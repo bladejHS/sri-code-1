@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZECE — Hybrid365</title>
+<meta name="theme-color" content="#09090B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2048%2048%22%20width=%22512%22%20height=%22512%22%3E%3Crect%20x=%221%22%20y=%221%22%20width=%2246%22%20height=%2246%22%20rx=%229%22%20fill=%22%233A3E45%22%20stroke=%22%23C3CAD4%22%20stroke-width=%221.6%22/%3E%3Crect%20x=%2213.2%22%20y=%2212.4%22%20width=%225.8%22%20height=%2219%22%20fill=%22%23C3CAD4%22/%3E%3Crect%20x=%228.6%22%20y=%2226.8%22%20width=%2214.8%22%20height=%224.6%22%20fill=%22%23C3CAD4%22/%3E%3Cpath%20d=%22M8.9%2016.6%20L13.2%2012.4%20L13.2%2018.6%20L10.2%2021.4%20Z%22%20fill=%22%23C3CAD4%22/%3E%3Crect%20x=%2226.4%22%20y=%2212.4%22%20width=%2213.6%22%20height=%2219%22%20rx=%226.6%22%20fill=%22%23C3CAD4%22/%3E%3Crect%20x=%2230.5%22%20y=%2216.4%22%20width=%225.4%22%20height=%2211%22%20rx=%222.6%22%20fill=%22%233A3E45%22/%3E%3Crect%20x=%2213.2%22%20y=%2235.4%22%20width=%2221.6%22%20height=%222.8%22%20fill=%22%238C919A%22/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAKj0lEQVR4nOzdi1NU5xnH8UdhQZRdWBAUiIJXFhC0XusVJRoJMUTTaaLWBgOY2LSdtjOd6T/QmcxkOp1pm1qbNvFSU6OCd9FoVNSoiDckKvergIhykQUW5GJfw+hkIk/cc857dpft7zOr44zrjK7f856z77m8nvMWLSOAgXgSAANxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAAtxAMsl4hhhNBp9fUmG+rt3aZAICAgwGk0enh59fdTeYW1rtdpsNnIlzo8jNDQsMWlFpMVCMvzh978jl2Qymab9aPpkS5TZ3yy2Be9hwwZ8W3NT08PWlsryyvz8vNqaO+RUTo5DlPHexl/U37tHbko0ETt1WtzUqeHh44YMGfLC95sDAsQrImL84oSExsbGb/LzbuTl1dXWkDM4M46x4RGpaek+w0eQO/L391+emDRt+oyhQ4eSKoGBgYuXvCxelRUVWUcOVlVWkmM5LQ5RRtp7G4d5e5PbGT5ixNKly+bMne/pKefjjRg37oNf/abg9q1jWUfq6x13UOWcONy1DC9vr/j4hAXxi/X4p0VFx0RaovKuXT1+/Jg4NCH9OSGOSZMnr0tJdb8yAgID0zdsDBw5knQj9lDTZ86aEjd1x7YtRUWFpDOVu0PVRBkp725wvzLCXhrzy1//VtcynvHy8lqftmHmrNmkM4eOHP1lGAzuNvMWGWlZl/Ku+D8jRxFDyE/fXuPnbz554kvSjeNGDnctIzwiIiU13ZFlPPPK8kTxXYZ046A4YqbEumUZfn7+76xP8/DwICdZ/mpS3NRppA9HxCHK+NnPU9yvDE9Pw/rUdF9JE//qiP3LW6vXiLlE0oHucfSX4cRtSydiuvPtNWtDw3T5X1HEYPBKSU0bMUL+XKK+cUyfMdMtyxDinkyK6zWeK+Xvb05e9SbJpmMcooy3Vq91yzLE1Kc4WUiuZNq06aNHh5BUesXRX4Y9p5oGowUL48UJd3IxSSuSSSpd4nDvMry9vZe8vJRcT6TFMjlSzpUP/eR/g5g3f0HyyjfdtQwhYemyYczVGPZrtbbW1tSIUyTt7W1ijsTfbA4KCtb+pSNpxevF8qbVJccxaXLkG6t+Qu5LHEL9eO58Uqv70aNzZ89cuZLb+ODB87/r4zN8SmycmNoy+fmRKiEhoWPHhldXV5EMkuNoaWkmtzZh4iTVw0ZNdfX2bVsePmzh3mCzdVzOzbl+7WryGyvnzJ1HqsTExsqKQ/Ixx/2GBsecTXYWMW1DqhQWFmz+x8c/UMYzPT3dezP3fHVc5UmTmJgpJIn8A1IHnEp2omhVH73YZnbu2N7d3W3/Hzlx/Njly7mkXFDwqKDgYJJBhzgK3TYOsTs3mUykkM1m27rl352dnaTQgb0Z4qCVlIuJUTm8fY/8OMrLSx8/fkzuSGyUpFzOxfMP7t8n5cRIczTrMCkXEhZKMsiPo9Nmu1NdTe4oIMBMyp05fZrUKikuqqyoIIVMRsXD24B0mQQrLiogd+SvfFa0qLBAfAchDQpu3ySFzGY5s7e6xFFaWqbo/T3dPTQYGH0Vb5Hav1VWVSkehsU0ier7Ib5LlzjuVFd22L25iI8vP/8GDQZGo5EUslqtpE1zcyMpJGbqpJzB1yWOnp6eijK7Bo/SkpJ/bd4k5g1pMDAr361YW1tJmzZVeRllHHbodVa2vKz0he/Ju35ty6efPBokZQi9fb2kUF9fH2mj7qvfEJfdrZAdU2G5ORd3fv4fMcYQuCq94vjhefQz2acyM3YTuDYdrwTjBo8jhw5kHT5E4PL0jOO5eXSx+8zcs+vsmWyCwUDH2wX659GfXfXT29u7a+fnN/KuEwwSOo4c351H7+rq2r71M5QxuOh7a0L/PLqYEPtk86bCgtsEg4q+cZSVlYo5nH9u+rjmjnueinNv+t6iKKbGN/39rwNeLwmuT984xBk1lDF44SG1wEIcwEIcwEIcwEIcwEIcwEIcwEIcwEIcwEIcwEIcwEIcwEIcwHL0qgmDWneX4ltsvDU/E91gMJByjx51kWaIQwEV9zb6mrTeeabu3jXtt2ESdiuKWK2K720M0fyAwNBQxQ/bsNlsnTJWIUUcCqjYHCdOnETaTLJEkUJtVq036PbDbkUBFR+62WyO1vAEN19f3ynKH1EnZZ9CiEORqio1D9tYtjyR1FqcsNTHx4cUqqurIxkQhwJlpSUq7vwODQ1bkbySlLNERc+bv4CUKyqU82QlxKFAb29vWemLHy3xvIWL4hcvSVD0R8ZPmLDunfUq1pwQR6MiYpJB5gGpGAMjIiJIOT8/f5JkfWo6KXft6pX8G3n2vPPWzfxIi5qHz7/62usjg4Iz9+yy53kbsXFTV69dp27N4qKiAhExySAzjjFjxkRFx5BTqfsLVFdV2vnO4uIiUmvW7Dljxow9dHBfaQm7ZY8cGZSY9NqU2DjVKwsUF6r/G34Pvsoq09zUdL/hnroHkgqjQ0I2vP9BU2NjWXlZw7168Yv29g5vL8OTVROCR40bPz4s7CXSQAxLxcWuumrC/4ODB/anbXifNAgIDBQv0sH5r89pfwrZMzggVay4qNCeJ545Xmdn56mTJ0gexKHGl0ezyPWcPvlVe1sbyYM41KisrLh18xtyJW1W69fnzpBUiEOlg/v3tkmapdaur69v9xf/lf5oRsShUktLy47tW2XNKGgkdnN6LHODONSrqCg/sC+TnO1G3vXs0ydJB4hDk0s5F3MuXiDnqa2t2f3FTtIH4tBKDB7q1lPSTpxG2fbZpz09ClYHUwRxaCUOBv/2lz/nXDxPjiWm/D/68I/2rCioGmZIJRCT1vsyM+pq65JXrlJ3tkyp3Es5+/dm6H04jDikuZRzof5uXUpqupS1TjhioNqbsfty7iXSH+KQqaqq8k8ffRgfnzB/wQKD5psSnldw+1bW4UMNDffIIRCHZB3t7UezDonJyleWJ86YNVvF1ToDKisrPXrk8B1JS03bCXHowmptzczYnZ19auHC+KjoGHFGnlTp6uwsLinOuXC+tKSYHA5x6KjxwYP9+zLFKzh4lCU62mKJjhgX4eHx4s+8rq5WnPstuF1QXVWhfa0n1WTGUVZaYlO+7jJ9ewH+yKAgkkHFKqwk73JtjjhKEK+z2U8WmDWZTL5G05OfBaPJ4OnR2/e4vb3N2mr99kdbc5PiFf90MmTeomUEMBDsVoCFOICFOICFOICFOICFOICFOICFOICFOICFOICFOICFOICFOICFOICFOIDlEnH4m83h4REET1VVVbY0N5OzuUQcRl/jhAkTCZ5qamxEHODSEAewEAewEAewEAewEAewEAewEAewEAewEAewXOJeWYPB4OMznOApm62ju1uvx8DZzyVGju4nHhK4GOxWgIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gIU4gPU/AAAA//93mk+7AAAABklEQVQDAMy3WOXo6hPuAAAAAElFTkSuQmCC">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlpFQ0UgXHUyMDE0IEh5YnJpZDM2NSIsICJzaG9ydF9uYW1lIjogIlpFQ0UiLCAic3RhcnRfdXJsIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiIzBBMEEwQiIsICJ0aGVtZV9jb2xvciI6ICIjMEEwQTBCIiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBSUFBQURkdnZ0UUFBQUxSMGxFUVZSNG5PemQrMU5VNXgzSDhTOENzc2d1Y2hGTU5DQWdzc0F1bXVaaW1rc1RtNGlvVFNaSmpSZThwelpScXhrN25mNFBuV2JHcHEzVkdCT3ZWV09hZUl0WDZnMU5GRFZlVUM0Q0NzdUNYQVJsZFhjTklDejJTVFBET0lrWGVMN1AyVDNzZmw2enlRL09PaVA2UHM4NTV6bTd6eFB5d3N2WkJDQXJoQUFZRUJDd0lDQmdRVURBZ29DQUJRRUJDd0lDRmdRRUxBZ0lXQkFRc0NBZ1lFRkF3SUtBZ0FVQkFRc0NBaFlFQkN3SUNGZ1FFTEFnSUdCQlFNQ0NnSUFGQVFFTEFnSVdCQVFzQ0FoWUVCQ3dJQ0JnUVVEQWdvQ0FCUUVCQ3dJQ0ZnUUVMQWdJV0JBUXNDQWdZRUZBd0lLQWdFVkhBZlhyMSsvVjE3SXpNakpKa2VLU29pT0hEbEpmOEVSQ1FreE1yTkZvakJEL0dVMG1vOUVRUGlBb2lEbzZPbSs3WGU3YmJ2RS90OHZsY2p0cmEycGJXNzhuM2RCTFFLS2VHYlBtaUwrNkp4SVRTWkg2K2pyU3NaQ1FrTlFSYVpuV0xFdW1SZnpnUGZ4ZEhrK1hyYXF5cFBoaWNkRkZwOU5KdnFhTGdINnN4NW8xc3JyYVJnRWdLVG41K1JkZnlzaXdoSVdGVVM4RkIvZExIVEZDdk41OGUxSk5qZjFpWVdIQmllT2RuUjNrSTc0UFNCeUl1VE5taVhvb0FNVEhENTc0K2hzWm1SWlNJVEZ4bUhpOS9NcVlBd2Z5enB3KzFkWFZSVjduNDRCRVBYUGVuWmRtVGlkL0Z4VVZsVE4rNHBOUFBTMkdXMUlxY3VEQVNlOU1FUm5sN2R0WGRMR1F2TXVYQWZVUDZ6OXI5cnVCVU0vVHp6ejc5cVIzUWtQN2syYmk0dUpuenA1VFZqWjZ5NmFOM3J6S1ZudzA5SnlvWjk1NzgvMitucENRME1sVGM2ZE1tNjVwUGQzUzB6T1cvT25QVHlRb3V4RjVKTjhFRkI0ZUx1cEpTa29odnhZN2FORGlKWDk4NXRuUjVFWFIwZEVMRjMwZ3hqenlDaCtjd2tROTd5OVlOR1RvVVBKcjRyWmd5dFRjTUlPQnZFNWNXWW94TDJWNDZ2YXRYMmw5ZytidEVTaEE2aG1XbERSOTVteWYxTk5Oakh4VHB1V1N4cndha0poa0RZUjZCZzZNbWoxM1huQndNUG5hcUNkL01lYlhyNUdXdkJlUXFHZkJIeGI3ZlQzaXFubnU3MzR2ZmxqU2g1d0pFODFhM3FsNEthQ282R2hSVDF6OFlQSnJRVUZCVTNPbjYrb2dFZE5PdVRObkQ0cUxJMjE0STZBZjZsbm8vL1VJSTBjOUtWNmtNK0s2YzlMa3FhUU56UU1TRTF5aW51aVlHUEozWXZnWlArRTNwRXNwS2NNekxWbWtBVzBERXZYTVg3Z29FT29SUmovM3k1allXTktyN0p3Y2tUaXBwbUZBUTRZTUZmV1lJaU1wQUlpcGwreWNDYVJqNHAvanFhZlZ6eTVxRlpENDQ3Ni9ZR0dBMUNPODlLdFhURDMrVEkrdnZKWTlUdmtncE1sTTlJLzFoQStJb01CZ01Cakd2S3BndXFXOXJjMW1xN3BhVyt0d3REaWR0em83T3lNaVRPSVdKRDQrUGprNW1YOFhFaHNiSzg2enAwNFdrRHFhQkdTeFdnT25IaUZ4V0pLNDB5R0dqbzdPby9tSGpodzZLS0o1MEh1U2tsTW1UNW5HdkNHM1dFZXFEVWlUVTFobDVSVUtKQllyNndiSFZsWDUwZEsvSHNqYi81QjZoR3BiMVVkTFB6eDg4SUNvaldRTlQwMDFLSDNBb2tsQU5YYjc5M3I2NExmV01pMVdrdUx4ZElrZ1ZxMWNjZVA2OVo2OFh4U1d0My92cHl1WDM3aHhnNlNJaTMxemVnYXBvMGxBNHVlMFZWWlNZRWhNSEJZcGU2OVFXbEwwMzd4OXZmMG9xdDFldmUyci8zZzhIcEtTYVpYTS9iNjB1Z3VyQ3Bpem1DVkw4dnhscjY3ZXNublQzYnQzcWZldVhLN1l1V01iU1RHYk14USs2TlVxb1BMeU1nb01qejh1K2VUclZNRUp6b2Qxem41MzJ1VnlVZStKNjMyRkU1NWFCZFRjMU9Sb2FhRUFJRGY5NDNJNno1NzlqaGpFZGNLSmI3OGhLUXFuckRTY2lhNnNDb2l6bU55RG11TGlJbUs3VkZwQ1Vrd21aUk84R2daVVVlYi9aN0dRMEJDNUdhQmF1NTNZR2hycTVlNTIrOFlJSkM2RGVuV0Y2SGE1S3ZyYWxaUDBvZHppY0pBS2JxZk1aWkRDUjB3YUJ0VFcydHBRWDkvRE4xOXZibDZ4L0orM2J0MmtQc1ZrbER5VUhRN0ppWnlma0x1T052YUpFVWlvcU9qUmlDS0c0bytYTCt2aFpKcXVpRk1ZeVpHNmUvKzV0clpXNnIyd01HV1QwZG9HVkY1MjZaSHZxYW14cjF6eEw3ZGI1a2dDbjlQMmUySGltWVo0Y0JQNjRNUDB5dVhMNjlkK2R1Zk9IWUsrU2RzUlNNeFZQR1JLV3R5RnJsMjlDdlgwYVpwL0pycWkvUDVuc2RNbkN6YXNXL1B3NTgrZ2Y1cC90Ym5xZms5VmorWWYzcnQ3RjBIZnAzbEE5ZlYxWXJKclFQaUE3bC9aczJ2bnNhUDVCSDdCRzk4TDY1NGVGUE9LVzcvOEF2WDRFNjhFVkZaT1AzeDR5dlA1cG4rZlBuV1N3STk0WTNtWHFxb3I3ZTN0bXpkdUtMdFVTdUJmdkJHUW82Vmx4YkovTkRZMkVQZ2RMeTB3aFhyOEZiWTZBQllFQkN3SUNGZ1FFTEFnSUdCQlFNQ0NnSUFGQVFFTEFnSVdCQVFzQ0FoWUVCQ3dJQ0JnUVVEQTRyTWRDLzFEVzJzYlNRbS81MFBpSEFhRHpOSU90OTF1VWdRQnNiUTRKTmRBVXZYdGRMbDFOdHd1WlJ2T0l5Q1d0dFpXdVRWVGg2clkwY2RnTU1pdE5lWjBJaURka0R1YTA4d0tsa28xbTlORFFtU3VZbDB1bk1KMFEyNkJsWlRody9uYmlqMzMvSXNrNWFaRDJlcURDSWpMSlRVQ0JRVUZqUjA3amhpU1UxS0hwNmFTRkJldWdmU2pSbmF4dWt4ckZtY1F5aDZYUTFKYy8wZUtJQ0N1a2hMSjVUTEZJRFIvNGVMWVFZT29sOFJ2bkRsN3J2VHdjNkh3UEttamZpSnhSSnBaZWsraHh4NTduTlFaT0RBcVRYYS8yZnE2dWg2dWVkWGMxTlRjZEUxdUt4MXhHN1hvZ3lXclYzMVNWM2UxaDc4bE5EUTBkOFlzenU0Y0Y4NmZJM1hVQnpUdnZmbGE3SXdud1p5UklWNGtaZjNhTmFVOUhsckVNVDEyM0hpU0VoRmhYTEJvOGQ0OXV3dU9mL3ZJTnc4Wk12UzNrNmNrSkNTU0xISHlxcWxSc0VCc056ektVS0NRRVpEUXYzL1lXMjlQR2pQbTFXK09IUzA4ZjlaOXYybGlNYTQvLzhLTHpHMkJoQklWNjFQZkN3RXBJTTVpNVdWbDVuVFc5dXhSMGRGdnZQbVdlRlhiYkRkdVhMOTE2MmFYeHlQR0ovSHJZc2hSTW5QZDFkVjE0cmprNHZZUGdvRFUyTHY3YTJaQTNaS1NrOFdMTkhEdTNKbHJqWTJrRk83QzFHaHNiQ2dzVkhseHFseEhSOGZCdlAya0dnSlNadi9lUGIzZCtjdWJUcDBzY0NoYUh2OWVDRWdaUjB1TGJwZlBhbXRyTzN6b0FHa0FBYW0wYjg4dUxZNXl2cTkzYkZmNEdhQjdJU0NWeElHK1lkMXF2YTE4ZmJMZ3hOa3pwMGtiQ0VneE1ZVzlZOXRXMG8ycXFzcWQyelg4OHlBZzljVGhMZzU2MGdHM3k3Vnh3enBOTCswUmtDYkVRUzhPZmZJcGo4Y2o2dEhvMHFjYkF0S0VPT2pYZlBySitYTm55VWVjVHVleXYvL05acXNpaldFbVdpdGk0bTdMNW8xTjF4ckhqWi9vNWFmTE5mYnFEZXZXS1B6UXowTWdJRzBkUG5Td3NiRnhhdTRNZzBIWkhtOFBkNkh3L0JlZmJ4TG5ML0lLQktTNTBwTGlwUi8rWld4MnpqT2pud3NPRGliTk5EWTA1TzNmVTFvaXVaV3pIQVRrRGVLS1pOdldMNDhkemM4WlB6RnIxQ2psWnpReENYNGdiNzk0Vm5wWDBVNmFQWWVBdk9mNjllWk5HOWNQelUrWU1QSDFFV2xwcElMYjdUcHk2R0RCaWVOZU8yZjlCQUx5dHJxcnRaK3Qramd1UHQ1aXNWcXNJeE1TRXlVR0pESEJVMUphVWxwY2RPVnloVzgzN1VOQXZ0SGMxSlRmZERqL3lPSEl5TWhNaXpVOUl6TTZKc1pvTWhrampQZDlmM3Q3dTF1TU5xNWJ0WFo3Y1hGUnRjMUcraEQwd3N2WnBKUTFheVRKbnVPTlJxUGNkM1h2eSsxeXQ3UkliczllVTIxVCtQM2ZYakdaVEJGR1kzaDRSRkRRM2M2T1RwR04wK1hzN05EcDNxRHFBNEtBZ2xNWXNDQWdZRUZBd0lLQWdBVUJBUXNDQWhZRUJDd0lDRmdRRUxBZ0lHQkJRTUNDZ0lBRkFRRUxBZ0lXQkFRc0NBaFk5QlhRNE1HUG1jMW1nZ2NyTHkrL2RrM3hNblVjK2dySUVHNFlGQmRQOEdCMnBZdjA4dUVVQml3SUNGZ1FFTEFnSUdCQlFNQ0NnSUFGQVFFTEFnSVdCQVFzQ0FoWTlCVlFlM3U3bzBYWmp0UitTZndWa1o3b0s2REdoZ2J4SXVnN2NBb0RGZ1FFTEFnSVdCQVFzQ0FnWUVGQXdJS0FnQVVCQVFzQ0FoWUVCQ3dJQ0ZnUUVMQWdJR0JCUU1DQ2dJQUZBUUVMQWdJV0JBUXNDQWhZRUJDd0lDQmdRVURBZ29DQUJRRUJDd0lDRmdRRUxBZ0lXQkFRc0NBZ1lFRkF3SUtBZ0FVQkFRc0NBaFlFQkN3SUNGZ1FFTEFnSUdENUh3QUFBUC8vWlIwa3dRQUFBQVpKUkVGVUF3Q0wyWmF4bFIvNmJRQUFBQUJKUlU1RXJrSmdnZz09IiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmcifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FJQUFBQjdHa090QUFBUUFFbEVRVlI0bk96ZGQzUlZaZDdvOFY5SVBTbVVRQko2UzZIM1hxVTNGYkVqS3VJd2VMa3o0NXEzclB2ZlhldXVkZis2N1gzbkhYVXNZeG5MS0Jaa1JBYVZEb3FBQ0tFR1NJVWtCRWlsNUtTZkpQZUorTnBHTUlHY2M1NjlmOStQWjJCd3dSSTRKODkzNytmWis5bGhVMmZPRndDQVBtRUNBRkNKQUFDQVVnUUFBSlFpQUFDZ0ZBRUFBS1VJQUFBb1JRQUFRQ2tDQUFCS0VRQUFVSW9BQUlCU0JBQUFsQ0lBQUtBVUFRQUFwUWdBQUNoRkFBQkFLUUlBQUVvUkFBQlFpZ0FBZ0ZJRUFBQ1VJZ0FBb0JRQkFBQ2xDQUFBS0VVQUFFQXBBZ0FBU2hFQUFGQ0tBQUNBVWdRQUFKUWlBQUNnRkFFQUFLVUlBQUFvUlFBQVFDa0NBQUJLRVFBQVVJb0FBSUJTQkFBQWxDSUFBS0FVQVFBQXBRZ0FBQ2hGQUFCQUtRSUFBRW9SQUFCUWlnQUFnRklFQUFDVUlnQUFvQlFCQUFDbENBQUFLRVVBQUVBcEFnQUFTaEVBQUZDS0FBQ0FVZ1FBQUpRaUFBQ2dGQUVBQUtVSUFBQW9SUUFBUUNrQ0FBQktFUUFBVUlvQUFJQlNCQUFBbENJQUFLQVVBUUFBcFFnQUFDaEZBQUJBS1FJQUFFb1JBQUJRaWdBQWdGSUVBQUNVSWdBQW9CUUJBQUNsQ0FBQUtFVUFBRUFwQWdBQVNoRUFBRkNLQUFDQVVnUUFBSlFpQUFDZ0ZBRUFBS1VJQUFBb1JRQUFRQ2tDQUFCS0VRQUFVSW9BQUlCU0JBQUFsQ0lBQUtBVUFRQUFwUWdBQUNoRkFBQkFLUUlBQUVvUkFBQlFpZ0FBZ0ZJRUFBQ1VJZ0FBb0JRQkFBQ2xDQUFBS0VVQUFFQXBBZ0FBU2hFQUFGQ0tBQUNBVWdRQUFKUWlBQUNnRkFFSXBrNmRPb3VMVkZWNWZUNmZBSEFJQWhBMGl4YmZPWHZ1UEhHUmwxOTZJU2M3UytBaUhrOTBmTmV1OGZGZHU4UjM2UmdYRnhWbC9rVzArVGE2NWR1Vzd6d2V6MDkrU1hWVmRVMk5lZFcwZkZ0ZFUxdmI4bDNsdFdzVkZlVVZMY3JyNitvRmRpQUF3WEhQc3Z1bVRwOGhnRTNNNko2YWx0YW5iOSt1TFNOK1Z5TXlLa3JhS0RvbTJyeHU4aE9xcXFxK2lVRjVlV25adVhObjgzSnpHeHBJUW5BUWdDQmc5SWM5d3NMREJnd1ltSkl5S0NVdHRXZlBYaDA2ZEJBL2kvbEduejU5ci8vUVRCc1c1Si9MenNyTXpzNHVPbC9ZMU5Ra0NCUUNFR2dQTFY4eGJ2d0VBWUluSkNTa1Y2OWVLYWxtMEUvcjMzOUFlSGk0QkU5WVdOakE1QlR6V3JoWXpHUlJYazVPZG5aV1RsWldXVm1wd004SVFPQ1lZNnNISGxyTzZJOGdpbzJOR3pscTFNaFJZL29QR0dBeUlKYUo5a1FQSHpIU3ZNeHBRVlptNXJHajZhZFBaZFRWMVFuOGd3QUVpQm45SDMzOENmUEpGaURnek9UK2lGSEdtSUhKeVFHWTVMbDk1clJnNkxCaDV0WFEwSERtek9salI0NmNQbjNTMThBMVp1Mk1BQVJDYUdqb2lzZFdNdm9qOE14YTdxeFpzOGRObUJqY2VaNWJabjdiSTBhTU5LK2FtcHI5Ky9aK3ZudDNUVTIxb0owUUFMOHpvLytUcTlla3BnMFNJSUM2OStneGEvWmNNOXNUR3VxQVEvNWY1UEY0NXN5ZFAyMzZ6SzhPN04vNytaNnJWNjhJYmhzQjhDOUdmd1NlbWQ4M1EvK1FvY1BFZFNJakkyZmVNV3ZhOU9ucGh3N3QyYjJydExSRWNCc0lnQjlGUkVTc1hQVXJSbjhFVEh4OC9MTDdIaGcwZUlpNFdtaG8ySVJKazgyODFzR3ZEbnoyeVdZbWhXNFpBZkFYTS9xdmZtcHQvLzREQlBBL2MyZzhhODdjR1RObmg0ZHIrYUkycTltVHAwd2RPWEwwbHM4Mm14SndBOEV0SUFCK1llWXJWNjFldytpUHdCZy9ZZUtpeFhmR2Rld28ra1RIUk45Ny80UFRac3pjc1A2RHMzbTVncllnQU8zUGpQNVByZjF0ejE2OUJQQ3pQbjM3THIzbnZyNzkrb2x1aVlsSmEzL3p1eFBIam42eWVWTkZSWVdnZFFoQU80dU5qVjI5WmkyalAvd3ROamJ1enJ2dUhqTnV2SVgzY3dYTGlGR2pCdzhkL3NXZVhUdDNiR2Qvb2RZZ0FPM0pqUDVyZi9OMFFtS2lBUDZVbE5SOXhlTXJ1M2Z2SWZneHN3UXlaOTc4M24zNnZQUFhOMnRxYWdRMzVZWUxoQzNCNkkvQUdETjIzTlAvOUMrTS9qZVJObWp3UC8zcmYyTVI3aGVGOXVtWExMaHRuVHQzTWZQK3lrZi85TU9IS2lyS0JYNFRFUkh4d0VQTDV5OWNGQm9hS3JpcHFDalAySEVUbWtYeXo1MXRibTRXL0J5bWdOcUJHZjNYL3ZaM1hickVDK0EzdlhyMWZ2VHhKN3AyNnlab25kRFFEZ3NYTFU0Yk5PaXZiL3pGNi9VSy9nRlRRTGVyVzBJQ296LzhiZENnd1d0Lyt6U2oveTBZTUdBZ00yWTNRZ0J1Uzh2by81dW5HZjNoVitNblRGeTFlbzJaL3hIY2ttL08wWjhlbUp3aStERUNjT3Q2OU94cFJ2KzR1RGdCL0diYWpKa1BQdnlJSS9ad3Rwbkg0MW05NXI4TUhqSlU4QU44cW02UkdmM05xaStqUC96cTdxWExsdDV6cjZBOWhJV0ZyVnoxcTRtVEpnditFNHZBdDZKZnYvN21sRHc2T2xvQS93Z05EVjIrNHJHUm8wWUwyby81VzczL3dZZGpZK04yN3RnbUlBQzN3SXorcTU5YUd4a1pLWUIvaElTRVBQN0VrNjdjejlrR0N4Y3ZDUTN0c0czckZsR1BLYUMyWWZSSEFDeTc3MzVHZjcrYXQyRFJsS25UUkQwQzBBWXBxV21NL3ZDMytRc1dUcDdDMk9SM1M1ZmRSMlVKUUd1WjBmL0oxV3NZL2VGWGt5WlBOUWVuQXYvcjBLSERvNDgva1p5aSt0cFFBdEFxdzRhUE1LTi9XQmhMSnZDalVhUEhtTWtmUWFDRWg0Yy9zV3AxVXZmdW9oVUIrR1ZtOURkSENveis4S3VCeWNrUFAvSW8xL3NIV0dSVTFLL1hySTN2MmxWVTR0UDJDOGFPRzI5R2YvYmVnbC9GeHNXdFhMV2FqMWxRZE96VTZRbXRmL2tFNEdiTTZQL1E4aFY4V2NLdlFrSkNIbG54bU1makVRUko5eDQ5bHR5MVZQUWhBRGMwWmRwME0vcnp1Q1g0Mjd6NUMxSlMwd1JCTlgzR3pPRWpSb295Qk9Ebm1kRi8yYjMzTS9yRDMzcjM2VHRuM2dLQkJWcHVFbGEydVFzQitCblhSMzhCL0N3cUtzcXNNTEh3YTRubzZPamxqenltNnJDUFQ5NVB6Wms3bjlFZmdmSGd3NC9FeDdPWHVFVlMwOUxNakp5b1FRQitaUDZDaFFzWEx4SEEvMGFOSHFOdzB0bCtaa1l1SVVITHMxMEp3UGNXTEZyTVRaZ0lqSWpJeUNWMzNTMndqNW1SMDNNN0hnSDQxajNMN3B2TFdod0NaZUdpSlowN2R4RllLU1Uxelp5ZmlRSUVvSVVaL2FkT255RkFRSFJMU0pnNmJickFZdWI4TEVMQnhsOEVRQjVhdm9MUkg0RjAzLzBQY3VXUDVjejVtVGxMRTdmVC9pazBvLys0OFJNRUNCUXp0NUNja2lxd25qbExjLzFxc040QW1FTXdSbjhFR0d1L0RxSmhOVmhwQUs1dkJjN29qd0NiT25VNmE3OE9ZbGFEMHdZTkZ2ZlNHSURRMEZBeituTUpOZ0lzTEN4ODJveVpBa2VaUFdldXVKZTZBSmpSLzhuVmF4ajlFWGlUcDB6cDJMR2p3RkVHSnFjTVRFNFdsOUlWZ0lpSUNEUDZwNllORWlDd3pLempIYlBkZkN6cFlyTm16eE9YVWhRQU0vcXZmbW90b3orQ1lzelk4UnorTzFUYW9FRzlldmNSTjlMeW1FT1B4N05xOVpyKy9RY0lFSERtOEgvT1hCY2VSVlpYVlZkVlZYcTlWVTFOVGRLeXlCRVdHeHNiRXhNYjVZa1NGd2tKQ1prNWE5YTZ2NzRscnFNaUFHYjBmMnJ0YjN2MjZpVkFNSXdZT2FwYlFvSTQzTlVyVjA2ZnlqaHo1dlRseXhWVjNxckt5bXMzK3BsaDRXRXgwYkV4c2JFSmlZbERoZ3dkTW1TWTA1TXdZc1NvYmQwK0t5c3JGWGR4ZndBWS9SRjB6dDFZcHJtNXViQ2d3SXo3NW5YeDRvVlcvaXBmZysvcTFTdm1kYUhvL0xFajZlWUVhTURBNUtIRGhnOGVQTVNoSVF3TkRSMHpkdXkyclZ2RVhkd2ZnQjQ5ZXpMNkk0ak1nZkRnSVVQRmdUSXlUbTc5OUpOTGx5N0s3VEVUUkxrNTJlYTFhZVBmVWxKVEZ5KzVxM2VmdnVJMG84ZU9Jd0RPazMvdW5NL25NN09UQWdURDhPRWp6UEdqT0VwQi9ybVBOMzVVV0pBdjdTMG5PL3ZaUC81aDVLalJDeFl0ZHRaR0M5MjZKZlR0MjYvQUQzOG5RZVQrWWJHeHNURTNKMmZRWURmZnpnZWJqUjR6VnB5aitOS2xUelp2T25QNmxQalQ4V05IVDU0NFBtSFM1SG56Rm5UczFFa2NZdFNZc1M0TGdJckxRTE15VHdzUURQSHg4V2I2V3h6aXdQNHYvL0J2LzhmZm8vOTFabDdvcS8zNy91My8vcStzekRQaUVHWXR4MlhidUtvSVFGNXVyZ0RCTUc3OEJFYzhaTndNeHh2V2YvQzNEOWViVlY4Sm9OcmEydGRlK2ZPK3ZWK0lFOFRGeGFXa3BvbUxxQWpBaFF0RlY2NWNGaURnSEhIOWp4bUZYMzM1eGE4TzdKTmdNTW5aK05HR2ovNzI0ZldiQ1N3M2FveXJuaFNtNVU3Z25KeHNBUUtyUzN4OFFtS1MySzJpb3VLNVAvN0JyTTFLVU8zL2NxODVGYWlwcVJHN0RSa3l6QkduZEsya0pRQjVPY3dDSWRBR0Rrd1J1elUwMUwvNStxdWxwU1ZpZ2V5c3pBM3IzeGU3eGNURTlPalJVOXhDelJsQWRsYUFKemVCZ1NsV0wvK2FLWmYzMXIxejhVSnJiKzhLZ09QSGptN2IrcG5ZelUyYmcyb0p3TldyVjZ6Nm9FT0RaTHZQQUxaOHV2bkU4V05pbWUxYnR4dzdla1FzTmpEWjloTzcxbE8wRzJoZUhyTkFDQnl6QUdCZVlpdHpyTDE3MTA2eDB2dnZyaXNxT2krMjZqOWdvR3VXQVJRRklEY25SNEJBc1hrQndPdjFmdkQrdTJJcm42L2h2WFZ2VzN0UmtKdVdBVFNkQWVSbSszdytBUUxDNWdXQXJWcytyYStyRTRzVlg3cjAxWUg5WWl2WExBTW9Da0J0YlcxQi9qa0JBc0xhQllEaTRrc0hMUjVidjJOV2c4M1hyRmpKTmNzQXVoNEptWmZMTEJBQ3djd1JkK3JjV2F5MGFlTkhqcmdpcnNycjNiVmptMWlwU3hkN1YzZmFSRmNBTXM4NFp0Y1JPRnEzaEFRN040M0pQSE02T3l0VEhHTHZGNTlYVkZTSWZlSzdkblhIT3JDdUFCUVU1TnQvcXlGY0lDSEJ4aHVBemJMcTN6L2VLTTVoRnUwKzI3eEo3Qk1WRmRXNVN4ZHhQbDBCRUdhQkVCRHg4VGFPRG9VRkJTVWx4ZUlvSjArZXNQT2dyUXNCY0NKekNpeUFuOW01QmRDcGpCUGlOSTJOalhaK3pUcnJhVFkzb2k0QVdjNlpBSVZ6SlNiYU9EcGtuRHdwRG5UcXBJM2RTa3pxTHM2bkxnQ1hLeW91Vzdtc0JEZXg4UEN3cExqWWtrM2YyaW96ODR5Rmx5MHhCZVJVbWM1NUFoRWNLc29UTFpaeDdzZittenQ0ckhzUVkxeGNSM0UrbFFIZ1lsRDRVMWg0V0hpNGRVL2JkdlRxbDRXckZ4NVBsRGlmeGdEazVXYXpOVFQ4eHhQbEVmdGN2RkFramxWVVpOMXZQc3JLZDdtdE5BYkFuRkVXRmhSSVVKa0NmV0xsQmM2NGZWRWU2NGFHeHNiRzZ1cHFjU3h2WmFWWXhwemxpZk5wRElDUmxSbk0wMkh6MWJqdTdiZjJmcjVINEVabUJrZ3NVMVZkNVlnbjd0NUlaZVUxc1V5WWZlL3lMVkFhZ056ZzNRN204L25lZlAwMXl4OTVnZHNSRm1iZEFrQnR0Yk52Z0xkd1Z6aXp6Qk5tMzBwUFd5a05RUDY1YzBHNXZiQytydTdWbDE4NmMvcVV3TDBzbkFLcXRHOEtwVTNNWVZOMWpYVlRXSFl1OXJTSjBnQ1lTWmpBN3dsaGt2UFNpOCt6RjRYcmVXd01nSFZUS0czbHZjWXlRUHRUR2dBSitLWkFaaFhyeFQ4OWU3NHd5SXZQQ0lCR0MyZmJuWC9WbTRWWDduWG9FQ29PcHpjQWdid3Y1c3FWeTg4Lzk4eWxTeGNGQUt5aE53Q2xKU1dCMlJPaXJLejArV2VmS1M4dkV3Q3dpZDRBR0xsNWZwOEZLaXpJTjhmK1Y2OWVFUUN3ak9vQVpQbDVUNGpjbkd5ejZsdmw5UW9BMk1meDE3SGVqc3d6cDgzS2twOGU3WGI2Vk1aYmIveWxzYkZSQU1CS3FzOEFhbXRyTDE2NElINXc5RWo2bTYrL3h1Z1B3R2FxQXlBdHo0ZHAvMW1ncnc3c1gvZjJXNDYrOHg2QUJ0b0QwTzU3NU83WnZXdkQrdmNGQUt5bmVnMUF2dGtUd3VmenRkZm1MWnMzYmZ4OHoyNEJBQ2ZRZmdaZ3B1a0w4cy9KYlRPTHlSOSs4QjZqUHdBSDBSNEFhWThIaEYzZjN2bmdWd2NFQUp5REFFalc3ZTBKVVY5WHgvYk9BSnhJK3hxQWNlRkNVVTFOemEzdDRHaCs0U3QvZnBFdDNnQTRFV2NBTFRKdjZRRmhiUEFKd05FSVFJdXNNNW5TUm16d0NjRHBtQUpxa2RmR1hlSEt5a3IvL01MemJQRUd3TkU0c0R5eXhBQUFEdDFKUkVGVUEyaHh1YUtpdEtTNGxULzU0c1VMYlBBSndBVUl3TGN5TTFzMUMxUllrRy9tL2RuZ0U0QUxFSUJ2NWVia3RPTG50R3p2WEZ0Ykt3RGdmS3dCZkNzdk4vdm1lMEljUFpMKy9ydnZzTUVuQU5mZ0RPQmI1cmorSm50Q1hOL2drOUVmZ0pzUWdPL2w1Zjc4TEJBYmZBSndKUUx3dlovZEZHanpwbzJmL1AxakFRRFhZUTNnZXdVRitUL2NFNks1dWRrYytMUEZHd0MzNGd6Z1I3NmJCV0tEVHdDdVJ3Qis1UG9Ed253K0h4dDhBbkE5cG9CK0pDc3JzNzZ1N2krdnZYS2pCV0VBY0EwQzhDT1hLeXIrOU93ZjJlSU5nQVlFNEtjWS9RRW9RUUFBUUNrQ0FBQktFUUFBVUlvQUFJQlNCQUFBbENJQUFLQVVBUUFBcFFnQUFDaEZBQUJBS1FJQUFFb1JBQUJRaWdBQWdGSUVBQUNVSWdBQW9CUUJBQUNsQ0FBQUtFVUFBRUFwQWdBQVNoRUFBRkNLQUFDQVVnUUFBSlFpQUFDZ0ZBRUFBS1VJQUFBb1JRQUFRQ2tDQUFCS0VRQUFVSW9BQUlCU0JBQUFsQ0lBQUtBVUFRQUFwUWdBQUNoRkFBQkFLUUlBQUVvUkFBQlFpZ0FBZ0ZJRUFBQ1VJZ0FBb0JRQkFBQ2xDQURRenBvYW04UTJJZUowSVNIVy9SbWFtaHJGNFFnQTRINGVqMGNjTGlyYThYOEVDeEVBb0ozNWZBMWltYWdveDQrZUh2ditDTDRHNjk3b3RpSUFRRHV6TUFCeGNYSGlaRkZSVWVIaDRXS1ptdG9hY2JnT0FxQmQrUnA4WXBsT25UdDM2T0RnTC9ZdVhlTEZQaGErMFcxRkFJQjJkdmx5aFZnbU5EUzBWKzgrNGxoOSsvY1h5MVJldXliT1J3Q0FkbWJuekVEUFhyM0VzWHIwNkNtV3FYWCsvSThRQUtEZG1abUJtaHJyUmdjTHg5RFc2OW5UdW5wVlZsYUs4eEVBb1AxNUs2MmJIMGhPVGhGbmlvaU03TjNIdXZtcmEvYTl4YmVBQUFEdHI2YW1WaXlUbUpUazBKT0FFY05IbWpVTXNZeTMwaXZPUndDQTlsZFNXaXoyR1RWbWpEaVFuYi90eXhYbDRud0VBR2gvcGNVbFlwOWh3MGFJMDVqNW41VFVOTEZQU1ltTmIzRmJFUUNnL2RrNU9waFpvTlMwUWVJb1U2ZE9zM0QreDdoNG9VaWNqd0FBN2EvVXlpa2c0ODY3bDRwelJFWkd6cDQ3WCt4VFUxUERWVUFBZmw1WmFXbGRYWjNZeDZ3RGp4bzFXaHhpOXR4NVVWRlJZcDlTVjh6L0NBRUEvS0c1dWJtOHJFeXN0R2pKWFJadXJmeVBZbUpqcDgrNFE2eGs1eUwvTFNBQWdGL2s1ZVdLbGVLN2RwMDRlWXBZYi82Q1JSWnVBSGRkWG82bGIyNWJFUURBTDNKemNzUldpNWZjbFpDUUtCWXppOVdUTEs1VVhwNjliMjZiRUFEQUw4NmR6VzFxc3UvUllOL3dlRHdybi95Vm5kUHJScmR1Q1krdFhHWHQ5cVdYS3lyTVMxeUJBQUIrVVYxZGZlbmlSYkZWWW1MUzhoV1BXN2dZRUJrWnVXcjFyNjJOazVIcmxzTi9JUUNBLzFpN0RIRGRrS0ZERnk1ZUlqWXhRVExIL3BaUFQ3bG1BVUFJQU9BL05pOERYRGQ3enJ6Ulk4YUtOVXlRMGdZTkZydTVaZ0ZBQ0FEZ1B6WXZBM3pud1ljZnNhUUI4eGNzTWtFU3U3bHBBVUJjL0V6ZzZPaG9zZnRpNTlBT29jM2lLcEZSVWRFeE1XSWxNeERYQm55UGZyTU1jTzVzM2tDNzkyRU9Dd3Q3NU5ISCsvVHR0M25UeG1EbHlzejdtOS9Ea0tIRHhIb1pHU2ZGUlZ3YmdQLytQLzZublZ1SXVOaktKNTRVV3hWZnV2VHYvKzkvUzhBZCt2cHJ5d053M2ZRWk01T1N1ci8xeG11QnY0RzVXMExDcWlkL25aQm85YnovZDQ0ZFNSY1hZUW9JOEtNVHg0ODJOamFLRTZTbXBmM3U5LzhjNEFYWTVKU1VwMy8vTDA0Wi9Tdkt5d3NLOHNWRkNBRGdSL1gxOVdkT254S0hTRXhNK3YwLy8rdWlKWGRHZVR6aVo1MjdkSG5nNFVkKy9kUi90Zm1LejU5SVAveTF1SXRycDRBQVM1aFpvR0hESGJNUmYzaEVoRm1KblRSbDZ1NGRPNzdjKzRYUDF5RHRyV1BIam5QbUxaZ3djWkpaZmhEbmFHNXVQblNJQUFCb2l6T25NN3lWbGJGeGNlSWMwWjdvSlhmZFBXM21IVHUzYlRtU25sNVgxejVQdU96VXFmUEVTWlB1bURYSFpFYWM1bXhlcnB1dS83bU9BQUQrMWRUVWRQTGtpY2xUcG9yVGRPclk4ZDc3SDF5NjdONzgvSE9uTWs2ZHpqaFpWbFlxYmRlN2QrOGhRNGNQSGpxMGQyL3JudTNlZWtmZHRmeDdIUUVBL083WTBYUW5CdUM2ME5Dd2dRTlR6T3V1dTVlV2xaYWVPblhTSEFoWGViMVZWVlhlbG4rOFAzdzBpam5HajRtTmlZMk5qWWsyMzhXWUpXVXovUlhYc2FNNG5GbkpQM25pdUxnT0FRRDhMaTgzTnk4M3h4SFhnOTVjdDRTRW1YZk1GbjMyNy92U0JFOWNoNnVBZ0VEWXR2VXpnVE0xTk5UdjNybGQzSWdBQUlGZ1RnSUs4bDExQ2JrZWh3OGRjc2NUZ1A4UkFRQUNaTmZPSFFLbk1iUC9uKy9aSlM1RkFJQUFPWlZ4b3JUVUpROFQxK1BFaVdQV1B0NzU5aEVBSUhCMjdlQWt3RW1hbTV2MzdOb3A3a1VBZ01CSlAveDFTVW14d0NHT0hUdHlvYWhJM0lzQUFJRmpqaWcvMnZDaHdBbnFhbXMvMmJSSlhJMEFBQUdWbTVOOTZOQkJnZlcyYnZuMDZ0VXI0bW9FQUFpMHpSOS9iSTR1QlJZN1gxanc1ZDR2eE8wSUFCQm8xZFZWNXVoU1lMRU5INjQzODNYaWRnUUFDQUp6ZEZsWVdDQ3drcG1qS3pwZktBb1FBQ0FJV2xhRFAxd3ZzRTlWbGRmTTBZa09CQUFJanZQbkM3ZXpRWkI5MXIvL25wbWpFeDBJQUJBMDI3ZHR6Y25PRWxoajd4ZWZuOG80S1dvUUFDQm96RVRRdW5mK1dubnRtc0FDWmxWbTg2YU5vZ2tCQUlMSlcxbHBHdERVMUNRSXFwcWFtcmZmZkYzYkcwRUFnQ0RMemNuZXVYMnJJS2plZi9lZHk1Y3ZpeklFQUFnK0ZnT0NTOXZVLzNjSUFCQjhaakhnM1hWdnUzamJZWnZsWkdkL3V0bmxlLzdjQ0FFQXJHQ1dnbDk1K1VWWFBualdacGN1WG56ajlWZDlQcCtvUkFBQVcxU1VsNy8yeXAvWkppaGd6Q21YaVc1OVhaMW9SUUFBaTV3dkxEQUhwSTJOalFJL015ZGJadlJYZmcwdUFRRHNrcHVUODhGNzZ3VCsxTkRRWUU2MnpDbVg2RVlBQU9zY1NULzg2ZWEvQy96RG5HQzkvZFliNTltTVR5Uk1BTmhuOTY0ZDFkVlY5ejN3VUVoSWlLRDkxTmZYbTJQL3MzbTVBZ0lBV092Z1Z3ZnE2dW9lV3I0aUxJeXYwL2JoOVhyTjZLOWtxK2ZXNElNRjJPdlkwU09WbFpVclYvM0s0L0VJYnMvMWEzNlk5LzhoMWdBQXErWGw1cno0cDJlOWxaV0MyM0RwMHNVL1Bmc2ZqUDQvUVFBQTI1bkI2L25ubmlrckt4WGNFaFBSRjU1N2hwdnMvaEVCQUJ5Z3ZMenN1VC8rSWVQa0NVRmJORGMzNzltOTgrV1hYcWpsOXJxZnd4b0E0QXcxTlRWdnZ2N2F4TWxUbGk1ZEZoNFJJZmdsWnZua3ZYVnZaMmRsQ202QUFBQk9jdkRBL3Z5eloxYzh2cko3OXg2Q0c4dktQR05HZjYvWEs3Z3hwb0FBaHlrdXZ2VHNmL3g3K3VGRGdwL1QyT2pidkduanF5Ky94T2ovaXpnREFKekg1L09adzF0emtIdnYvUTlHUmtZSy9sTjVXZG5iYjcxUlZIUmUwQW9FQUhDcUkrbUhUMlZrTEY1eTU2UXBVenQwMEg0MlgxdFR1MjNyWi91Ky9JTG5hN1llQVFBY3JLNnU5cU8vZlhqdzRJRjc3cjIvZi84Qm90WHhvMGMzZnJUQjYrVnVpYlloQUlEalhTZ3FldUc1WjhhTUdiZGs2ZEtPY1IxRms1S1M0ZzNyUDJCdm4xdERBQUNYT0hMa2NFYkdpY2xUcHM2WU5WdERCa3FLaTNmdjNHSCsxTXo1M0RJQ0FMaEhmWDM5NTN0Mjc5dTNkK0xFeVRObnorblN1WXU0MFlVTFJidDNiRDkrL0ZoemM3UGdOaEFBd0cxOERiNTlYKzQ5c0gvZnVQRVRaOCtkMjdWck4zRUxNOVd6YzhmMnJNd3pndlpBQUFCM01oTWpYeDg4Y1BqUXdXSERSODZaTzY5bnIxN2laTmxabWR1M2JUbDM5cXlnL1JBQXdNMU1CazRjUDJwZTNib2xqQmszeml3VWQrM21wQk9DOCtjTGo2YW5IejF5dUpMOVVQMkFBQUFxbEpXVmJ0dnltWG4xNmR0dnpOaHhvMGFQam8yTkUxdVZsNWNkUFpLZWZ1Z1FlNkQ2RlFFQWRDa3N5RGV2djMvOFVkOSsvVkpUMDFKU0IvWHAyemMwTkZTQ3JiNis3bXplMlp6c3pKeWM3QXRGUlFML0l3Q0FSbVpxeU15bm05ZTJyVnNpSWlNR0RFaE9UVTFOVGszcjBhTm5JSjlDM05qWVdGaVluNU9WYlJRV25ETS9GQVFRQVFDMHE2K3J6enh6MnJ6TS80K0ppZTNYdjMraWtkUTlLVEVwSVNtcGZmY2FxcTZxTGk2K1ZGcFNiTDR0S1NrK2QrNnMrYThMZ3NTMUFiaGNVV0hEV2UzTmhFaW5UcDNGUmFxOFhwL1BKMWE2ZXZXS29CV3FxcnluTWs2ZXl2aiszOFRIeDVzWUpDWWxlVHllOFBDSU1DUGNDR3Y1cCtVVjlzTVRodVptOGZrYURGK0QrU3g4ODcrR2V2T2p5c3ByTFdOKzhTWFdjcTBTTW5YbWZBRUE2TU1VRUFBb1JRQUFRQ2tDQUFCS0VRQUFVSW9BQUlCU0JBQUFsQ0lBQUtBVUFRQUFwUWdBQUNoRkFBQkFLUUlBQUVvUkFBQlFpZ0FBZ0ZJRUFBQ1VJZ0FBb0JRQkFBQ2xDQUFBS0VVQUFFQXBBZ0FBU2hFQUFGQ0tBQUNBVWdRQUFKUWlBQUNnRkFFQUFLVUlBQUFvUlFBQVFDa0NBQUJLRVFBQVVJb0FBSUJTQkFBQWxDSUFBS0FVQVFBQXBRZ0FBQ2hGQUFCQUtRSUFBRW9SQUFCUWlnQUFnRklFQUFDVUlnQUFvQlFCQUFDbENBQUFLRVVBQUVBcEFnQUFTaEVBQUZDS0FBQ0FVZ1FBQUpRaUFNSFV1MWR2QVhRN1gzUmVFQ1FFSUdoQ1FqcE1uRHhGQU4yS05uelkzTndrQ0FZQ0FBQktFUUFBVUlvQUFJQlNCQUFBbENJQUFLQVVBUUFBcFFnQUFDaEZBQUJBS1FJQUFFb1JBQUJRaWdBQWdGSUVBQUNVSWdBQW9CUUJBQUNsQ0FBQUtFVUFBRUFwQWdBQVNoRUFBRkNLQUFDQVVnUUFBSlFpQUFDZ0ZBRUFBS1VJQUFBb1JRQUFRQ2tDQUFCS0VRQUFVSW9BQUlCU0JBQUFsQ0lBQUtBVUFRQUFwUWdBQUNoRkFBQkFLUUlRTk0zTlRaOXUzaXlBYnVZTFFSQWtCQ0NZYW1xckJRQ0NoQUFBZ0ZJRUFBQ1VJZ0FBb0JRQkFBQ2xDQUFBS0VVQUFFQXBBZ0FBU2hFQUFGQ0tBQUNBVWdRQUFKUWlBQUNnRkFFQUFLVUlBQUFvUlFBQVFDa0NBQUJLRVFBQVVJb0FBSUJTQkFBQWxDSUFBS0FVQVFBQXBRZ0FBQ2hGQUFCQUtRSUFBRW9SQUFCUWlnQUFnRklFQUFDVUlnQUFvQlFCQUFDbENBQUFLRVVBQUVBcEFnQUFTaEVBQUZDS0FBQ0FVZ1FBQUpRaUFBQ2dGQUVBQUtVSUFBQW9SUUFBUUNrQ0FBQktFUUFBVUlvQUFJQlNCQUFBbENJQUFLQVVBUUFBcFFnQUFDaEZBQUJBS1FJQUFFb1JBQUJRaWdBQWdGSUVBQUNVSWdBQW9CUUJBQUNsQ0FBQUtFVUFBRUFwQWdBQVNoRUFBRkNLQUFDQVVnUUFBSlFpQUFDZ0ZBRUFBS1VJQUFBb1JRQUFRQ2tDQUFCS0VRQUFVSW9BQUlCU0JBQUFsQ0lBQUtBVUFRQUFwUWdBQUNoRkFBQkFLUUlBQUVvUkFBQlFpZ0FBZ0ZJRUFBQ1VJZ0FBb0JRQkFBQ2xDQUFBS0VVQUFFQXBBZ0FBU2hFQUFGQ0tBQUNBVWdRQUFKUWlBQUNnRkFFQUFLVUlBQUFvUlFBQVFDa0NBQUJLRVFBQVVJb0FBSUJTQkFBQWxDSUFBS0FVQVFBQXBRZ0FBQ2hGQUFCQUtRSUFBRW9SQUFCUWlnQUFnRklFQUFDVUlnQUFvQlFCQUFDbC9qOEFBQUQvLzZGdWtkRUFBQUFHU1VSQlZBTUFZN1EzeHIrbW92NEFBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmcifV19">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ZECE">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* =====================================================================
+   ZECE v3 — antrenament hibrid: forță + alergare.
+   Întunecat, un singur accent (jar), alergarea în albastru, recuperarea în verde.
+   Mișcare scurtă și rapidă; strălucire doar pe ce contează.
+   ===================================================================== */
+:root{
+  --bg:#09090B; --s1:#131316; --s2:#19191D; --s3:#232329;
+  --ln:rgba(255,255,255,.07); --ln2:rgba(255,255,255,.13);
+  --tx:#F4F4F5; --mu:#A1A1AA; --mu2:#6E6E78;
+  --ac:#FF4D2E; --ac2:#FF8A3D; --acg:rgba(255,77,46,.55);
+  --run:#4DA3FF; --rung:rgba(77,163,255,.5);
+  --ok:#3DDC97; --warn:#FFB020;
+  --r1:10px; --r2:16px; --r3:22px;
+  --e1:cubic-bezier(.2,.9,.25,1); --sp:cubic-bezier(.3,1.5,.4,1);
+  --fd:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;
+  --fb:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--tx);font:15px/1.5 var(--fb);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+button,input,textarea,select{font:inherit;color:inherit}
+input,textarea{-webkit-appearance:none;appearance:none}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+[hidden]{display:none!important}
+::selection{background:rgba(255,77,46,.55);color:#fff}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:#2A2A30;border-radius:8px}
+.i{width:20px;height:20px;flex:none}
+
+/* fundal ambiental */
+#amb{position:fixed;inset:-20vmax;z-index:0;pointer-events:none;
+  background:radial-gradient(40vmax 28vmax at 30% 18%,rgba(255,77,46,.17),transparent 65%),
+             radial-gradient(42vmax 30vmax at 85% 70%,rgba(77,163,255,.08),transparent 65%);
+  animation:amb 14s ease-in-out infinite alternate}
+@keyframes amb{to{transform:translate3d(-3vmax,2vmax,0) scale(1.06)}}
+#grain{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* antet */
+.top{position:sticky;top:0;z-index:40;padding:calc(10px + env(safe-area-inset-top)) 16px 10px;
+  background:rgba(9,9,11,.74);backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5)}
+.top::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,77,46,.6) 30%,rgba(255,255,255,.18) 70%,transparent)}
+.top-in{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.logo{width:36px;height:36px;flex:none;filter:drop-shadow(0 0 12px var(--acg))}
+.brand{font:800 24px/1 var(--fd);letter-spacing:.08em}
+.brand small{display:block;font:500 11.5px/1.2 var(--fb);letter-spacing:0;color:var(--mu);margin-top:3px}
+.ib{appearance:none;border:1px solid var(--ln);background:var(--s1);width:42px;height:42px;border-radius:12px;
+  display:grid;place-items:center;cursor:pointer;flex:none;transition:transform .12s var(--sp),border-color .2s,color .2s,box-shadow .2s}
+.ib:active{transform:scale(.92)}
+.ib.on{border-color:rgba(255,77,46,.6);color:var(--ac);box-shadow:0 0 18px -4px var(--acg)}
+.top .ib{margin-left:auto}
+
+/* conținut */
+.view{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:6px 16px calc(116px + env(safe-area-inset-bottom));overflow-x:clip}
+.card{position:relative;margin-top:12px;padding:16px;border-radius:var(--r2);border:1px solid var(--ln);
+  background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,0) 42%),var(--s1);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 18px 40px -28px rgba(0,0,0,.95)}
+.eyebrow{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--mu);letter-spacing:.05em;text-transform:uppercase}
+.eyebrow .i{width:15px;height:15px}
+.h1{font:800 36px/1 var(--fd);text-transform:uppercase;letter-spacing:.01em;margin:8px 0 2px}
+.h2{font:700 26px/1.05 var(--fd);text-transform:uppercase;letter-spacing:.015em}
+.h3{font:700 20px/1.1 var(--fd);text-transform:uppercase;letter-spacing:.02em}
+.big{font:700 42px/1 var(--fd);font-variant-numeric:tabular-nums;letter-spacing:.005em}
+.big small{font:600 15px var(--fb);color:var(--mu);margin-left:4px;letter-spacing:0}
+.big.sm{font-size:30px}
+.mu{color:var(--mu)} .mu2{color:var(--mu2)} .sm{font-size:13px} .xs{font-size:12px}
+p{margin:8px 0 0}
+.row{display:flex;align-items:center;gap:12px}
+.sp{flex:1;min-width:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.grid2 > .card{margin-top:0}
+.hello{padding:10px 2px 2px}
+.hello .eyebrow{color:var(--mu2)}
+.hello .h1{font-size:40px;background:linear-gradient(100deg,#fff 10%,#C9C9CF 60%,#8A8A94);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* butoane */
+.btn{appearance:none;border:1px solid var(--ln2);background:var(--s2);border-radius:12px;padding:10px 16px;min-height:44px;
+  font-weight:600;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;
+  position:relative;overflow:hidden;transition:transform .12s var(--sp),background .15s,border-color .15s,box-shadow .2s,color .15s}
+.btn:active{transform:scale(.96)}
+.btn:disabled{opacity:.4;cursor:default}
+.btn .i{width:18px;height:18px}
+.btn.pri{background:linear-gradient(180deg,#FF5C3D,#E5391D);border-color:rgba(255,255,255,.1);color:#fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 10px 30px -10px var(--acg)}
+@media(hover:hover){.btn.pri:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 12px 40px -8px rgba(255,77,46,.9)}
+  .btn:not(.pri):hover{border-color:rgba(255,255,255,.25)}}
+.btn.ghost{background:transparent;border-color:var(--ln)}
+.btn.blue{background:linear-gradient(180deg,#5AAEFF,#2F86E8);color:#fff;border-color:rgba(255,255,255,.1);box-shadow:0 10px 30px -12px var(--rung)}
+.btn.wide{width:100%}
+.btn.xl{min-height:58px;font-size:16px;border-radius:16px}
+.btn.sm{min-height:36px;padding:7px 12px;font-size:13px;border-radius:10px}
+.btn.danger{color:#FF8A70}
+.btn.armed{background:var(--warn);color:#141414;border-color:transparent}
+.btn.glow{animation:glow 1.7s ease-in-out infinite}
+@keyframes glow{0%,100%{box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 10px 28px -10px var(--acg)}
+  50%{box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 12px 46px -4px rgba(255,77,46,.95)}}
+.btn .rip{position:absolute;border-radius:50%;background:rgba(255,255,255,.35);transform:scale(0);animation:rip .5s ease-out forwards;pointer-events:none}
+@keyframes rip{to{transform:scale(4);opacity:0}}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.scrollx{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:2px 16px}
+.scrollx::-webkit-scrollbar{display:none}
+.chip{appearance:none;border:1px solid var(--ln2);background:rgba(255,255,255,.02);color:var(--mu);border-radius:10px;
+  padding:7px 12px;min-height:36px;font-weight:600;font-size:13px;cursor:pointer;white-space:nowrap;flex:none;
+  transition:transform .12s var(--sp),background .15s,color .15s,border-color .15s,box-shadow .2s}
+.chip:active{transform:scale(.95)}
+.chip.on{background:var(--tx);color:var(--bg);border-color:transparent;box-shadow:0 0 20px -6px rgba(255,255,255,.7)}
+.chip.ask{text-align:left;white-space:normal;color:var(--tx);border-color:rgba(255,77,46,.3);background:rgba(255,77,46,.06)}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;padding:4px;margin-top:12px;
+  background:var(--s1);border:1px solid var(--ln);border-radius:14px}
+.seg button{appearance:none;border:0;background:transparent;color:var(--mu);font-weight:600;font-size:13.5px;padding:9px 4px;
+  border-radius:10px;cursor:pointer;transition:background .2s,color .2s,box-shadow .2s;display:flex;gap:6px;align-items:center;justify-content:center}
+.seg button.on{background:var(--s3);color:var(--tx);box-shadow:0 2px 12px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.06)}
+.seg button .i{width:15px;height:15px}
+.seg .ok{color:var(--ok)}
+
+/* câmpuri */
+.inp{width:100%;min-width:0;background:var(--bg);border:1px solid var(--ln2);border-radius:12px;padding:11px 12px;font-size:16px;
+  outline:none;transition:border-color .2s,box-shadow .2s}
+.inp:focus{border-color:rgba(255,77,46,.75);box-shadow:0 0 0 3px rgba(255,77,46,.16),0 0 22px -6px var(--acg)}
+.inp::placeholder{color:var(--mu2)}
+.fld{display:flex;flex-direction:column;gap:6px}
+.fld label{font-size:12px;font-weight:600;color:var(--mu)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.inrow{display:flex;gap:8px;margin-top:12px}
+.inrow .btn{flex:none}
+
+/* tag-uri, inele, bare */
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:4px 9px;border-radius:8px;background:rgba(255,255,255,.06);color:var(--mu)}
+.tag .i{width:13px;height:13px}
+.tag.lift{background:rgba(255,77,46,.14);color:#FF9A84}
+.tag.run{background:rgba(77,163,255,.15);color:#93C8FF}
+.tag.mix{background:linear-gradient(90deg,rgba(255,77,46,.16),rgba(77,163,255,.16));color:#E8E8EC}
+.tag.rest{background:rgba(61,220,151,.13);color:#7EEBC0}
+.tag.pr{background:var(--ac);color:#fff;box-shadow:0 0 14px -2px var(--acg)}
+.ring .rg{filter:drop-shadow(0 0 5px var(--acg))}
+.ring-t{fill:var(--tx);font:700 15px var(--fd)}
+.bar{height:8px;border-radius:5px;background:var(--s3);overflow:hidden;margin-top:12px}
+.bar > i{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,var(--ac),var(--ac2));box-shadow:0 0 14px var(--acg);
+  transform-origin:left;transition:width .4s var(--e1)}
+.delta{font-size:13px;font-weight:600;margin-top:6px}
+.delta.good{color:var(--ok)} .delta.bad{color:var(--warn)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 0 var(--acg);animation:live 1.4s ease-out infinite;flex:none}
+@keyframes live{0%{box-shadow:0 0 0 0 rgba(255,77,46,.7)}100%{box-shadow:0 0 0 10px rgba(255,77,46,0)}}
+
+/* AZI */
+.hero{padding:20px;overflow:hidden;border-color:rgba(255,77,46,.38);isolation:isolate;
+  background:radial-gradient(120% 130% at 0 0,rgba(255,77,46,.24),transparent 55%),linear-gradient(180deg,var(--s2),var(--s1));
+  box-shadow:0 0 54px -18px var(--acg),inset 0 1px 0 rgba(255,255,255,.07)}
+.hero::after{content:'';position:absolute;top:0;bottom:0;left:-45%;width:35%;z-index:-1;pointer-events:none;transform:skewX(-18deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.07),transparent);animation:sweep 3.6s ease-in-out .6s infinite}
+@keyframes sweep{0%{left:-45%}40%,100%{left:125%}}
+.hero-top{display:flex;gap:14px;align-items:flex-start}
+.hero .btn{margin-top:16px}
+.peek{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:7px}
+.peek li{display:flex;justify-content:space-between;gap:10px;font-size:14px}
+.peek li span{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.peek li em{font-style:normal;color:var(--mu);white-space:nowrap;font-variant-numeric:tabular-nums}
+.peek li.more{color:var(--mu2);font-size:13px}
+.live-clock{display:flex;align-items:baseline;gap:10px;margin-top:6px}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-top:12px}
+.wd{appearance:none;border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;
+  color:var(--mu2);font-size:12px;font-weight:700;padding:2px 0;transition:transform .15s var(--sp)}
+.wd:active{transform:scale(.9)}
+.wd svg{width:40px;height:40px;overflow:visible}
+.wd.next{color:var(--tx)}
+.wd.next svg{filter:drop-shadow(0 0 8px var(--acg));animation:pulseS 1.6s ease-in-out infinite}
+@keyframes pulseS{50%{transform:scale(1.07)}}
+.coach-cta{border-color:rgba(255,77,46,.25)}
+.cc-ic{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;color:#fff;flex:none;
+  background:linear-gradient(135deg,var(--ac),var(--ac2));box-shadow:0 0 24px -4px var(--acg)}
+.cc-ic .i{width:22px;height:22px}
+.coach-cta .chips{margin-top:12px}
+.pr-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--ln)}
+.pr-row:first-of-type{border-top:0}
+.pr-row b{font-weight:600}
+.pr-row .v{margin-left:auto;font:700 18px var(--fd);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* PLAN */
+.cyc-bar{display:flex;justify-content:space-between;font-size:13px;color:var(--mu);margin-top:10px}
+.day{padding:0;overflow:hidden;margin-top:10px}
+.day.next{border-color:rgba(255,77,46,.45);box-shadow:0 0 34px -18px var(--acg)}
+.day-h{appearance:none;border:0;background:none;width:100%;display:flex;align-items:center;gap:12px;padding:14px 14px 14px 0;text-align:left;cursor:pointer}
+.day-bar{width:4px;align-self:stretch;border-radius:0 4px 4px 0;background:var(--c,var(--ac));box-shadow:0 0 14px var(--c,var(--ac))}
+.day-t{font:700 21px/1.05 var(--fd);text-transform:uppercase;letter-spacing:.02em}
+.day-m{font-size:13px;color:var(--mu);margin-top:4px}
+.day-k{font-size:12px;font-weight:700;color:var(--mu2);text-transform:uppercase;letter-spacing:.06em}
+.chev{color:var(--mu2);transition:transform .25s var(--e1)}
+.day.open .chev{transform:rotate(180deg);color:var(--tx)}
+.day-b{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s var(--e1)}
+.day.open .day-b{grid-template-rows:1fr}
+.day-b > div{overflow:hidden;min-height:0}
+.ex{display:flex;gap:12px;align-items:flex-start;padding:12px 16px;border-top:1px solid var(--ln)}
+.tick{appearance:none;width:30px;height:30px;border-radius:10px;border:2px solid var(--ln2);background:transparent;display:grid;place-items:center;
+  cursor:pointer;flex:none;color:transparent;transition:background .15s,border-color .15s,box-shadow .2s,transform .15s var(--sp)}
+.tick:active{transform:scale(.85)}
+.tick .i{width:17px;height:17px;stroke-width:3}
+.tick.on{background:var(--ac);border-color:transparent;color:#fff;box-shadow:0 0 16px -2px var(--acg)}
+.tick.on.pop{animation:tickPop .3s var(--sp)}
+@keyframes tickPop{0%{transform:scale(.6)}100%{transform:none}}
+.ex-n{font-weight:600}
+.ex-p{font-size:13px;color:var(--mu);margin-top:2px}
+.ex-l{font-size:12px;color:var(--mu2);margin-top:3px}
+.ex.done .ex-n{color:var(--mu);text-decoration:line-through;text-decoration-color:rgba(255,255,255,.3)}
+.notes{margin:0;padding:12px 16px;border-top:1px solid var(--ln)}
+.notes summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--mu);list-style:none;display:flex;align-items:center;gap:8px}
+.notes summary::-webkit-details-marker{display:none}
+.notes p{font-size:13.5px;color:var(--mu);line-height:1.6}
+.notes p b{color:var(--tx)}
+.day-act{padding:12px 16px 16px;border-top:1px solid var(--ln)}
+
+/* PROGRES */
+.heat{display:grid;grid-template-rows:repeat(7,1fr);grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;margin-top:12px}
+.heat i{aspect-ratio:1;border-radius:4px;background:var(--s3)}
+.heat i.on{background:var(--ac);box-shadow:0 0 8px -1px var(--acg)}
+.heat i.run{background:var(--run);box-shadow:0 0 8px -1px var(--rung)}
+.heat i.both{background:linear-gradient(135deg,var(--ac) 50%,var(--run) 50%)}
+.heat i.today{outline:2px solid rgba(255,255,255,.7);outline-offset:1px}
+.heat i.fut{background:transparent}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--mu);margin-top:10px}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.chart{width:100%;height:auto;display:block;margin-top:12px;overflow:visible}
+.chart .gl{stroke:rgba(255,255,255,.06)}
+.chart .ax{fill:var(--mu2);font:600 10.5px var(--fb)}
+.chart .ln{fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 6px var(--acg))}
+.chart .ln.blue{filter:drop-shadow(0 0 6px var(--rung))}
+.chart .raw{fill:rgba(255,255,255,.35)}
+.chart .goal{stroke:var(--ok);stroke-dasharray:5 5;stroke-width:1.4}
+.chart .goal-t{fill:var(--ok);font:700 11px var(--fb)}
+.chart .bv{fill:var(--tx);font:700 12px var(--fd)}
+.chart .bar-r{transform-box:fill-box;transform-origin:bottom}
+.list-row{display:flex;align-items:center;gap:10px;padding:11px 0;border-top:1px solid var(--ln);font-size:14px}
+.list-row:first-child{border-top:0}
+.list-row .v{margin-left:auto;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.xb{appearance:none;border:0;background:none;color:var(--mu2);width:32px;height:32px;border-radius:9px;display:grid;place-items:center;cursor:pointer;flex:none}
+.xb:hover{color:#FF8A70;background:rgba(255,77,46,.1)}
+.xb .i{width:16px;height:16px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.kpi{background:var(--bg);border:1px solid var(--ln);border-radius:12px;padding:10px}
+.kpi .k{font-size:11.5px;color:var(--mu);font-weight:600}
+.kpi .v{font:700 24px/1.1 var(--fd);margin-top:4px;font-variant-numeric:tabular-nums}
+.kpi .v small{font:600 12px var(--fb);color:var(--mu);margin-left:2px}
+.sess-l{font-size:13px;color:var(--mu);font-variant-numeric:tabular-nums}
+.empty{text-align:center;padding:22px 10px;color:var(--mu)}
+.empty .i{width:34px;height:34px;color:var(--mu2);margin-bottom:6px}
+
+/* SETĂRI */
+.set-sec{margin-top:6px}
+.set-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--ln)}
+.set-row:first-of-type{border-top:0}
+.sw{appearance:none;width:50px;height:30px;border-radius:20px;border:0;background:var(--s3);position:relative;cursor:pointer;flex:none;transition:background .2s}
+.sw::after{content:'';position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;transition:transform .2s var(--sp)}
+.sw.on{background:var(--ac);box-shadow:0 0 16px -4px var(--acg)}
+.sw.on::after{transform:translateX(20px)}
+.rp-grid{display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:6px;align-items:center;margin-top:12px;font-size:13px}
+.rp-grid .h{color:var(--mu);font-weight:600;text-align:center}
+.rp-grid .n{color:var(--mu);font-weight:600}
+.rp-grid .inp{padding:8px 4px;text-align:center;font-size:15px}
+.note{font-size:12.5px;color:var(--mu);line-height:1.55;margin-top:10px}
+.note b{color:var(--tx)}
+.keybox{display:flex;gap:8px;margin-top:12px}
+.file-l{position:relative;overflow:hidden}
+.file-l input{position:absolute;inset:0;opacity:0;cursor:pointer}
+
+/* ANTRENOR AI */
+.ai-head{display:flex;align-items:center;gap:12px}
+.ai-steps{margin:12px 0 0;padding-left:20px;font-size:14px;color:var(--mu);line-height:1.6}
+.ai-steps b{color:var(--tx)}
+.msgs{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.msg{max-width:90%;padding:12px 14px;border-radius:18px;line-height:1.55;font-size:15px;animation:msgIn .22s var(--e1) both;overflow-wrap:anywhere}
+@keyframes msgIn{from{opacity:0;transform:translateY(8px) scale(.98)}}
+.msg.me{align-self:flex-end;background:linear-gradient(180deg,#FF5C3D,#E5391D);color:#fff;border-bottom-right-radius:6px;
+  box-shadow:0 10px 26px -14px var(--acg);white-space:pre-wrap}
+.msg.ai{align-self:flex-start;background:var(--s1);border:1px solid var(--ln);border-bottom-left-radius:6px}
+.msg.ai p{margin:0 0 8px}.msg.ai p:last-child{margin-bottom:0}
+.msg.ai ul,.msg.ai ol{margin:2px 0 8px;padding-left:20px}
+.msg.ai li{margin:3px 0}
+.msg.ai h4{font:700 18px/1.1 var(--fd);text-transform:uppercase;margin:12px 0 6px}
+.msg.ai h4:first-child{margin-top:0}
+.msg.ai code{background:var(--s3);padding:1px 5px;border-radius:5px;font-size:13px}
+.msg.ai b{color:#fff}
+.msg.ai hr{border:0;border-top:1px solid var(--ln);margin:10px 0}
+.msg-meta{align-self:flex-start;font-size:11.5px;color:var(--mu2);margin-top:-6px;padding-left:4px}
+.sysnote{align-self:center;display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mu2)}
+.sysnote .i{width:14px;height:14px}
+.typing{display:inline-flex;gap:5px;padding:4px 0}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--mu);animation:typ .9s ease-in-out infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes typ{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}
+.err{margin-top:12px;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,176,32,.4);background:rgba(255,176,32,.08);color:#FFD27A;font-size:14px;display:flex;gap:10px}
+.err .i{color:var(--warn);margin-top:1px}
+.composer{position:sticky;bottom:calc(76px + env(safe-area-inset-bottom));z-index:5;margin-top:16px;display:flex;gap:8px;align-items:flex-end;
+  background:rgba(19,19,22,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--ln2);border-radius:18px;padding:7px;
+  box-shadow:0 20px 44px -18px rgba(0,0,0,.95)}
+.composer:focus-within{border-color:rgba(255,77,46,.6);box-shadow:0 0 0 3px rgba(255,77,46,.12),0 0 28px -8px var(--acg)}
+.composer textarea{flex:1;min-width:0;resize:none;border:0;background:transparent;outline:none;padding:9px 8px;max-height:150px;font-size:16px;line-height:1.4}
+.composer textarea::placeholder{color:var(--mu2)}
+.send{width:44px;height:44px;padding:0;border-radius:13px;flex:none}
+.sugg-list{display:grid;gap:8px;margin-top:12px}
+
+/* SESIUNE (mod ghidat) */
+.fx{position:fixed;inset:0;z-index:90;background:var(--bg);overflow-y:auto;-webkit-overflow-scrolling:touch}
+.fx.enter{animation:fxUp .28s var(--e1)}
+.fx.leave{animation:fxDown .2s ease forwards}
+@keyframes fxUp{from{transform:translateY(100%)}}
+@keyframes fxDown{to{transform:translateY(100%)}}
+.fx::before{content:'';position:fixed;inset:0;pointer-events:none;
+  background:radial-gradient(90% 50% at 50% -5%,rgba(255,77,46,.2),transparent 60%)}
+.fx-in{position:relative;max-width:560px;margin:0 auto;padding:calc(12px + env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom))}
+.fx-top{display:flex;align-items:center;gap:12px}
+.fx-tt{flex:1;min-width:0}
+.fx-tt .t{font:700 20px/1.1 var(--fd);text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fx-clock{font:700 26px var(--fd);font-variant-numeric:tabular-nums}
+.fx-prog{display:flex;gap:4px;margin:14px 0 20px}
+.fx-prog button{appearance:none;border:0;flex:1;height:6px;padding:0;border-radius:4px;background:var(--s3);cursor:pointer;transition:background .2s,box-shadow .2s}
+.fx-prog button.ok{background:var(--ac);box-shadow:0 0 8px -1px var(--acg)}
+.fx-prog button.cur{background:var(--tx);box-shadow:0 0 12px rgba(255,255,255,.7)}
+.fx-body{animation:fxIn .22s var(--e1) both}
+.fx-body.r{animation-name:fxR}.fx-body.l{animation-name:fxL}
+@keyframes fxIn{from{opacity:0;transform:translateY(8px)}}
+@keyframes fxR{from{opacity:0;transform:translateX(36px)}}
+@keyframes fxL{from{opacity:0;transform:translateX(-36px)}}
+.fx-n{font:800 40px/1 var(--fd);text-transform:uppercase;margin:8px 0 4px;letter-spacing:.005em}
+.fx-p{color:var(--mu);font-size:14.5px}
+.sugg{display:flex;gap:10px;align-items:flex-start;margin-top:14px;padding:12px 14px;border-radius:14px;font-size:14px;
+  background:rgba(255,255,255,.04);border:1px solid var(--ln)}
+.sugg .i{color:var(--ac);margin-top:1px;filter:drop-shadow(0 0 6px var(--acg))}
+.sugg.up{border-color:rgba(61,220,151,.35);background:rgba(61,220,151,.07)}
+.sugg.up .i{color:var(--ok);filter:none}
+.sugg b{color:#fff}
+.last{font-size:13px;color:var(--mu);margin-top:10px}
+.sets{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.sd{min-width:74px;padding:8px 10px;border-radius:12px;border:1px dashed var(--ln2);font-size:13px;color:var(--mu2);text-align:center;font-variant-numeric:tabular-nums}
+.sd b{font:700 18px var(--fd);color:var(--tx)}
+.sd.ok{border-style:solid;border-color:rgba(255,77,46,.5);background:rgba(255,77,46,.1);color:var(--tx);animation:sdIn .3s var(--sp)}
+.sd.cur{border-style:solid;border-color:rgba(255,255,255,.5);color:var(--tx)}
+.sd .tag.pr{padding:1px 5px;font-size:10px;margin-left:4px}
+@keyframes sdIn{from{transform:scale(.7);opacity:0}}
+.logger{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stp{background:var(--s1);border:1px solid var(--ln);border-radius:16px;padding:8px 6px 6px;text-align:center}
+.stp label{font-size:11.5px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.06em}
+.stp .r{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;gap:2px;margin-top:2px}
+.stp input{width:100%;min-width:0;background:transparent;border:0;outline:none;text-align:center;font:700 36px/1.1 var(--fd);font-variant-numeric:tabular-nums;padding:0}
+.stp button{appearance:none;height:44px;border-radius:12px;border:0;background:var(--s3);font-size:24px;line-height:1;cursor:pointer;transition:transform .1s var(--sp),background .15s}
+.stp button:active{transform:scale(.88);background:#2E2E35}
+.fx-cta{margin-top:12px}
+.fx-sub{display:flex;gap:8px;margin-top:8px}
+.fx-sub .btn{flex:1}
+.restbox{display:flex;align-items:center;gap:16px;margin:4px 0 14px;padding:14px;border-radius:18px;
+  background:radial-gradient(120% 140% at 0 0,rgba(77,163,255,.14),transparent 60%),var(--s1);border:1px solid rgba(77,163,255,.35);
+  box-shadow:0 0 36px -16px var(--rung);animation:sdIn .3s var(--sp)}
+.restbox svg{width:84px;height:84px;flex:none;filter:drop-shadow(0 0 8px var(--rung))}
+.restbox .t{font:800 40px/1 var(--fd);font-variant-numeric:tabular-nums}
+.restbox .k{font-size:12px;font-weight:700;color:#93C8FF;text-transform:uppercase;letter-spacing:.08em}
+.restbox .acts{margin-left:auto;display:flex;flex-direction:column;gap:6px}
+.restbox.urgent .t{color:#fff;animation:beat .5s ease infinite alternate}
+@keyframes beat{to{transform:scale(1.08)}}
+.done-box{display:flex;align-items:center;gap:12px;margin:14px 0;padding:14px;border-radius:16px;background:rgba(61,220,151,.08);border:1px solid rgba(61,220,151,.35);color:#AEF3D4;font-weight:600}
+.done-box .i{color:var(--ok)}
+.pace{font-size:14px;color:var(--mu);margin-top:10px;text-align:center}
+.pace b{color:var(--tx);font:700 22px var(--fd)}
+.fx-nav{display:flex;gap:10px;margin-top:22px}
+.fx-nav .btn{flex:1;min-height:52px}
+.fx-quit{margin-top:14px}
+.sum-h{text-align:center;padding:24px 0 6px}
+.sum-h .cc-ic{margin:0 auto 14px;width:64px;height:64px;border-radius:20px;animation:trophy .6s var(--sp)}
+.sum-h .cc-ic .i{width:32px;height:32px}
+@keyframes trophy{from{transform:scale(.3) rotate(-20deg);opacity:0}}
+.sum-h .h1{font-size:44px}
+
+/* bara de jos + pastila de sesiune */
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(13,13,16,.84);backdrop-filter:blur(20px) saturate(1.5);
+  -webkit-backdrop-filter:blur(20px) saturate(1.5);border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom)}
+.nav-in{position:relative;max-width:560px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.nb{appearance:none;border:0;background:none;color:var(--mu2);display:flex;flex-direction:column;align-items:center;gap:4px;
+  padding:10px 0 9px;font-size:11.5px;font-weight:600;cursor:pointer;position:relative;z-index:1;transition:color .2s}
+.nb .i{width:24px;height:24px;transition:transform .25s var(--sp),filter .25s,color .2s}
+.nb:active .i{transform:scale(.85)}
+.nb.on{color:var(--tx)}
+.nb.on .i{color:var(--ac);filter:drop-shadow(0 0 8px var(--acg));transform:translateY(-1px) scale(1.08)}
+.nb .badge{position:absolute;top:8px;left:calc(50% + 8px);width:8px;height:8px;border-radius:50%;background:var(--ac);box-shadow:0 0 10px var(--acg)}
+.nav-ind{position:absolute;top:0;left:0;width:25%;height:100%;pointer-events:none;transition:transform .28s var(--sp),opacity .2s}
+.nav-ind::before{content:'';position:absolute;top:-1px;left:30%;right:30%;height:3px;border-radius:0 0 3px 3px;background:var(--ac);box-shadow:0 0 16px 2px var(--acg)}
+.nav-ind::after{content:'';position:absolute;inset:0 14%;background:radial-gradient(70% 90% at 50% 0,rgba(255,77,46,.24),transparent 72%)}
+.pill{position:fixed;left:50%;bottom:calc(74px + env(safe-area-inset-bottom));z-index:45;transform:translateX(-50%);
+  appearance:none;border:1px solid rgba(255,77,46,.5);background:rgba(25,25,29,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-radius:16px;padding:10px 14px;display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px;font-weight:600;white-space:nowrap;
+  box-shadow:0 0 30px -8px var(--acg),0 16px 30px -14px rgba(0,0,0,.9);animation:pillIn .3s var(--sp)}
+.pill b{font:700 18px var(--fd);font-variant-numeric:tabular-nums}
+.pill .rb{color:#93C8FF}
+@keyframes pillIn{from{transform:translate(-50%,20px);opacity:0}}
+body.has-pill .view{padding-bottom:calc(170px + env(safe-area-inset-bottom))}
+
+/* toast, artificii, intro */
+.toast{position:fixed;left:50%;top:calc(14px + env(safe-area-inset-top));z-index:200;transform:translateX(-50%);
+  min-width:260px;max-width:92vw;padding:12px 16px;border-radius:16px;background:rgba(25,25,29,.95);backdrop-filter:blur(16px);
+  border:1px solid rgba(255,77,46,.5);box-shadow:0 0 40px -6px var(--acg),0 18px 40px rgba(0,0,0,.6);
+  animation:tIn .35s var(--sp) both,tOut .3s ease 2.6s forwards;pointer-events:none}
+.toast.info{border-color:var(--ln2);box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.toast b{display:block;font:800 18px var(--fd);text-transform:uppercase;letter-spacing:.03em}
+.toast span{font-size:13.5px;color:var(--mu)}
+@keyframes tIn{from{opacity:0;transform:translate(-50%,-120%) scale(.9)}}
+@keyframes tOut{to{opacity:0;transform:translate(-50%,-40%) scale(.96)}}
+.burst{position:fixed;z-index:199;pointer-events:none;width:0;height:0}
+.burst i{position:absolute;width:8px;height:8px;border-radius:2px;background:var(--c);animation:bst var(--t) cubic-bezier(.15,.7,.3,1) forwards}
+@keyframes bst{to{transform:translate(var(--x),var(--y)) rotate(var(--r)) scale(.4);opacity:0}}
+.flash{position:fixed;inset:0;z-index:198;pointer-events:none;background:var(--ac);animation:fl .5s ease forwards}
+@keyframes fl{from{opacity:.18}to{opacity:0}}
+.intro{position:fixed;inset:0;z-index:300;background:var(--bg);display:grid;place-items:center;cursor:pointer}
+.intro.out{animation:inOut .35s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes inOut{to{opacity:0;transform:scale(1.06)}}
+.intro-c{text-align:center}
+.intro .n{font:800 120px/1 var(--fd);letter-spacing:-.02em;background:linear-gradient(180deg,#fff,#FF8A3D 70%,#FF4D2E);
+  -webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 30px var(--acg));animation:inN .5s var(--sp) both}
+.intro .w{font:800 28px var(--fd);letter-spacing:.4em;margin-top:6px;padding-left:.4em;animation:inW .4s var(--e1) .25s both}
+@keyframes inN{from{opacity:0;transform:scale(.6)}}
+@keyframes inW{from{opacity:0;letter-spacing:1em}}
+
+/* intrarea în ecran: cascadă scurtă */
+#view.anim > *{animation:vIn .3s var(--e1) both}
+#view.anim[data-dir="r"] > *{animation-name:vR}
+#view.anim[data-dir="l"] > *{animation-name:vL}
+#view.anim > *:nth-child(2){animation-delay:.03s}#view.anim > *:nth-child(3){animation-delay:.06s}
+#view.anim > *:nth-child(4){animation-delay:.09s}#view.anim > *:nth-child(5){animation-delay:.12s}
+#view.anim > *:nth-child(6){animation-delay:.15s}#view.anim > *:nth-child(n+7){animation-delay:.18s}
+@keyframes vIn{from{opacity:0;transform:translateY(10px)}}
+@keyframes vR{from{opacity:0;transform:translateX(22px)}}
+@keyframes vL{from{opacity:0;transform:translateX(-22px)}}
+@keyframes ringIn{from{stroke-dashoffset:var(--c)}}
+#view.anim .rg{animation:ringIn .6s var(--e1) .1s both}
+@keyframes drawL{from{stroke-dasharray:1;stroke-dashoffset:1}to{stroke-dasharray:1;stroke-dashoffset:0}}
+.chart .ln{animation:drawL .7s var(--e1) both}
+.chart .area{animation:fadeA .7s ease .2s both}
+@keyframes fadeA{from{opacity:0}}
+.chart .bar-r{animation:growB .45s var(--e1) both;animation-delay:calc(var(--i) * 35ms)}
+@keyframes growB{from{transform:scaleY(0)}}
+.bar > i{animation:barIn .5s var(--e1) both}
+@keyframes barIn{from{transform:scaleX(0)}}
+.heat i{animation:hIn .3s ease both;animation-delay:calc(var(--i) * 4ms)}
+@keyframes hIn{from{opacity:0;transform:scale(.4)}}
+
+@media(max-width:380px){.h1{font-size:32px}.big{font-size:36px}.fx-n{font-size:34px}.kpis{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .burst,.flash{display:none}
+}
+</style>
+</head>
+<body>
+<div id="amb" aria-hidden="true"></div><div id="grain" aria-hidden="true"></div>
+
+<div class="intro" id="intro" aria-hidden="true"><div class="intro-c"><div class="n">10</div><div class="w">ZECE</div></div></div>
+
+<header class="top"><div class="top-in">
+  <svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><rect x="1" y="1" width="46" height="46" rx="12" fill="#17171B" stroke="#FF4D2E" stroke-width="1.6"/><rect x="13.2" y="12.4" width="5.8" height="19" fill="#F4F4F5"/><rect x="8.6" y="26.8" width="14.8" height="4.6" fill="#F4F4F5"/><path d="M8.9 16.6 L13.2 12.4 L13.2 18.6 L10.2 21.4 Z" fill="#F4F4F5"/><rect x="26.4" y="12.4" width="13.6" height="19" rx="6.6" fill="#F4F4F5"/><rect x="30.5" y="16.4" width="5.4" height="11" rx="2.6" fill="#17171B"/><rect x="13.2" y="35.4" width="21.6" height="2.8" fill="#FF4D2E"/></svg>
+  <div><div class="brand">ZECE<small id="sub">Hybrid365 · forță + alergare</small></div></div>
+  <button class="ib" id="gear" data-a="tab" data-k="set" aria-label="Setări"></button>
+</div></header>
+
+<main class="view" id="view"></main>
+<div id="pillRoot"></div>
+<nav class="nav" id="nav" aria-label="Navigare"></nav>
+<div id="fxRoot"></div>
+
+<script>
+"use strict";
+/* =====================================================================
+   1 · UTILITARE
+   ===================================================================== */
+const $=(s,r)=>(r||document).querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pad=n=>String(n).padStart(2,'0');
+const keyOf=d=>d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+const todayKey=()=>keyOf(new Date());
+const parseKey=k=>new Date(k+'T00:00');
+const dayShift=(k,n)=>{ const d=parseKey(k); d.setDate(d.getDate()+n); return keyOf(d); };
+const daysBetween=(a,b)=>Math.round((parseKey(b)-parseKey(a))/864e5);
+const mondayOf=k=>dayShift(k,-((parseKey(k).getDay()+6)%7));
+const fmtClock=s=>{ s=Math.max(0,Math.round(s)); const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60; return h?h+':'+pad(m)+':'+pad(x):m+':'+pad(x); };
+const mmss=v=>{ const t=Math.round(v*60); return Math.floor(t/60)+':'+pad(t%60); };
+const fmtDay=k=>parseKey(k).toLocaleDateString('ro-RO',{day:'numeric',month:'short'}).replace('.','');
+const relDay=k=>{ const n=daysBetween(k,todayKey()); return n===0?'azi':n===1?'ieri':n>1&&n<7?'acum '+n+' zile':fmtDay(k); };
+const num=(v,d=1)=>{ const x=(+v).toFixed(d); return x.indexOf('.')<0?x:x.replace(/0+$/,'').replace(/\.$/,''); };
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const IC={
+  home:'<path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+  plan:'<rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4M8 13h3M8 17h6"/>',
+  chart:'<path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/>',
+  coach:'<path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/>',
+  gear:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
+  play:'<path d="M7 4.5v15l13-7.5z" fill="currentColor" stroke="none"/>',
+  check:'<path d="M20 6L9 17l-5-5"/>', x:'<path d="M18 6L6 18M6 6l12 12"/>',
+  left:'<path d="M15 18l-6-6 6-6"/>', right:'<path d="M9 18l6-6-6-6"/>', down:'<path d="M6 9l6 6 6-6"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>', minus:'<path d="M5 12h14"/>',
+  clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  scale:'<rect x="3" y="3" width="18" height="18" rx="5"/><path d="M7.5 10a6 6 0 0 1 9 0l-3.2 2.6"/>',
+  run:'<path d="M3 12h4l3 8 4-16 3 8h4"/>', bolt:'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+  flame:'<path d="M12 22c4 0 7-2.7 7-6.5 0-4.5-5-6-4-11.5-3 1-7 5-7 10 0 1.5.5 2.5 1.5 3.5C10 16 9 13 11 11c0 3 4 3 4 6 0 2-1.3 3.5-3 3.5"/>',
+  trophy:'<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/>',
+  trash:'<path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/>', send:'<path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/>',
+  stop:'<rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor" stroke="none"/>',
+  refresh:'<path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/>',
+  download:'<path d="M12 3v12M7 10l5 5 5-5M5 21h14"/>', upload:'<path d="M12 21V9M7 14l5-5 5 5M5 3h14"/>',
+  key:'<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/>',
+  dumbbell:'<path d="M6 7v10M3 9v6M18 7v10M21 9v6M6 12h12"/>',
+  leaf:'<path d="M5 21c0-9 6-15 16-16-1 10-7 16-16 16z"/><path d="M5 21l8-8"/>',
+  eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  sound:'<path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/>',
+  alert:'<path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17.5h.01"/>',
+  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>',
+  user:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>'
+};
+const ic=(n,c='')=>`<svg class="i ${c}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[n]||''}</svg>`;
+
+/* =====================================================================
+   2 · STOCARE — aceleași chei ca versiunile vechi, ca istoricul să rămână
+   ===================================================================== */
+const store={
+  _mem:{},
+  async get(k){
+    try{ if(window.storage&&window.storage.get){ const r=await window.storage.get(k,false); return r?JSON.parse(r.value):null; } }catch(e){}
+    try{ const v=localStorage.getItem(k); if(v!=null) return JSON.parse(v); }catch(e){}
+    return this._mem[k]!==undefined?this._mem[k]:null;
+  },
+  async set(k,v){
+    this._mem[k]=v;
+    try{ if(window.storage&&window.storage.set){ await window.storage.set(k,JSON.stringify(v),false); return; } }catch(e){}
+    try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){}
+  }
+};
+const K={lifts:'zece:lifts',weights:'zece:weights',runs:'zece:runs',wlog:'zece:wlog',cyc:'zece:cyc',runPlan:'zece:runPlan',
+  prof:'zece:nutri',hist:'zece3:hist',sess:'zece3:sess',sound:'zece3:sound',aiKey:'zece3:aiKey',aiChat:'zece3:aiChat',aiEffort:'zece3:aiEffort'};
+const S={tab:'azi',lifts:{},weights:{},runs:[],wlog:{},cyc:{},runPlan:{},prof:{},hist:[],sess:null,sound:true,
+  aiKey:'',aiChat:null,aiEffort:'medium',
+  rest:null,fxOpen:false,fxDir:'',summary:null,planW:null,openDay:-1,progTab:'w',prEx:null,wRange:90,runKind:'ez'};
+async function save(p,v){ S[p]=v; await store.set(K[p],v); }
+const prof=()=>Object.assign({age:23,h:200,startW:135,goalW:105},S.prof||{});
+
+/* =====================================================================
+   3 · PLANUL — exercițiile și zilele, neschimbate
+   ===================================================================== */
+const DAYN=['Luni','Marți','Miercuri','Joi','Vineri','Sâmbătă','Duminică'];
+const DAYS=['Lu','Ma','Mi','Jo','Vi','Sâ','Du'];
+const WEEKS=4;
+const PLAN=[
+ {t:'Easy run + Upper',cat:'mix',min:90,run:'ez1',lift:[['cal',60]],ex:[
+  ['Easy run Z2','30 min · ritm conversațional, zona 2'],
+  ['Bench Press','4×6–8 · pauză 90s'],
+  ['Pull Up / Lat Pulldown','4×6–10 · pauză 90s'],
+  ['Incline Dumbbell Press','3×8–10 · pauză 90s'],
+  ['Chest Supported Row','3×8–10 · pauză 90s'],
+  ['Lateral Raise','3×12–15 · pauză 60s'],
+  ['Tricep Pushdown','3×10–12 · pauză 60s'],
+  ['Bicep Curl','3×10–12 · pauză 60s']]},
+ {t:'Threshold run',cat:'run',min:50,run:'thr',lift:[],ex:[
+  ['Warm up','10–15 min alergare ușoară + drills'],
+  ['Threshold','4 × 6:00 @ ritm de prag · pauză 90s jog ușor'],
+  ['Cool down','10 min alergare ușoară']]},
+ {t:'Upper + Conditioning',cat:'lift',min:80,lift:[['cal',65],['hard',15]],ex:[
+  ['Weighted Pull Up','4×5–8 · pauză 90s'],
+  ['Flat Dumbbell Press','4×6–8 · pauză 90s'],
+  ['Chest Supported Row','4×8–10 · pauză 90s'],
+  ['Seated Overhead Press','3×8–10 · pauză 90s'],
+  ['Cable Face Pull','3×12–15 · pauză 60s'],
+  ['Dumbbell Lateral Raise','3×12–15 · pauză 60s'],
+  ['Tricep Rope Pushdown','3×10–12 · pauză 60s'],
+  ['Alternating Dumbbell Curl','3×10–12 · pauză 60s'],
+  ['Conditioning — opțiunea A sau B','A · Engine Builder: 8 runde pentru timp — 250 m Ski/Row, pauză 45s. B · Hybrid Circuit, 10 min AMRAP: 10 Wall Balls, 10 Burpee Broad Jumps, 10 Kettlebell Swings, 10 Push Ups. Apoi 2–3 min pauză']]},
+ {t:'Easy run + Lower',cat:'mix',min:90,run:'ez2',lift:[['cal',60]],ex:[
+  ['Easy run Z2','30 min · ușor — e flush, nu antrenament'],
+  ['Hack Squat','4×4–6 · pauză 90s — în loc de Back Squat'],
+  ['Romanian Deadlift','4×6–8 · pauză 90s'],
+  ['Walking Lunge','3×8–10 pe picior · pauză 90s'],
+  ['Hip Thrust','3×8–10 · pauză 90s'],
+  ['Leg Press','3×10–12 · pauză 60s'],
+  ['Hamstring Curl','3×10–12 · pauză 60s'],
+  ['Calf Raise','3×12–15 · pauză 60s']]},
+ {t:'Upper Strength + Power',cat:'lift',min:75,lift:[['cal',65],['hard',10]],ex:[
+  ['Bench Press','5×3–5 · pauză 90s'],
+  ['Weighted Pull Up','4×4–6 · pauză 90s'],
+  ['Incline Dumbbell Press','4×6–8 · pauză 90s'],
+  ['Chest Supported Row','4×6–8 · pauză 90s'],
+  ['Push Press','4×3–5 · pauză 90s'],
+  ['Close Grip Bench Press','3×8–10 · pauză 90s'],
+  ['Barbell Curl','3×8–10 · pauză 90s'],
+  ['Tricep Overhead Extension','3×10–12 · pauză 90s'],
+  ['Power finisher — EMOM 10 min','minutele impare: 6 Med Ball Chest Throws · minutele pare: 8 Plyo Push Ups']]},
+ {t:'Long run',cat:'run',min:65,run:'lng',lift:[],ex:[
+  ['Warm up','10–15 min alergare ușoară'],
+  ['Long run Z2','45 min continuu · ritm conversațional, zona 2'],
+  ['Cool down','5–10 min ușor']]},
+ {t:'Recovery & Mobility',cat:'rest',min:40,lift:[],ex:[
+  ['Light walk / easy bike','5–10 min'],
+  ['Mobility flow','10–15 min · full body'],
+  ['Stretching','10–15 min · ține fiecare întindere 45–60s'],
+  ['Foam roll / trigger point','după nevoie'],
+  ['Deep breathing / mindset reset','5 min']]}
+];
+/* notele de coaching și progresie din program, pe zile */
+const NOTES=[
+ {wk:'Bază aerobă + forță pe partea de sus',d:[
+  ['Coaching','Alergarea rămâne UȘOARĂ — stai în zona 2. Tempo controlat și amplitudine completă la ridicări. Începi săptămâna construind elan, nu oboseală.'],
+  ['Progresie','Adaugi 5–10 min la alergare în fiecare săptămână. La ridicări crești întâi repetările, apoi greutatea.']]},
+ {wk:'Pragul lactic — sesiunea-cheie de performanță',d:[
+  ['Coaching','Asta e sesiunea-cheie. Ritm controlat și puternic în fiecare repriză. Rămâi relaxat, nu forța efortul. Reprize egale. Calitate peste cantitate.'],
+  ['Progresie','Adaugi o repriză (până la 5–6). Apoi lungești repriza la 7–8 min. Sau scurtezi pauza la 60s.']]},
+ {wk:'Forță pe partea de sus + conditioning hibrid',d:[
+  ['Coaching','Greu, cu intenție, 1–2 repetări în rezervă la exercițiile principale. Amplitudine completă. Conditioning-ul trebuie să fie provocator, nu maximal.'],
+  ['Progresie','Adaugi repetări sau greutate la exercițiile principale în fiecare săptămână. Crești densitatea la conditioning.']]},
+ {wk:'Alergare ușoară + forță pe picioare',d:[
+  ['Hack Squat în loc de Back Squat','Spatele stă lipit de spătar și traiectoria e ghidată, dar greutatea tot pe umeri apasă — coboară doar cât bazinul rămâne lipit de spătar.'],
+  ['Coaching','Alergarea rămâne ușoară — e flush, nu antrenament. Forță și calitate la ridicări, nu volum. 1–2 repetări în rezervă la exercițiile compuse.'],
+  ['Progresie','Adaugi 5 min la easy run sau păstrezi și alergi mai ușor. Crești greutatea când ai făcut toate seriile și repetările.']]},
+ {wk:'Forță maximă + putere explozivă',d:[
+  ['Coaching','Intenție grea și explozivă la ridicările principale. Amplitudine completă la fiecare repetare. Pauză corectă, ridici cu scop. Calitate peste cantitate.'],
+  ['Progresie','Adaugi greutate la ridicările principale în fiecare săptămână. Încerci să bați seria de top de săptămâna trecută. Viteză mai bună a barei.']]},
+ {wk:'Rezistență + motorul aerob',d:[
+  ['Coaching','Pulsul în zona 2. Respirație relaxată, ritm fluid. Constant, nu vânezi ritmul. Hidratare înainte și după. Termini simțindu-te mai bine decât ai început.'],
+  ['Progresie','Adaugi 5–10 min pe săptămână pe măsură ce crește rezistența. Intensitatea rămâne aceeași — nu devine tempo. Urmărești distanța sau timpul și încerci să le bați.']]},
+ {wk:'Recuperare — 30–45 min, intensitate mică',d:[
+  ['Coaching','Aici te faci mai bun — nu o sări. Mișcare cu intenție, nu cu intensitate. Insiști pe zonele tensionate sau cu febră musculară. Hidratare, mâncare bună, somn de calitate.'],
+  ['Progresie','Notezi cum te simți și cum recuperezi în fiecare săptămână. Îmbunătățești calitatea somnului.']]}
+];
+const CAT={mix:['Alergare + forță','mix','#FF7A45'],run:['Alergare','run','#4DA3FF'],lift:['Forță','lift','#FF4D2E'],rest:['Recuperare','rest','#3DDC97']};
+/* progresia alergării pe cele 4 săptămâni (minute / reprize) */
+const RUN_DEFAULT={ez1:{w:[30,30,35,35]},thr:{m:6,r:[4,5,6,6],rest:90},ez2:{w:[30,35,35,40]},lng:{w:[45,50,55,60]}};
+const RUN_WU={thr:22.5,lng:20};
+const RUNK={ez:'Easy Z2',thr:'Prag',lng:'Long run',int:'Intervale',tmp:'Tempo'};
+const RUN_EX=/^(Easy run|Threshold$|Long run)/;
+
+function runPlan(){
+  const d=JSON.parse(JSON.stringify(RUN_DEFAULT)), sv=(S.runPlan||{}).h||{};
+  Object.keys(d).forEach(k=>{ if(sv[k]) Object.assign(d[k],sv[k]); });
+  return d;
+}
+function runWork(kind,w){ const p=runPlan();
+  if(kind==='thr'){ const r=p.thr.r[w]||0; return r*p.thr.m+Math.max(0,r-1)*p.thr.rest/60; }
+  return (p[kind]&&p[kind].w[w])||0; }
+function runTotal(kind,w){ const p=runPlan(), wk=runWork(kind,w);
+  if(kind==='thr') return (p.thr.r[w]||0)?RUN_WU.thr+wk:0;
+  if(kind==='lng') return wk?wk+RUN_WU.lng:0;
+  return wk; }
+const runKindOf=run=>run==='thr'?'thr':run==='lng'?'lng':'ez';
+function parseEx(n,p,base){
+  if(base.run&&RUN_EX.test(n)) return {kind:'run'};
+  const m=/^(\d+)×(\d+)(?:–(\d+))?/.exec(p);
+  if(m){ const r=/pauză (\d+)s/.exec(p); return {kind:'lift',sets:+m[1],lo:+m[2],hi:+(m[3]||m[2]),rest:r?+r[1]:90}; }
+  return {kind:'task'};
+}
+function dayFor(w,d){
+  const base=PLAN[d], p=runPlan();
+  const ex=base.ex.map(([n,pr],x)=>{
+    let txt=pr, planMin=null;
+    if(base.run==='thr'&&n==='Threshold'){ const r=p.thr.r[w]||0; txt=r+' × '+mmss(p.thr.m)+' @ ritm de prag · pauză '+p.thr.rest+'s jog ușor'; planMin=Math.round(runWork('thr',w)); }
+    else if(base.run==='lng'&&/^Long run/.test(n)){ planMin=p.lng.w[w]||0; txt=planMin+' min continuu · ritm conversațional, zona 2'; }
+    else if((base.run==='ez1'||base.run==='ez2')&&/^Easy run/.test(n)){ planMin=p[base.run].w[w]||0; txt=planMin+' min · ritm conversațional, zona 2'+(base.run==='ez2'?' — flush, nu antrenament':''); }
+    return Object.assign({x,n,p:txt,planMin},parseEx(n,txt,base));
+  });
+  const liftMin=(base.lift||[]).reduce((a,s)=>a+s[1],0);
+  const min=base.run?Math.round(runTotal(base.run,w)+liftMin):base.min;
+  return {w,d,t:base.t,cat:base.cat,run:base.run,min,ex,notes:NOTES[d]};
+}
+
+/* progresul în ciclu: aceleași chei ca înainte (hc{ciclu}w{săpt}d{zi}e{exercițiu}) */
+const cyc=()=>((S.cyc||{}).h)||1;
+const dKey=(w,d)=>'hc'+cyc()+'w'+w+'d'+d;
+const eId=(w,d,x)=>dKey(w,d)+'e'+x;
+const isDone=(w,d,x)=>!!((S.wlog||{})[dKey(w,d)]||{})[eId(w,d,x)];
+function doneCount(w,d){ let n=0; PLAN[d].ex.forEach((_,x)=>{ if(isDone(w,d,x)) n++; }); return n; }
+const dayFull=(w,d)=>doneCount(w,d)===PLAN[d].ex.length;
+function nextDay(){ for(let w=0;w<WEEKS;w++) for(let d=0;d<7;d++) if(!dayFull(w,d)) return {w,d}; return null; }
+function cycleDaysDone(){ let n=0; for(let w=0;w<WEEKS;w++) for(let d=0;d<7;d++) if(dayFull(w,d)) n++; return n; }
+async function setDone(w,d,x,on){
+  const log=Object.assign({},S.wlog), k=dKey(w,d), day=Object.assign({},log[k]||{});
+  if(on) day[eId(w,d,x)]=1; else delete day[eId(w,d,x)];
+  log[k]=day; await save('wlog',log);
+}
+
+/* =====================================================================
+   4 · DATE — forță, greutate, alergare
+   ===================================================================== */
+const e1rm=(w,r)=>w>0&&r>0?Math.round(w*(1+r/30)):0;
+const liftHist=n=>(S.lifts||{})[n]||[];
+function bestE1(n,before){ let b=0; liftHist(n).forEach(e=>{ if(before&&e.d>=before) return; e.s.forEach(([w,r])=>{ const v=e1rm(w,r); if(v>b) b=v; }); }); return b; }
+function lastSession(n,before){ const h=liftHist(n); for(let i=h.length-1;i>=0;i--) if(!before||h[i].d<before) return h[i]; return null; }
+async function addSet(n,w,r){
+  const L=Object.assign({},S.lifts), h=(L[n]||[]).slice(), tk=todayKey(), cur=h[h.length-1];
+  if(cur&&cur.d===tk) h[h.length-1]=Object.assign({},cur,{s:cur.s.concat([[w,r]])}); else h.push({d:tk,s:[[w,r]]});
+  L[n]=h.slice(-80); await save('lifts',L);
+}
+async function removeSet(n,w,r){
+  const L=Object.assign({},S.lifts), h=(L[n]||[]).slice(), tk=todayKey(), cur=h[h.length-1];
+  if(!cur||cur.d!==tk) return;
+  const s=cur.s.slice(); for(let i=s.length-1;i>=0;i--) if(s[i][0]===w&&s[i][1]===r){ s.splice(i,1); break; }
+  if(s.length) h[h.length-1]=Object.assign({},cur,{s}); else h.pop();
+  if(h.length) L[n]=h; else delete L[n];
+  await save('lifts',L);
+}
+function incFor(n){ return /Leg Press|Hack Squat|Hip Thrust|Romanian Deadlift/.test(n)?5
+  :/Dumbbell|Lateral Raise|Curl|Extension|Pushdown|Face Pull|Calf|Hamstring|Lunge/.test(n)?2:2.5; }
+/* dublă progresie: întâi repetările până la capătul intervalului la toate seriile, apoi greutatea */
+function suggest(e){
+  const prev=lastSession(e.n,todayKey());
+  if(!prev||!prev.s.length) return {kg:null,reps:e.lo,kind:'new',
+    txt:'Prima sesiune cu acest exercițiu: alege o greutate cu care faci <b>'+e.lo+'–'+e.hi+' repetări</b> curate, cu 1–2 în rezervă.'};
+  const top=Math.max(...prev.s.map(s=>s[0])), atTop=prev.s.filter(s=>s[0]===top), bestR=Math.max(...atTop.map(s=>s[1]));
+  const last=prev.s.map(s=>num(s[0])+'×'+s[1]).join(' · ');
+  const bw=top===0;
+  if(atTop.length>=e.sets&&atTop.every(s=>s[1]>=e.hi)){ const kg=top+incFor(e.n);
+    return {kg,reps:e.lo,kind:'up',last,d:prev.d,txt:'Ai atins <b>'+e.hi+' repetări</b> la toate seriile → <b>urcă la '+num(kg)+' kg</b> și începe iar de la '+e.lo+'.'}; }
+  if(bestR<e.lo) return {kg:top,reps:e.lo,kind:'hold',last,d:prev.d,
+    txt:'Data trecută ai rămas sub '+e.lo+' repetări → <b>'+(bw?'greutatea corpului':'rămâi la '+num(top)+' kg')+'</b>, cu pauza completă.'};
+  return {kg:top,reps:Math.min(e.hi,bestR+1),kind:'same',last,d:prev.d,
+    txt:'<b>'+(bw?'Greutatea corpului':'Rămâi la '+num(top)+' kg')+'</b> și țintește <b>+1 repetare</b> pe serie (până la '+e.hi+').'};
+}
+function prEvents(){
+  const ev=[]; Object.keys(S.lifts||{}).forEach(n=>{ let best=0;
+    (S.lifts[n]||[]).forEach(e=>{ const b=Math.max(0,...e.s.map(([w,r])=>e1rm(w,r))); if(b>best&&best>0) ev.push({n,d:e.d,b,prev:best}); if(b>best) best=b; }); });
+  return ev.sort((a,b)=>a.d<b.d?1:a.d>b.d?-1:b.b-a.b);
+}
+function wList(){ const w=S.weights||{}; return Object.keys(w).sort().map(d=>({d,w:+w[d]})).filter(x=>x.w>0); }
+function wStats(){
+  const a=wList(); if(!a.length) return null;
+  const last=a[a.length-1], anchor=last.d, avg=arr=>arr.reduce((s,x)=>s+x.w,0)/arr.length;
+  const l7=a.filter(x=>x.d>dayShift(anchor,-7)), p7=a.filter(x=>x.d<=dayShift(anchor,-7)&&x.d>dayShift(anchor,-14));
+  return {last,a7:avg(l7),wk:p7.length?avg(l7)-avg(p7):null,n:a.length};
+}
+function wMA(a){ return a.map(p=>{ const win=a.filter(x=>x.d<=p.d&&x.d>dayShift(p.d,-7)); return {x:p.d,y:win.reduce((s,x)=>s+x.w,0)/win.length}; }); }
+const paceOf=r=>(+r.km>0&&+r.min>0)?r.min/r.km:null;
+const fmtPace=p=>p==null?'—':mmss(p)+' /km';
+const runsIn=(a,b)=>(S.runs||[]).filter(r=>r.date>=a&&r.date<=b);
+const sumKm=rs=>rs.reduce((a,r)=>a+(+r.km||0),0);
+function activity(){
+  const L=new Set(), R=new Set();
+  Object.values(S.lifts||{}).forEach(h=>h.forEach(e=>L.add(e.d)));
+  (S.hist||[]).forEach(h=>L.add(h.date));
+  (S.runs||[]).forEach(r=>R.add(r.date));
+  return {L,R};
+}
+
+/* =====================================================================
+   5 · GRAFICE
+   ===================================================================== */
+let gid=0;
+function ring(f,o={}){
+  const s=o.s||44, sw=o.sw||4, r=s/2-sw/2-1, C=2*Math.PI*r, ff=clamp(f||0,0,1), c=s/2;
+  return `<svg class="ring" viewBox="0 0 ${s} ${s}" width="${s}" height="${s}" aria-hidden="true">
+    <circle cx="${c}" cy="${c}" r="${r}" fill="${o.fill||'none'}" stroke="${o.track||'rgba(255,255,255,.09)'}" stroke-width="${sw}"/>
+    ${ff>0?`<circle class="rg" cx="${c}" cy="${c}" r="${r}" fill="none" stroke="${o.c||'#FF4D2E'}" stroke-width="${sw}" stroke-linecap="round"
+      stroke-dasharray="${C.toFixed(2)}" stroke-dashoffset="${(C*(1-ff)).toFixed(2)}" transform="rotate(-90 ${c} ${c})" style="--c:${C.toFixed(2)}"/>`:''}
+    ${o.inner||''}</svg>`;
+}
+function lineChart(o){
+  const W=340,H=o.h||172,L=38,R=8,T=14,B=24, pts=o.pts, tx=p=>+parseKey(p.x);
+  let x0=Math.min(...pts.map(tx)), x1=Math.max(...pts.map(tx)); if(x1-x0<864e5){ x0-=3*864e5; x1+=3*864e5; }
+  let ys=pts.map(p=>p.y); if(o.ma) ys=ys.concat(o.ma.map(p=>p.y));
+  /* ținta intră în scară doar când e aproape de date; altfel ar turti linia */
+  if(o.goal!=null){ const lo=Math.min(...ys), hi=Math.max(...ys); if(o.goal>=lo-Math.max(3,(hi-lo)*1.5)&&o.goal<=hi+Math.max(3,(hi-lo)*1.5)) ys.push(o.goal); }
+  let y0=Math.min(...ys), y1=Math.max(...ys); if(y1-y0<2){ y0-=1; y1+=1; } const py=(y1-y0)*.12; y0-=py; y1+=py;
+  const X=t=>L+(t-x0)/(x1-x0)*(W-L-R), Y=v=>T+(y1-v)/(y1-y0)*(H-T-B);
+  const P=arr=>arr.map((p,i)=>(i?'L':'M')+X(tx(p)).toFixed(1)+','+Y(p.y).toFixed(1)).join('');
+  const main=o.ma&&o.ma.length>1?o.ma:pts, hex=o.hex||'#FF4D2E', id='lg'+(++gid);
+  let g=''; for(let i=0;i<=3;i++){ const v=y0+(y1-y0)*i/3, y=Y(v).toFixed(1);
+    g+=`<line x1="${L}" x2="${W-R}" y1="${y}" y2="${y}" class="gl"/><text x="${L-6}" y="${(+y+3.5).toFixed(1)}" text-anchor="end" class="ax">${num(v,o.dec==null?1:o.dec)}</text>`; }
+  const gl=o.goal!=null&&o.goal>=y0&&o.goal<=y1?`<line x1="${L}" x2="${W-R}" y1="${Y(o.goal).toFixed(1)}" y2="${Y(o.goal).toFixed(1)}" class="goal"/>
+    <text x="${W-R}" y="${(Y(o.goal)-5).toFixed(1)}" text-anchor="end" class="goal-t">țintă ${num(o.goal)}</text>`:'';
+  const area=P(main)+`L${X(tx(main[main.length-1])).toFixed(1)},${H-B}L${X(tx(main[0])).toFixed(1)},${H-B}Z`;
+  const dots=o.ma?pts.map(p=>`<circle cx="${X(tx(p)).toFixed(1)}" cy="${Y(p.y).toFixed(1)}" r="2.2" class="raw"/>`).join(''):'';
+  const last=main[main.length-1];
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label||'grafic')}">
+    <defs><linearGradient id="${id}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${hex}" stop-opacity=".32"/><stop offset="1" stop-color="${hex}" stop-opacity="0"/></linearGradient></defs>
+    ${g}${gl}<path d="${area}" fill="url(#${id})" class="area"/>${dots}
+    <path d="${P(main)}" class="ln ${o.blue?'blue':''}" stroke="${hex}" pathLength="1"/>
+    <circle cx="${X(tx(last)).toFixed(1)}" cy="${Y(last.y).toFixed(1)}" r="4.5" fill="${hex}" stroke="#09090B" stroke-width="2"/>
+    <text x="${L}" y="${H-5}" class="ax">${fmtDay(keyOf(new Date(x0)))}</text>
+    <text x="${W-R}" y="${H-5}" text-anchor="end" class="ax">${fmtDay(keyOf(new Date(x1)))}</text></svg>`;
+}
+function barChart(items,o={}){
+  const W=340,H=o.h||158,T=18,B=22,gap=8,n=items.length,bw=(W-gap*(n-1))/n,max=Math.max(1,...items.map(i=>i.v)), hex=o.hex||'#4DA3FF', id='bg'+(++gid);
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label||'grafic')}">
+    <defs><linearGradient id="${id}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${hex}"/><stop offset="1" stop-color="${hex}" stop-opacity=".35"/></linearGradient></defs>
+    ${items.map((it,i)=>{ const h=Math.max(it.v>0?3:0,(H-T-B)*it.v/max), x=i*(bw+gap), y=H-B-h;
+      return `<rect class="bar-r" style="--i:${i}" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="6" fill="${it.hi?`url(#${id})`:'rgba(255,255,255,.12)'}"/>
+        ${it.v>0?`<text x="${(x+bw/2).toFixed(1)}" y="${(y-5).toFixed(1)}" text-anchor="middle" class="bv">${num(it.v,o.dec==null?1:o.dec)}</text>`:''}
+        <text x="${(x+bw/2).toFixed(1)}" y="${H-5}" text-anchor="middle" class="ax">${esc(it.lbl)}</text>`; }).join('')}</svg>`;
+}
+
+/* =====================================================================
+   6 · ECRANE
+   ===================================================================== */
+const catTag=day=>{ const c=CAT[day.cat]; return `<span class="tag ${c[1]}">${ic(day.cat==='rest'?'leaf':day.cat==='run'?'run':day.cat==='lift'?'dumbbell':'bolt')} ${c[0]}</span>`; };
+const short=e=>e.kind==='lift'?e.sets+'×'+e.lo+(e.hi!==e.lo?'–'+e.hi:''):e.planMin?e.planMin+' min':'';
+function lastLine(e){
+  if(e.kind==='lift'){ const p=lastSession(e.n); return p?`<div class="ex-l">Ultima: ${p.s.map(s=>num(s[0])+'×'+s[1]).join(' · ')} (${relDay(p.d)})</div>`:''; }
+  return '';
+}
+const QUICK=['Ce greutăți să încerc la antrenamentul următor?','Cum a mers săptămâna asta? Ce schimb?','Slăbesc în ritmul potrivit?',
+  'Am stagnat la vreun exercițiu? Cum trec peste?','Cum alerg corect la prag?','Ce mănânc înainte și după antrenament?'];
+
+function viewAzi(){
+  const nx=nextDay(), now=new Date(), hr=now.getHours();
+  const hello=hr<5?'Noapte bună':hr<12?'Bună dimineața':hr<18?'Bună ziua':'Bună seara';
+  const dstr=now.toLocaleDateString('ro-RO',{weekday:'long',day:'numeric',month:'long'});
+  let hero;
+  if(S.sess){ const day=dayFor(S.sess.w,S.sess.d), dn=day.ex.filter((_,x)=>isDone(S.sess.w,S.sess.d,x)).length;
+    hero=`<div class="card hero">
+      <div class="eyebrow"><span class="dot"></span> În desfășurare · ${DAYN[S.sess.d]} · săptămâna ${S.sess.w+1}</div>
+      <div class="h1">${esc(day.t)}</div>
+      <div class="live-clock"><span class="big sm" id="heroClock">${fmtClock(sessSec())}</span><span class="mu">${dn}/${day.ex.length} exerciții</span></div>
+      <button class="btn pri xl wide glow" data-a="fxOpen">${ic('play')} Continuă antrenamentul</button></div>`;
+  } else if(!nx){
+    hero=`<div class="card hero"><div class="eyebrow">${ic('trophy')} Ciclul ${cyc()} · complet</div>
+      <div class="h1">Ai terminat cele 4 săptămâni</div>
+      <p class="mu">Ciclul următor reia același plan. Dacă vrei alergări mai lungi, ajustează progresia în Setări.</p>
+      <button class="btn pri xl wide glow" data-a="newCycle">${ic('refresh')} Începe ciclul ${cyc()+1}</button></div>`;
+  } else { const day=dayFor(nx.w,nx.d), dn=doneCount(nx.w,nx.d), tot=day.ex.length;
+    hero=`<div class="card hero">
+      <div class="hero-top"><div class="sp">
+        <div class="eyebrow">Următorul · ${DAYN[nx.d]} · săpt. ${nx.w+1}/${WEEKS}</div>
+        <div class="h1">${esc(day.t)}</div>
+        <div class="tags">${catTag(day)}<span class="tag">${ic('clock')} ${day.min} min</span><span class="tag">${tot} exerciții</span></div></div>
+        ${ring(dn/tot,{s:64,sw:5,inner:`<text x="32" y="37" text-anchor="middle" class="ring-t">${dn}/${tot}</text>`})}</div>
+      <ol class="peek">${day.ex.slice(0,5).map(e=>`<li><span>${esc(e.n)}</span><em>${esc(short(e))}</em></li>`).join('')}
+        ${tot>5?`<li class="more">+ încă ${tot-5}</li>`:''}</ol>
+      <button class="btn pri xl wide glow" data-a="start" data-w="${nx.w}" data-d="${nx.d}">${ic('play')} ${dn?'Continuă':'Începe'} antrenamentul</button></div>`;
+  }
+  const w=S.sess?S.sess.w:nx?nx.w:WEEKS-1;
+  const week=PLAN.map((p,d)=>{ const dn=doneCount(w,d), tot=p.ex.length, full=dn===tot, isN=nx&&nx.w===w&&nx.d===d, col=CAT[p.cat][2];
+    return `<button class="wd ${isN?'next':''}" data-a="openDay" data-w="${w}" data-d="${d}" aria-label="${DAYN[d]}: ${esc(p.t)}">
+      ${ring(dn/tot,{s:40,sw:3.5,c:full?'#FF4D2E':col,fill:full?'#FF4D2E':'none',track:isN?'rgba(255,77,46,.5)':'rgba(255,255,255,.09)',
+        inner:full?`<path d="M13 20.5l4.5 4.5L27 15.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`
+          :`<circle cx="20" cy="20" r="3.5" fill="${col}"/>`})}${DAYS[d]}</button>`; }).join('');
+  const ws=wStats(), P=prof(), tk=todayKey();
+  const cur=ws?ws.a7:null, gp=cur!=null&&P.startW>P.goalW?clamp((P.startW-cur)/(P.startW-P.goalW),0,1):0;
+  const km7=sumKm(runsIn(dayShift(tk,-6),tk)), n7=runsIn(dayShift(tk,-6),tk).length;
+  const planKm=['ez1','thr','ez2','lng'].reduce((a,k)=>a+runWork(k,w),0);
+  const prs=prEvents().slice(0,3);
+  return `
+  <div class="hello"><div class="eyebrow">${esc(dstr)}</div><div class="h1">${hello}.</div></div>
+  ${hero}
+  <div class="card"><div class="row"><div class="eyebrow sp">Săptămâna ${w+1} · ciclul ${cyc()}</div>
+    <button class="btn ghost sm" data-a="tab" data-k="plan">Planul ${ic('right')}</button></div>
+    <div class="week">${week}</div></div>
+  <div class="grid2">
+    <div class="card"><div class="eyebrow">${ic('scale')} Greutate</div>
+      <div class="big" style="margin-top:8px">${ws?`<span data-cnt="${num(ws.last.w)}" data-dec="1">${num(ws.last.w)}</span>`:'—'}<small>kg</small></div>
+      ${ws&&ws.wk!=null?`<div class="delta ${ws.wk<=0?'good':'bad'}">${ws.wk>0?'+':''}${num(ws.wk,2)} kg / săpt.</div>`
+        :`<div class="delta mu">${ws?'mai cântărește-te câteva zile':'nicio cântărire'}</div>`}
+      <div class="bar" title="spre ${P.goalW} kg"><i style="width:${(gp*100).toFixed(1)}%"></i></div>
+      <div class="xs mu" style="margin-top:6px">${cur!=null?num(Math.max(0,cur-P.goalW))+' kg până la '+P.goalW:'țintă '+P.goalW+' kg'}</div>
+      <div class="inrow"><input class="inp" id="wIn" type="number" step="0.1" inputmode="decimal" placeholder="${ws?num(ws.last.w):'kg azi'}" aria-label="Greutatea de azi">
+        <button class="btn pri" data-a="wAdd" aria-label="Salvează greutatea">${ic('check')}</button></div></div>
+    <div class="card"><div class="eyebrow">${ic('run')} Alergare · 7 zile</div>
+      <div class="big" style="margin-top:8px"><span data-cnt="${km7.toFixed(1)}" data-dec="1">${km7.toFixed(1)}</span><small>km</small></div>
+      <div class="delta mu">${n7} ${n7===1?'ieșire':'ieșiri'}</div>
+      <div class="bar"><i style="width:${clamp(n7/3,0,1)*100}%;background:linear-gradient(90deg,#2F86E8,#7CC0FF);box-shadow:0 0 14px var(--rung)"></i></div>
+      <div class="xs mu" style="margin-top:6px">plan: 3 alergări · ~${Math.round(planKm)} min de lucru</div>
+      <button class="btn ghost sm wide" style="margin-top:12px" data-a="goRuns">${ic('plus')} Notează o alergare</button></div>
+  </div>
+  <div class="card coach-cta"><div class="row"><div class="cc-ic">${ic('coach')}</div>
+    <div class="sp"><div class="h3">Antrenorul AI</div><div class="sm mu">Îți vede seriile, alergările, greutatea și planul.</div></div></div>
+    <div class="chips">${QUICK.slice(0,3).map((q,i)=>`<button class="chip ask" data-a="ask" data-i="${i}">${esc(q)}</button>`).join('')}</div></div>
+  ${prs.length?`<div class="card"><div class="eyebrow">${ic('trophy')} Recorduri recente</div><div style="margin-top:6px">
+    ${prs.map(p=>`<div class="pr-row"><span class="tag pr">PR</span><b>${esc(p.n)}</b><span class="xs mu">${relDay(p.d)}</span><span class="v">${p.b} kg</span></div>`).join('')}</div>
+    <div class="xs mu2" style="margin-top:4px">1RM estimat din cea mai bună serie (Epley)</div></div>`:''}`;
+}
+
+function viewPlan(){
+  const nx=nextDay(), w=S.planW!=null?S.planW:(S.sess?S.sess.w:nx?nx.w:0), full=cycleDaysDone();
+  const weekFull=a=>PLAN.every((_,d)=>dayFull(a,d));
+  const days=PLAN.map((_,d)=>{ const day=dayFor(w,d), dn=doneCount(w,d), tot=day.ex.length, open=S.openDay===d, isN=nx&&nx.w===w&&nx.d===d, c=CAT[day.cat];
+    return `<div class="card day ${open?'open':''} ${isN?'next':''}" id="day${d}" style="--c:${c[2]}">
+      <button class="day-h" data-a="toggleDay" data-d="${d}" aria-expanded="${open}">
+        <span class="day-bar"></span>
+        <span class="sp"><span class="day-k">${DAYN[d]}${isN?' · următorul':''}</span><span class="day-t" style="display:block">${esc(day.t)}</span>
+          <span class="day-m" style="display:block">${c[0]} · ${day.min} min · ${dn}/${tot} bifate</span></span>
+        ${dn===tot?`<span class="tag pr">${ic('check')}</span>`:ring(dn/tot,{s:34,sw:3,c:c[2]})}
+        <span class="chev">${ic('down')}</span></button>
+      <div class="day-b"><div>
+        ${day.ex.map(e=>{ const on=isDone(w,d,e.x); return `<div class="ex ${on?'done':''}">
+          <button class="tick ${on?'on':''}" data-a="tick" data-w="${w}" data-d="${d}" data-x="${e.x}" aria-label="${on?'Debifează':'Bifează'} ${esc(e.n)}">${ic('check')}</button>
+          <div class="sp"><div class="ex-n">${esc(e.n)}</div><div class="ex-p">${esc(e.p)}</div>${lastLine(e)}</div></div>`; }).join('')}
+        <details class="notes"><summary>${ic('info')} ${esc(day.notes.wk)}</summary>
+          ${day.notes.d.map(([t,x])=>`<p><b>${esc(t)}.</b> ${esc(x)}</p>`).join('')}</details>
+        <div class="day-act"><button class="btn pri wide" data-a="start" data-w="${w}" data-d="${d}">${ic('play')} ${dn&&dn<tot?'Continuă ziua':dn===tot?'Reia ziua':'Începe ziua'}</button></div>
+      </div></div></div>`; }).join('');
+  return `
+  <div class="card"><div class="eyebrow">Ciclul ${cyc()} · Hybrid365</div>
+    <div class="h2" style="margin-top:6px">Planul de 4 săptămâni</div>
+    <div class="sm mu">3 alergări · 3 upper · 1 lower · 1 conditioning · 1 zi de recuperare</div>
+    <div class="bar"><i style="width:${(full/(WEEKS*7)*100).toFixed(1)}%"></i></div>
+    <div class="cyc-bar"><span>${full} din ${WEEKS*7} zile complete</span><span>${nx?'următorul: S'+(nx.w+1)+' · '+DAYN[nx.d]:'ciclu complet'}</span></div></div>
+  <div class="seg" role="tablist">${Array.from({length:WEEKS},(_,a)=>`<button class="${a===w?'on':''}" data-a="planW" data-i="${a}" role="tab" aria-selected="${a===w}">S${a+1}${weekFull(a)?` <span class="ok">${ic('check')}</span>`:''}</button>`).join('')}</div>
+  ${days}
+  <div class="card"><div class="row"><div class="sp"><div class="h3">Ciclu nou</div><div class="sm mu">Reia planul de la săptămâna 1. Istoricul rămâne.</div></div>
+    <button class="btn ghost sm" data-a="newCycle" data-confirm="Sigur? Apasă iar">${ic('refresh')} Ciclul ${cyc()+1}</button></div></div>`;
+}
+
+function viewProg(){
+  const tk=todayKey(), {L,R}=activity(), start=dayShift(mondayOf(tk),-15*7);
+  let cells='', act28=0;
+  for(let i=0;i<16*7;i++){ const k=dayShift(start,i), l=L.has(k), r=R.has(k), fut=k>tk;
+    if(!fut&&k>dayShift(tk,-28)&&(l||r)) act28++;
+    cells+=`<i style="--i:${i}" class="${fut?'fut':l&&r?'both':l?'on':r?'run':''} ${k===tk?'today':''}" title="${k}"></i>`; }
+  const tabs=[['w','Greutate','scale'],['s','Forță','dumbbell'],['r','Alergare','run']];
+  const body=S.progTab==='s'?progStrength():S.progTab==='r'?progRuns():progWeight();
+  return `
+  <div class="card"><div class="row"><div class="eyebrow sp">${ic('flame')} Consecvență · 16 săptămâni</div><b>${act28}</b><span class="xs mu">zile active / 28</span></div>
+    <div class="heat">${cells}</div>
+    <div class="legend"><span><i style="background:var(--ac)"></i>forță</span><span><i style="background:var(--run)"></i>alergare</span><span><i style="background:linear-gradient(135deg,var(--ac) 50%,var(--run) 50%)"></i>ambele</span></div></div>
+  <div class="seg">${tabs.map(t=>`<button class="${S.progTab===t[0]?'on':''}" data-a="progTab" data-k="${t[0]}">${ic(t[2])} ${t[1]}</button>`).join('')}</div>
+  ${body}`;
+}
+function progWeight(){
+  const a=wList(), ws=wStats(), P=prof(), tk=todayKey();
+  const from=S.wRange?dayShift(tk,-S.wRange):'0000', vis=a.filter(x=>x.d>=from), ma=wMA(a).filter(p=>p.x>=from);
+  const cur=ws?ws.a7:null, left=cur!=null?cur-P.goalW:null;
+  const eta=ws&&ws.wk!=null&&ws.wk<-0.05&&left>0?Math.ceil(left/-ws.wk):null;
+  return `
+  <div class="card"><div class="row"><div class="sp"><div class="eyebrow">Medie 7 zile</div>
+      <div class="big" style="margin-top:6px">${cur!=null?`<span data-cnt="${num(cur)}" data-dec="1">${num(cur)}</span>`:'—'}<small>kg</small></div>
+      ${ws&&ws.wk!=null?`<div class="delta ${ws.wk<=0?'good':'bad'}">${ws.wk>0?'+':''}${num(ws.wk,2)} kg / săptămână</div>`:''}</div>
+    <div style="text-align:right"><div class="eyebrow" style="justify-content:flex-end">Țintă</div><div class="big sm" style="margin-top:6px">${P.goalW}<small>kg</small></div>
+      <div class="xs mu">${left!=null?(left>0?num(left)+' kg rămase':'atinsă'):''}${eta?' · ~'+eta+' săpt.':''}</div></div></div>
+    <div class="bar"><i style="width:${cur!=null&&P.startW>P.goalW?(clamp((P.startW-cur)/(P.startW-P.goalW),0,1)*100).toFixed(1):0}%"></i></div>
+    <div class="cyc-bar"><span>start ${P.startW} kg</span><span>${cur!=null?num(P.startW-cur)+' kg pierduți':''}</span></div>
+    <div class="chips" style="margin-top:14px">${[[30,'30 zile'],[90,'90 zile'],[365,'1 an'],[0,'Tot']].map(r=>`<button class="chip ${S.wRange===r[0]?'on':''}" data-a="wRange" data-i="${r[0]}">${r[1]}</button>`).join('')}</div>
+    ${vis.length>=2?lineChart({pts:vis.map(x=>({x:x.d,y:x.w})),ma,goal:P.goalW,label:'greutate'})
+      :`<div class="empty">${ic('scale')}<div>Graficul apare după a doua cântărire${S.wRange?' din interval':''}.</div></div>`}
+    <div class="inrow"><input class="inp" id="wIn" type="number" step="0.1" inputmode="decimal" placeholder="Greutatea de azi (kg)">
+      <button class="btn pri" data-a="wAdd">${ic('check')} Salvează</button></div>
+    <div class="note">Cântărește-te dimineața, după toaletă, înainte să mănânci. Contează media pe 7 zile, nu ziua de azi.</div></div>
+  ${a.length?`<div class="card"><div class="eyebrow">Ultimele cântăriri</div><div style="margin-top:4px">
+    ${a.slice(-7).reverse().map(x=>`<div class="list-row"><span>${relDay(x.d)}</span><span class="mu2 xs">${x.d}</span><span class="v">${num(x.w)} kg</span>
+      <button class="xb" data-a="wDel" data-k="${x.d}" data-confirm="?" aria-label="Șterge">${ic('trash')}</button></div>`).join('')}</div></div>`:''}`;
+}
+function progStrength(){
+  const Lf=S.lifts||{}, names=Object.keys(Lf).filter(n=>(Lf[n]||[]).some(e=>e.s.length))
+    .sort((a,b)=>{ const la=Lf[a][Lf[a].length-1].d, lb=Lf[b][Lf[b].length-1].d; return la<lb?1:la>lb?-1:a.localeCompare(b); });
+  if(!names.length) return `<div class="card"><div class="empty">${ic('dumbbell')}<div>Seriile apar aici după primul antrenament.<br>Pornește-l din <b>Azi</b> și notează fiecare serie.</div></div></div>`;
+  const n=names.indexOf(S.prEx)>=0?S.prEx:names[0], h=Lf[n];
+  const pts=h.map(e=>({x:e.d,y:Math.max(0,...e.s.map(([w,r])=>e1rm(w,r)))})).filter(p=>p.y>0);
+  let best=null; h.forEach(e=>e.s.forEach(([w,r])=>{ const v=e1rm(w,r); if(!best||v>best.v) best={v,w,r,d:e.d}; }));
+  const vol=h.length?h[h.length-1].s.reduce((a,[w,r])=>a+w*r,0):0;
+  const prs=prEvents().slice(0,8);
+  return `
+  <div class="card"><div class="scrollx">${names.map(x=>`<button class="chip ${x===n?'on':''}" data-a="prEx" data-k="${esc(x)}">${esc(x)}</button>`).join('')}</div>
+    <div class="h2" style="margin-top:14px">${esc(n)}</div>
+    <div class="kpis">
+      <div class="kpi"><div class="k">1RM estimat</div><div class="v">${best&&best.v?best.v:'—'}<small>kg</small></div></div>
+      <div class="kpi"><div class="k">Cea mai bună serie</div><div class="v">${best?num(best.w)+'×'+best.r:'—'}</div></div>
+      <div class="kpi"><div class="k">Volum ultima dată</div><div class="v">${Math.round(vol)}<small>kg</small></div></div></div>
+    ${pts.length>=2?lineChart({pts,label:'1RM estimat',dec:0}):`<div class="empty sm">Graficul apare după a doua sesiune cu greutate.</div>`}
+    <div style="margin-top:8px">${h.slice(-6).reverse().map(e=>`<div class="list-row"><span>${relDay(e.d)}</span>
+      <span class="sess-l sp">${e.s.map(s=>num(s[0])+'×'+s[1]).join(' · ')}</span></div>`).join('')}</div></div>
+  ${prs.length?`<div class="card"><div class="eyebrow">${ic('trophy')} Recorduri</div><div style="margin-top:4px">
+    ${prs.map(p=>`<div class="pr-row"><span class="tag pr">PR</span><b>${esc(p.n)}</b><span class="xs mu">${relDay(p.d)}</span>
+      <span class="v">${p.prev}→${p.b}</span></div>`).join('')}</div></div>`:''}`;
+}
+function progRuns(){
+  const tk=todayKey(), m0=mondayOf(tk), weeks=[];
+  for(let i=7;i>=0;i--){ const a=dayShift(m0,-7*i), b=dayShift(a,6); weeks.push({lbl:fmtDay(a).split(' ')[0]+'.'+pad(parseKey(a).getMonth()+1),v:sumKm(runsIn(a,b)),hi:i===0}); }
+  const r28=runsIn(dayShift(tk,-27),tk), byK=k=>{ const rs=r28.filter(r=>r.kind===k&&paceOf(r)); return rs.length?rs.reduce((a,r)=>a+paceOf(r),0)/rs.length:null; };
+  const runs=(S.runs||[]).map((r,i)=>Object.assign({i},r)).sort((a,b)=>a.date<b.date?1:a.date>b.date?-1:b.i-a.i).slice(0,12);
+  return `
+  <div class="card"><div class="eyebrow">${ic('run')} Kilometri pe săptămână</div>
+    ${barChart(weeks,{label:'km pe săptămână'})}
+    <div class="kpis">
+      <div class="kpi"><div class="k">4 săptămâni</div><div class="v">${num(sumKm(r28))}<small>km</small></div></div>
+      <div class="kpi"><div class="k">Ritm Easy</div><div class="v" style="font-size:20px">${fmtPace(byK('ez'))}</div></div>
+      <div class="kpi"><div class="k">Ritm prag</div><div class="v" style="font-size:20px">${fmtPace(byK('thr'))}</div></div></div></div>
+  <div class="card" id="runForm"><div class="eyebrow">${ic('plus')} Notează o alergare</div>
+    <div class="chips" style="margin-top:12px">${['ez','thr','lng'].map(k=>`<button class="chip ${S.runKind===k?'on':''}" data-a="runKind" data-k="${k}">${RUNK[k]}</button>`).join('')}</div>
+    <div class="form"><div class="fld"><label for="rKm">Distanță (km)</label><input class="inp" id="rKm" type="number" step="0.01" inputmode="decimal" placeholder="5.0"></div>
+      <div class="fld"><label for="rMin">Timp (minute)</label><input class="inp" id="rMin" type="number" step="0.1" inputmode="decimal" placeholder="35"></div>
+      <div class="fld"><label for="rDate">Data</label><input class="inp" id="rDate" type="date" value="${tk}" max="${tk}"></div>
+      <div class="fld"><label for="rRpe">Efort 1–10 (opțional)</label><input class="inp" id="rRpe" type="number" min="1" max="10" inputmode="numeric" placeholder="4"></div></div>
+    <button class="btn blue wide" style="margin-top:12px" data-a="runAdd">${ic('check')} Salvează alergarea</button></div>
+  ${runs.length?`<div class="card"><div class="eyebrow">Alergări recente</div><div style="margin-top:4px">
+    ${runs.map(r=>`<div class="list-row"><span class="tag run">${esc(RUNK[r.kind]||r.kind||'—')}</span><span class="sp"><b>${num(r.km,2)} km</b> <span class="mu sm">· ${num(r.min)} min · ${relDay(r.date)}</span></span>
+      <span class="v">${fmtPace(paceOf(r))}</span><button class="xb" data-a="runDel" data-i="${r.i}" data-confirm="?" aria-label="Șterge">${ic('trash')}</button></div>`).join('')}</div></div>`:''}`;
+}
+
+function viewSet(){
+  const P=prof(), p=runPlan(), key=S.aiKey;
+  const rpRow=(lbl,k,f)=>`<span class="n">${lbl}</span>${Array.from({length:WEEKS},(_,w)=>`<input class="inp" type="number" inputmode="numeric" data-rp="${k}|${f}|${w}" value="${p[k][f][w]}" aria-label="${lbl} săptămâna ${w+1}">`).join('')}`;
+  return `
+  <div class="hello"><div class="h1">Setări</div></div>
+  <div class="card"><div class="eyebrow">${ic('user')} Profil</div>
+    <div class="form">
+      <div class="fld"><label for="pAge">Vârstă</label><input class="inp" id="pAge" data-p="age" type="number" inputmode="numeric" value="${P.age}"></div>
+      <div class="fld"><label for="pH">Înălțime (cm)</label><input class="inp" id="pH" data-p="h" type="number" inputmode="numeric" value="${P.h}"></div>
+      <div class="fld"><label for="pS">Greutate la start (kg)</label><input class="inp" id="pS" data-p="startW" type="number" step="0.1" inputmode="decimal" value="${P.startW}"></div>
+      <div class="fld"><label for="pG">Greutate țintă (kg)</label><input class="inp" id="pG" data-p="goalW" type="number" step="0.1" inputmode="decimal" value="${P.goalW}"></div></div></div>
+  <div class="card" id="aiSet"><div class="eyebrow">${ic('coach')} Antrenor AI · Claude Opus 5.5</div>
+    ${key?`<div class="set-row" style="margin-top:6px"><span class="sp">Cheie API salvată <span class="mu sm">· ${esc(key.slice(0,10))}…${esc(key.slice(-4))}</span></span>
+        <button class="btn ghost sm danger" data-a="aiKeyDel" data-confirm="Sigur? Apasă iar">${ic('trash')} Șterge</button></div>`
+      :`<div class="keybox"><input class="inp" id="aiKeyIn" type="password" autocomplete="off" placeholder="sk-ant-…" aria-label="Cheia API Anthropic">
+        <button class="btn pri" data-a="aiKeySave">Salvează</button></div>`}
+    <div class="note">Cheia rămâne doar în browserul acesta și pleacă numai spre api.anthropic.com. O creezi în <b>console.anthropic.com → API Keys</b>; contul are nevoie de credit.</div>
+    <div class="sm" style="margin-top:14px;font-weight:600">Cât de mult gândește</div>
+    <div class="seg">${[['low','Rapid'],['medium','Echilibrat'],['high','Profund']].map(e=>`<button class="${S.aiEffort===e[0]?'on':''}" data-a="aiEffort" data-k="${e[0]}">${e[1]}</button>`).join('')}</div>
+    <div class="note">„Echilibrat" e potrivit pentru aproape orice întrebare. „Profund" răspunde mai încet și costă mai mult.</div></div>
+  <div class="card"><div class="eyebrow">${ic('run')} Progresia alergării</div>
+    <div class="rp-grid"><span></span>${Array.from({length:WEEKS},(_,w)=>`<span class="h">S${w+1}</span>`).join('')}
+      ${rpRow('Easy luni (min)','ez1','w')}${rpRow('Prag (reprize)','thr','r')}${rpRow('Easy joi (min)','ez2','w')}${rpRow('Long run (min)','lng','w')}</div>
+    <div class="note">Reprizele de prag au ${p.thr.m} min, cu ${p.thr.rest}s jog între ele. Exercițiile și zilele planului rămân aceleași.</div>
+    <button class="btn ghost sm" style="margin-top:10px" data-a="rpReset" data-confirm="Sigur? Apasă iar">${ic('refresh')} Valorile din program</button></div>
+  <div class="card"><div class="set-row"><span class="sp"><b>Sunet și vibrații</b><div class="sm mu">La finalul pauzei dintre serii</div></span>
+      <button class="sw ${S.sound?'on':''}" data-a="sound" role="switch" aria-checked="${S.sound}" aria-label="Sunet"></button></div></div>
+  <div class="card"><div class="eyebrow">${ic('download')} Datele tale</div>
+    <div class="note">Totul e salvat pe acest dispozitiv. Fă din când în când o copie, mai ales înainte să schimbi telefonul sau browserul.</div>
+    <div class="row" style="margin-top:12px;flex-wrap:wrap">
+      <button class="btn" data-a="export">${ic('download')} Exportă copia</button>
+      <label class="btn file-l">${ic('upload')} Importă<input type="file" id="impFile" accept="application/json,.json"></label></div>
+    <div class="set-row" style="margin-top:12px"><span class="sp"><b>Ciclul ${cyc()}</b><div class="sm mu">${cycleDaysDone()} din ${WEEKS*7} zile bifate</div></span>
+      <button class="btn ghost sm danger" data-a="resetCycle" data-confirm="Sigur? Apasă iar">Șterge bifele</button></div></div>
+  <div class="xs mu2" style="text-align:center;margin-top:18px">ZECE v3 · planul Hybrid365</div>`;
+}
+
+/* =====================================================================
+   7 · SESIUNEA GHIDATĂ
+   ===================================================================== */
+const sessSec=()=>S.sess?Math.max(0,Math.floor((Date.now()-S.sess.start)/1000)):0;
+async function persistSess(){ await store.set(K.sess,S.sess); }
+async function startSess(w,d){
+  if(S.sess){
+    if(S.sess.w!==w||S.sess.d!==d) toast('Ai deja un antrenament pornit','Termină-l sau renunță la el înainte să începi altul.','info');
+    S.fxOpen=true; render(); return;
+  }
+  const day=dayFor(w,d); let cur=day.ex.findIndex((_,x)=>!isDone(w,d,x)); if(cur<0) cur=0;
+  S.sess={w,d,start:Date.now(),cur,sets:{},runs:{},tasks:{},prs:[],best:{},kg:{},rp:{}};
+  S.fxOpen=true; S.fxDir=''; await persistSess(); keepAwake(true); render();
+}
+function restBlock(){
+  if(!S.rest) return '';
+  const left=Math.max(0,(S.rest.end-Date.now())/1000), C=2*Math.PI*36;
+  return `<div class="restbox ${left<=3?'urgent':''}" id="restBox">
+    <svg viewBox="0 0 84 84"><circle cx="42" cy="42" r="36" fill="none" stroke="rgba(77,163,255,.18)" stroke-width="7"/>
+      <circle id="restRing" cx="42" cy="42" r="36" fill="none" stroke="#4DA3FF" stroke-width="7" stroke-linecap="round"
+        stroke-dasharray="${C.toFixed(2)}" stroke-dashoffset="${(C*(1-left/S.rest.total)).toFixed(2)}" transform="rotate(-90 42 42)" style="transition:stroke-dashoffset .25s linear"/></svg>
+    <div><div class="k">Pauză</div><div class="t" id="restT">${fmtClock(left)}</div></div>
+    <div class="acts"><button class="btn sm" data-a="restAdd">+30s</button><button class="btn sm ghost" data-a="restSkip">Sari</button></div></div>`;
+}
+function fxLift(e,x){
+  const s=S.sess, sets=s.sets[x]||[], sg=suggest(e), inc=incFor(e.n);
+  const kg=s.kg[x]!=null?s.kg[x]:sets.length?sets[sets.length-1][0]:sg.kg!=null?sg.kg:'';
+  const rp=s.rp[x]!=null?s.rp[x]:sets.length?sets[sets.length-1][1]:sg.reps;
+  const complete=sets.length>=e.sets, isLast=x===dayFor(s.w,s.d).ex.length-1;
+  return `
+    <div class="eyebrow">${e.sets} serii × ${e.lo}${e.hi!==e.lo?'–'+e.hi:''} repetări · pauză ${e.rest}s</div>
+    <div class="fx-n">${esc(e.n)}</div>
+    ${sg.last?`<div class="last">Data trecută (${relDay(sg.d)}): <b>${esc(sg.last)}</b></div>`:''}
+    <div class="sugg ${sg.kind}">${ic(sg.kind==='up'?'trophy':'bolt')}<span>${sg.txt}</span></div>
+    <div class="sets">${Array.from({length:Math.max(e.sets,sets.length)},(_,i)=>{ const st=sets[i], pr=st&&(s.prs||[]).some(p=>p.n===e.n&&p.i===i);
+      return `<div class="sd ${st?'ok':i===sets.length?'cur':''}">${st?`<b>${num(st[0])}</b> × <b>${st[1]}</b>${pr?'<span class="tag pr">PR</span>':''}`:'Seria '+(i+1)}</div>`; }).join('')}</div>
+    ${restBlock()}
+    ${complete?`<div class="done-box">${ic('check')} Toate cele ${e.sets} serii sunt notate.</div>`:''}
+    <div class="logger">
+      <div class="stp"><label for="inKg">kg</label><div class="r"><button data-a="kg" data-v="${-inc}" aria-label="minus ${inc} kg">−</button>
+        <input id="inKg" type="number" step="0.5" inputmode="decimal" value="${kg===''?'':num(kg,2)}" placeholder="0"><button data-a="kg" data-v="${inc}" aria-label="plus ${inc} kg">+</button></div></div>
+      <div class="stp"><label for="inRp">repetări</label><div class="r"><button data-a="rp" data-v="-1" aria-label="minus o repetare">−</button>
+        <input id="inRp" type="number" inputmode="numeric" value="${rp}"><button data-a="rp" data-v="1" aria-label="plus o repetare">+</button></div></div></div>
+    ${complete
+      ?`<button class="btn pri xl wide glow fx-cta" data-a="${isLast?'fxFinish':'fxNext'}">${isLast?ic('trophy')+' Termină antrenamentul':'Următorul exercițiu '+ic('right')}</button>
+        <div class="fx-sub"><button class="btn ghost" data-a="logSet">${ic('plus')} Încă o serie</button>${sets.length?`<button class="btn ghost" data-a="undoSet">Șterge ultima</button>`:''}</div>`
+      :`<button class="btn pri xl wide ${S.rest?'':'glow'} fx-cta" data-a="logSet">${ic('check')} Salvează seria ${sets.length+1}</button>
+        ${sets.length?`<div class="fx-sub"><button class="btn ghost" data-a="undoSet">Șterge ultima serie</button><button class="btn ghost" data-a="exDone">Gata cu exercițiul</button></div>`:''}`}`;
+}
+function fxRun(e,x){
+  const s=S.sess, done=s.runs[x], day=dayFor(s.w,s.d), isLast=x===day.ex.length-1;
+  return `
+    <div class="eyebrow">${ic('run')} Alergare · ${RUNK[runKindOf(day.run)]}</div>
+    <div class="fx-n">${esc(e.n)}</div><div class="fx-p">${esc(e.p)}</div>
+    ${done?`<div class="done-box">${ic('check')} ${num(done.km,2)} km în ${num(done.min)} min · ${fmtPace(paceOf(done))}</div>
+      <button class="btn pri xl wide glow" data-a="${isLast?'fxFinish':'fxNext'}">${isLast?'Termină antrenamentul':'Următorul exercițiu '+ic('right')}</button>`
+    :`<div class="logger" style="margin-top:16px">
+      <div class="stp"><label for="inKm">km</label><div class="r"><button data-a="km" data-v="-0.5">−</button>
+        <input id="inKm" type="number" step="0.01" inputmode="decimal" placeholder="0"><button data-a="km" data-v="0.5">+</button></div></div>
+      <div class="stp"><label for="inMin">minute</label><div class="r"><button data-a="mn" data-v="-1">−</button>
+        <input id="inMin" type="number" step="0.1" inputmode="decimal" value="${e.planMin||''}"><button data-a="mn" data-v="1">+</button></div></div></div>
+      <div class="pace" id="paceOut">Ritmul apare când completezi distanța.</div>
+      <button class="btn blue xl wide fx-cta" data-a="logRun">${ic('check')} Salvează alergarea</button>
+      <div class="fx-sub"><button class="btn ghost" data-a="exDone">Am făcut-o, fără date</button></div>`}`;
+}
+function fxTask(e,x){
+  const s=S.sess, day=dayFor(s.w,s.d), on=isDone(s.w,s.d,x), isLast=x===day.ex.length-1;
+  return `
+    <div class="eyebrow">${ic(day.cat==='rest'?'leaf':'bolt')} ${day.cat==='rest'?'Recuperare':'Bloc'}</div>
+    <div class="fx-n">${esc(e.n)}</div><div class="fx-p" style="font-size:16px;line-height:1.6">${esc(e.p)}</div>
+    ${on?`<div class="done-box">${ic('check')} Făcut.</div>`:''}
+    <button class="btn pri xl wide ${on?'':'glow'} fx-cta" data-a="${on?(isLast?'fxFinish':'fxNext'):'exDone'}">${on?(isLast?'Termină antrenamentul':'Următorul '+ic('right')):ic('check')+' Gata'}</button>`;
+}
+let fxWasOpen=false;
+function renderFocus(){
+  const root=$('#fxRoot');
+  if(S.summary){ root.innerHTML=summaryHTML(); document.body.classList.add('lock'); fxWasOpen=true; return; }
+  if(!S.sess||!S.fxOpen){
+    const el=root.firstElementChild;
+    if(el&&fxWasOpen){ el.classList.add('leave'); setTimeout(()=>{ if(!(S.sess&&S.fxOpen)&&!S.summary) root.innerHTML=''; },190); } else root.innerHTML='';
+    fxWasOpen=false; document.body.classList.remove('lock'); return;
+  }
+  const s=S.sess, day=dayFor(s.w,s.d), x=clamp(s.cur,0,day.ex.length-1), e=day.ex[x];
+  const prev=root.querySelector('.fx'), keepScroll=prev?prev.scrollTop:0;
+  root.innerHTML=`<div class="fx ${fxWasOpen?'':'enter'}" role="dialog" aria-label="Antrenament"><div class="fx-in">
+    <div class="fx-top"><button class="ib" data-a="fxMin" aria-label="Minimizează">${ic('down')}</button>
+      <div class="fx-tt"><div class="eyebrow">S${s.w+1} · ${DAYN[s.d]} · ${x+1}/${day.ex.length}</div><div class="t">${esc(day.t)}</div></div>
+      <div class="fx-clock" id="fxClock">${fmtClock(sessSec())}</div></div>
+    <div class="fx-prog">${day.ex.map((q,i)=>`<button class="${i===x?'cur':isDone(s.w,s.d,i)?'ok':''}" data-a="fxGo" data-x="${i}" aria-label="${esc(q.n)}"></button>`).join('')}</div>
+    <div class="fx-body ${S.fxDir}">${e.kind==='lift'?fxLift(e,x):e.kind==='run'?fxRun(e,x):fxTask(e,x)}</div>
+    <div class="fx-nav"><button class="btn ghost" data-a="fxPrev" ${x===0?'disabled':''}>${ic('left')} Înapoi</button>
+      ${x<day.ex.length-1?`<button class="btn" data-a="fxNext">Următorul ${ic('right')}</button>`:`<button class="btn pri" data-a="fxFinish">${ic('trophy')} Termină</button>`}</div>
+    <button class="btn ghost wide sm danger fx-quit" data-a="fxQuit" data-confirm="Sigur? Seriile notate rămân">Renunță la sesiune</button>
+  </div></div>`;
+  S.fxDir=''; fxWasOpen=true; document.body.classList.add('lock');
+  const fx=root.querySelector('.fx'); if(fx&&keepScroll) fx.scrollTop=keepScroll;
+  updPace();
+}
+function summaryHTML(){
+  const m=S.summary;
+  return `<div class="fx ${fxWasOpen?'':'enter'}"><div class="fx-in">
+    <div class="sum-h"><div class="cc-ic">${ic('trophy')}</div><div class="eyebrow" style="justify-content:center">S${m.w+1} · ${DAYN[m.d]} · ciclul ${m.cyc}</div>
+      <div class="h1">${esc(m.t)}</div><div class="mu">Antrenament terminat. Bună treabă.</div></div>
+    <div class="kpis">
+      <div class="kpi"><div class="k">Durată</div><div class="v">${fmtClock(m.dur)}</div></div>
+      <div class="kpi"><div class="k">Serii</div><div class="v">${m.sets}</div></div>
+      <div class="kpi"><div class="k">${m.km?'Distanță':'Volum'}</div><div class="v">${m.km?num(m.km,2)+'<small>km</small>':Math.round(m.vol)+'<small>kg</small>'}</div></div></div>
+    ${m.prList.length?`<div class="card"><div class="eyebrow">${ic('trophy')} Recorduri noi</div>${m.prList.map(p=>`<div class="pr-row"><span class="tag pr">PR</span><b>${esc(p.n)}</b>
+      <span class="xs mu">${num(p.w)}×${p.r}</span><span class="v">${p.prev}→${p.v}</span></div>`).join('')}</div>`:''}
+    ${m.skipped.length?`<div class="note">Fără date notate: ${m.skipped.map(esc).join(', ')}. Ziua e bifată oricum, ca ciclul să meargă mai departe.</div>`:''}
+    <button class="btn pri xl wide glow" style="margin-top:18px" data-a="sumClose">${ic('check')} Gata</button>
+    <button class="btn ghost wide" style="margin-top:10px" data-a="sumAsk">${ic('coach')} Ce spune antrenorul AI?</button>
+  </div></div>`;
+}
+function updPace(){
+  const o=$('#paceOut'); if(!o) return;
+  const km=parseFloat(($('#inKm')||{}).value), mn=parseFloat(($('#inMin')||{}).value);
+  o.innerHTML=km>0&&mn>0?`Ritm: <b>${fmtPace(mn/km)}</b>`:'Ritmul apare când completezi distanța.';
+}
+async function logSet(){
+  const s=S.sess, day=dayFor(s.w,s.d), x=s.cur, e=day.ex[x];
+  const kg=parseFloat($('#inKg').value), rp=parseInt($('#inRp').value,10);
+  if(!(rp>0)){ shake('#inRp'); return; }
+  const w=isFinite(kg)&&kg>=0?Math.round(kg*100)/100:0;
+  const before=bestE1(e.n,todayKey()), v=e1rm(w,rp);
+  await addSet(e.n,w,rp);
+  s.sets[x]=(s.sets[x]||[]).concat([[w,rp]]); s.kg[x]=w; s.rp[x]=rp;
+  if(before>0&&v>before&&v>(s.best[e.n]||0)){
+    s.best[e.n]=v; s.prs.push({n:e.n,i:s.sets[x].length-1,w,r:rp,v,prev:Math.max(before,...s.prs.filter(p=>p.n===e.n).map(p=>p.v))});
+    toast('Record nou · '+e.n,num(w)+' kg × '+rp+' → 1RM estimat '+v+' kg (înainte '+before+')'); burstAt(innerWidth/2,90,30); buzz([60,40,60,40,120]); beep(990,.08); setTimeout(()=>beep(1320,.12),110);
+  } else buzz(25);
+  if(s.sets[x].length>=e.sets&&!isDone(s.w,s.d,x)) await setDone(s.w,s.d,x,true);
+  startRest(e.rest);
+  await persistSess(); renderFocus();
+}
+async function undoSet(){
+  const s=S.sess, day=dayFor(s.w,s.d), x=s.cur, e=day.ex[x], a=(s.sets[x]||[]).slice(); if(!a.length) return;
+  const [w,r]=a.pop(); s.sets[x]=a; await removeSet(e.n,w,r);
+  s.prs=s.prs.filter(p=>!(p.n===e.n&&p.i===a.length)); s.best[e.n]=Math.max(0,...s.prs.filter(p=>p.n===e.n).map(p=>p.v));
+  if(a.length<e.sets&&isDone(s.w,s.d,x)) await setDone(s.w,s.d,x,false);
+  S.rest=null; await persistSess(); renderFocus();
+}
+async function logRun(){
+  const s=S.sess, day=dayFor(s.w,s.d), x=s.cur;
+  const km=parseFloat($('#inKm').value)||0, mn=parseFloat($('#inMin').value)||0;
+  if(!(km>0)&&!(mn>0)){ shake('#inKm'); return; }
+  const run={date:todayKey(),kind:runKindOf(day.run),km:Math.round(km*100)/100,min:Math.round(mn*10)/10};
+  await save('runs',(S.runs||[]).concat([run])); s.runs[x]=run;
+  await setDone(s.w,s.d,x,true); buzz(40); await persistSess(); renderFocus();
+}
+async function exDone(){ const s=S.sess; s.tasks[s.cur]=1; await setDone(s.w,s.d,s.cur,true); buzz(25);
+  const day=dayFor(s.w,s.d); if(s.cur<day.ex.length-1&&day.ex[s.cur].kind!=='task'){ s.cur++; S.fxDir='r'; }
+  await persistSess(); renderFocus(); }
+async function finishSess(){
+  const s=S.sess; if(!s) return; const day=dayFor(s.w,s.d);
+  const log=Object.assign({},S.wlog), k=dKey(s.w,s.d), dd=Object.assign({},log[k]||{});
+  day.ex.forEach((_,x)=>{ dd[eId(s.w,s.d,x)]=1; }); log[k]=dd; await save('wlog',log);
+  let sets=0,vol=0; Object.values(s.sets).forEach(a=>a.forEach(([w,r])=>{ sets++; vol+=w*r; }));
+  const km=Object.values(s.runs).reduce((a,r)=>a+(+r.km||0),0);
+  const skipped=day.ex.filter((e,x)=>e.kind==='lift'?!(s.sets[x]||[]).length:e.kind==='run'?!s.runs[x]&&!s.tasks[x]:!s.tasks[x]).map(e=>e.n);
+  const rec={date:todayKey(),cyc:cyc(),w:s.w,d:s.d,t:day.t,dur:sessSec(),sets,vol:Math.round(vol),km:Math.round(km*100)/100,prs:s.prs.length};
+  await save('hist',(S.hist||[]).concat([rec]).slice(-400));
+  S.summary=Object.assign({},rec,{prList:s.prs,skipped});
+  S.sess=null; S.rest=null; S.fxOpen=false; await store.set(K.sess,null); keepAwake(false);
+  render(); burstAt(innerWidth/2,innerHeight*.28,44); flash(); buzz([80,50,80,50,200]); beep(660,.1); setTimeout(()=>beep(880,.1),120); setTimeout(()=>beep(1320,.18),240);
+}
+async function quitSess(){ S.sess=null; S.rest=null; S.fxOpen=false; await store.set(K.sess,null); keepAwake(false); render(); toast('Sesiune închisă','Seriile notate au rămas salvate.','info'); }
+
+/* pauza dintre serii */
+function startRest(sec){ if(!sec) return; S.rest={end:Date.now()+sec*1000,total:sec,beeped:4}; }
+function restDone(){
+  S.rest=null; buzz([200,100,200]); beep(1320,.14); setTimeout(()=>beep(1320,.14),190);
+  if(!document.hidden) flash(); renderFocus(); renderPill();
+}
+function tick(){
+  if(!S.sess&&!S.rest) return;
+  const t=fmtClock(sessSec());
+  ['#fxClock','#heroClock','#pillClock'].forEach(sel=>{ const el=$(sel); if(el&&el.textContent!==t) el.textContent=t; });
+  if(S.rest){
+    const left=(S.rest.end-Date.now())/1000;
+    if(left<=0){ restDone(); return; }
+    const sl=Math.ceil(left); if(sl<=3&&sl<S.rest.beeped){ S.rest.beeped=sl; beep(880,.05); }
+    const rt=$('#restT'); if(rt) rt.textContent=fmtClock(left);
+    const rr=$('#restRing'); if(rr){ const C=2*Math.PI*36; rr.setAttribute('stroke-dashoffset',(C*(1-left/S.rest.total)).toFixed(2)); }
+    const rb=$('#restBox'); if(rb) rb.classList.toggle('urgent',left<=3);
+    const pr=$('#pillRest'); if(pr) pr.textContent=fmtClock(left);
+  }
+}
+setInterval(tick,250);
+
+/* sunet, vibrații, ecran aprins */
+let actx=null, wakeLock=null;
+function unlockAudio(){ try{ actx=actx||new (window.AudioContext||window.webkitAudioContext)(); if(actx.state==='suspended') actx.resume(); }catch(e){} }
+function beep(f=1000,d=.09){ if(!S.sound) return; try{ unlockAudio(); const o=actx.createOscillator(), g=actx.createGain(), t=actx.currentTime;
+  o.type='sine'; o.frequency.value=f; g.gain.setValueAtTime(.0001,t); g.gain.exponentialRampToValueAtTime(.35,t+.01); g.gain.exponentialRampToValueAtTime(.0001,t+d);
+  o.connect(g); g.connect(actx.destination); o.start(t); o.stop(t+d+.02); }catch(e){} }
+function buzz(p){ if(!S.sound) return; try{ navigator.vibrate&&navigator.vibrate(p); }catch(e){} }
+async function keepAwake(on){ try{ if(on&&!wakeLock&&navigator.wakeLock){ wakeLock=await navigator.wakeLock.request('screen'); wakeLock.addEventListener('release',()=>{ wakeLock=null; }); }
+  if(!on&&wakeLock){ await wakeLock.release(); wakeLock=null; } }catch(e){} }
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden&&S.sess) keepAwake(true); });
+
+/* =====================================================================
+   8 · ANTRENORUL AI — Claude prin SDK-ul oficial Anthropic, direct din browser
+   ===================================================================== */
+const SDK_URL='https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.131.0/+esm';
+const AI_MODEL='claude-opus-5-5';
+const AI={busy:false,stream:null,live:'',err:null,draft:'',usage:null,usageModel:null};
+let sdkP=null;
+function loadSdk(){ return sdkP||(sdkP=import(SDK_URL).then(m=>m.default||m.Anthropic).catch(e=>{ sdkP=null; throw e; })); }
+const AI_SYS=`Ești antrenorul personal din aplicația ZECE, care urmează programul hibrid Hybrid365 (forță + alergare).
+Programul are cicluri de 4 săptămâni cu aceeași săptămână-tip:
+- Luni: Easy run Z2 + Upper (Bench Press, Pull Up / Lat Pulldown, Incline Dumbbell Press, Chest Supported Row, Lateral Raise, Tricep Pushdown, Bicep Curl)
+- Marți: Threshold run (încălzire, reprize la ritm de prag, răcire)
+- Miercuri: Upper + Conditioning (Weighted Pull Up, Flat Dumbbell Press, Chest Supported Row, Seated Overhead Press, Cable Face Pull, Dumbbell Lateral Raise, Tricep Rope Pushdown, Alternating Dumbbell Curl, conditioning A sau B)
+- Joi: Easy run Z2 (flush) + Lower (Hack Squat în loc de Back Squat, Romanian Deadlift, Walking Lunge, Hip Thrust, Leg Press, Hamstring Curl, Calf Raise)
+- Vineri: Upper Strength + Power (Bench Press 5×3–5, Weighted Pull Up, Incline Dumbbell Press, Chest Supported Row, Push Press, Close Grip Bench Press, Barbell Curl, Tricep Overhead Extension, EMOM de putere)
+- Sâmbătă: Long run Z2
+- Duminică: recuperare și mobilitate
+Alergările cresc de la o săptămână la alta (minute la easy și long run, reprize la prag).
+
+Primești datele utilizatorului din aplicație: profil, greutate, serii notate (kg × repetări), alergări, unde a ajuns în ciclu și antrenamentele terminate. Dacă primești în conversație un mesaj de sistem cu date actualizate, folosește versiunea cea mai nouă.
+
+Cum răspunzi:
+- În limba română, direct și concret, ca un antrenor care îl cunoaște. Folosește cifrele lui reale (kg, repetări, ritmuri, date) și dă recomandări pe care le poate aplica la următorul antrenament.
+- Exercițiile și zilele planului rămân cele din program. Poți recomanda greutăți, repetări, ritmuri, ajustări de volum când e obosit, recuperare, somn și alimentație.
+- La forță folosește dubla progresie: întâi repetările până la capătul intervalului la toate seriile, apoi crești greutatea. La alergare, zona 2 rămâne ușoară (poate vorbi în propoziții întregi), iar pragul e controlat, nu maximal.
+- Dacă îți lipsesc date ca să răspunzi bine, spune exact ce să noteze în aplicație. Nu inventa valori.
+- Siguranță: la durere ascuțită, durere în piept, amețeală sau o posibilă accidentare, recomanzi să se oprească și să meargă la medic sau kinetoterapeut; nu pui diagnostice. Nu recomanda deficite calorice extreme sau o scădere în greutate mai rapidă de aproximativ 1% din greutatea corporală pe săptămână.
+- Format: răspunsuri scurte (de regulă sub 180 de cuvinte), paragrafe scurte și liste cu liniuță, **bold** pentru cifrele-cheie. Fără tabele.`;
+
+function snapshot(){
+  const out=[], tk=todayKey(), P=prof();
+  const sec=(t,f)=>{ try{ const v=f(); if(v) out.push('## '+t+'\n'+v); }catch(e){} };
+  sec('Data de azi',()=>tk+', '+DAYN[(parseKey(tk).getDay()+6)%7]);
+  sec('Profil',()=>`Vârstă ${P.age} ani, înălțime ${P.h} cm. Greutate la start ${P.startW} kg, țintă ${P.goalW} kg.`);
+  sec('Greutate',()=>{ const a=wList(); if(!a.length) return 'Nicio cântărire notată.'; const ws=wStats();
+    return `Ultima cântărire: ${num(ws.last.w)} kg (${ws.last.d}). Media pe 7 zile: ${num(ws.a7)} kg.`+(ws.wk!=null?` Ritm: ${ws.wk>0?'+':''}${num(ws.wk,2)} kg/săptămână.`:'')+
+      `\nCântăriri recente: ${a.slice(-14).map(x=>x.d.slice(5)+' '+num(x.w)).join(', ')}.`; });
+  sec('Unde a ajuns în program',()=>{ const nx=nextDay(); let s=`Ciclul ${cyc()}.`;
+    if(!nx) return s+' Toate cele 4 săptămâni sunt bifate; urmează un ciclu nou.';
+    const day=dayFor(nx.w,nx.d);
+    s+=` Următorul antrenament: săptămâna ${nx.w+1}/4, ${DAYN[nx.d]} — ${day.t} (~${day.min} min):\n`+day.ex.map(e=>{ const p=e.kind==='lift'?lastSession(e.n):null;
+      return `- ${e.n}: ${e.p}`+(p?` (ultima dată, ${p.d}: ${p.s.map(x=>num(x[0])+'×'+x[1]).join(', ')})`:''); }).join('\n');
+    s+=`\nExerciții bifate în săptămâna ${nx.w+1}: `+PLAN.map((p,d)=>`${DAYS[d]} ${doneCount(nx.w,d)}/${p.ex.length}`).join(', ')+'.';
+    return s; });
+  sec('Antrenament în desfășurare',()=>{ if(!S.sess) return ''; const s=S.sess, day=dayFor(s.w,s.d);
+    const done=Object.keys(s.sets).map(x=>`${day.ex[x].n}: ${s.sets[x].map(z=>num(z[0])+'×'+z[1]).join(', ')}`);
+    return `${DAYN[s.d]} — ${day.t}, pornit azi. Exercițiul curent: ${day.ex[s.cur].n}.`+(done.length?'\nSerii notate până acum:\n- '+done.join('\n- '):''); });
+  sec('Forță (kg × repetări; 1RM estimat cu Epley)',()=>{ const Lf=S.lifts||{};
+    const names=Object.keys(Lf).filter(n=>Lf[n]&&Lf[n].length).sort((a,b)=>Lf[a][Lf[a].length-1].d<Lf[b][Lf[b].length-1].d?1:-1).slice(0,26);
+    if(!names.length) return 'Nicio serie notată încă.';
+    return names.map(n=>`- ${n}: 1RM maxim ${bestE1(n)} kg; `+Lf[n].slice(-3).map(e=>`${e.d}: ${e.s.map(s=>num(s[0])+'×'+s[1]).join(', ')}`).join(' | ')).join('\n'); });
+  sec('Alergare',()=>{ const rs=(S.runs||[]).slice().sort((a,b)=>a.date<b.date?-1:1).slice(-12); if(!rs.length) return 'Nicio alergare notată.';
+    const m0=mondayOf(tk), wk=[]; for(let i=5;i>=0;i--){ const a=dayShift(m0,-7*i); wk.push(num(sumKm(runsIn(a,dayShift(a,6))))); }
+    return 'Ultimele alergări:\n'+rs.map(r=>`- ${r.date} ${RUNK[r.kind]||r.kind}: ${num(r.km,2)} km în ${num(r.min)} min (${fmtPace(paceOf(r))})`+(r.rpe?`, efort ${r.rpe}/10`:'')).join('\n')+
+      `\nKm pe săptămână, ultimele 6 săptămâni (cea curentă la final): ${wk.join(', ')}.`; });
+  sec('Antrenamente terminate',()=>(S.hist||[]).slice(-10).map(h=>`- ${h.date}: ${h.t} (ciclul ${h.cyc}, S${h.w+1}), ${Math.round(h.dur/60)} min, ${h.sets} serii`+(h.km?`, ${num(h.km,2)} km`:'')).join('\n'));
+  sec('Recorduri recente',()=>prEvents().slice(0,6).map(p=>`- ${p.d} ${p.n}: 1RM estimat ${p.b} kg (înainte ${p.prev} kg)`).join('\n'));
+  return out.join('\n\n');
+}
+/* după o preluare la jumătatea răspunsului, blocurile interne de dinaintea ultimului marcaj „fallback" nu se trimit înapoi */
+function echoable(c){ const a=Array.isArray(c)?c:[]; let lf=-1; a.forEach((b,i)=>{ if(b&&b.type==='fallback') lf=i; });
+  return a.filter((b,i)=>!(i<lf&&/^(thinking|redacted_thinking|tool_use)$/.test(b.type))); }
+const msgText=m=>typeof m.content==='string'?m.content:(m.content||[]).filter(b=>b.type==='text').map(b=>b.text).join('\n\n');
+function aiErrText(e,A){
+  if(!A) return 'Nu am putut încărca SDK-ul Anthropic. Verifică conexiunea la internet și încearcă din nou.';
+  if(e instanceof A.AuthenticationError) return 'Cheia API nu e validă. Verific-o în Setări → Antrenor AI.';
+  if(e instanceof A.PermissionDeniedError) return 'Cheia nu are acces la acest model. Verifică organizația din console.anthropic.com.';
+  if(e instanceof A.RateLimitError) return 'Prea multe cereri într-un timp scurt. Mai încearcă peste un minut.';
+  if(e instanceof A.APIConnectionError) return 'Nu ajung la api.anthropic.com. Verifică internetul.';
+  if(e instanceof A.InternalServerError) return 'Serverele Anthropic au o problemă momentan. Mai încearcă o dată.';
+  if(e instanceof A.APIError){ if(e.type==='billing_error'||/credit/i.test(e.message||'')) return 'Contul Anthropic nu are credit. Adaugă credit în console.anthropic.com → Billing.';
+    return 'Eroare de la API'+(e.status?' ('+e.status+')':'')+': '+(e.message||''); }
+  return 'Eroare: '+((e&&e.message)||e);
+}
+function costOf(u,model){ if(!u||model!==AI_MODEL) return null;
+  return ((u.input_tokens||0)*4+(u.cache_creation_input_tokens||0)*5+(u.cache_read_input_tokens||0)*.2+(u.output_tokens||0)*20)/1e6; }
+
+async function aiSend(text){
+  text=(text||'').trim(); if(!text||AI.busy) return;
+  if(S.tab!=='coach'){ S.tab='coach'; }
+  if(!S.aiKey){ AI.err='Adaugă mai întâi cheia API (mai jos), apoi trimite din nou.'; AI.draft=text; render(); return; }
+  let chat=S.aiChat&&Array.isArray(S.aiChat.msgs)?S.aiChat:{msgs:[]};
+  const before=chat.msgs.length, prevLast=chat.last;
+  if(!before){ chat={started:todayKey(),snap:snapshot(),msgs:[]}; chat.last=chat.snap; }
+  chat.msgs=chat.msgs.concat([{role:'user',content:text}]);
+  /* datele noi se adaugă la final ca mesaj de sistem: istoricul nu se rescrie, deci cache-ul și raționamentul anterior rămân valide */
+  if(before){ const now=snapshot(); if(now!==chat.last){ chat.msgs.push({role:'system',content:'Datele din aplicație s-au schimbat. Versiunea actuală:\n\n'+now}); chat.last=now; } }
+  S.aiChat=chat; AI.busy=true; AI.err=null; AI.live=''; AI.draft='';
+  render(); scrollEnd(true);
+  let Anthropic=null;
+  try{
+    Anthropic=await loadSdk();
+    const client=new Anthropic({apiKey:S.aiKey,dangerouslyAllowBrowser:true});
+    const stream=client.beta.messages.stream({
+      model:AI_MODEL,
+      max_tokens:64000,
+      betas:['server-side-fallback-2026-07-01'],
+      fallbacks:'default',
+      output_config:{effort:S.aiEffort||'medium'},
+      cache_control:{type:'ephemeral'},
+      system:[{type:'text',text:AI_SYS},{type:'text',text:'Datele utilizatorului la începutul conversației ('+chat.started+'):\n\n'+chat.snap}],
+      messages:chat.msgs
+    });
+    AI.stream=stream;
+    stream.on('text',d=>{ AI.live+=d; paintLive(); });
+    const msg=await stream.finalMessage();
+    AI.stream=null;
+    if(msg.stop_reason==='refusal'){
+      chat.msgs=chat.msgs.slice(0,before); chat.last=before?prevLast:null; AI.draft=text;
+      AI.err='Modelul a refuzat cererea (filtrele de siguranță). Reformulează întrebarea.';
+    } else {
+      chat.msgs.push({role:'assistant',content:echoable(msg.content)});
+      AI.usage=msg.usage; AI.usageModel=msg.model;
+      if(msg.stop_reason==='max_tokens') AI.err='Răspunsul a fost tăiat la limita de lungime.';
+    }
+  }catch(err){
+    AI.stream=null;
+    const aborted=!!(Anthropic&&err instanceof Anthropic.APIUserAbortError);
+    if(aborted&&AI.live.trim()) chat.msgs.push({role:'assistant',content:[{type:'text',text:AI.live.trim()+' […]'}]});
+    else { chat.msgs=chat.msgs.slice(0,before); chat.last=before?prevLast:null; AI.draft=text; }
+    if(!aborted) AI.err=aiErrText(err,Anthropic);
+  }
+  if(!chat.msgs.length) chat=null;
+  AI.busy=false; AI.live=''; S.aiChat=chat; await store.set(K.aiChat,chat);
+  if(S.tab==='coach'){ render(); scrollEnd(); } else renderNav();
+}
+let liveRaf=0;
+function paintLive(){ if(liveRaf) return; liveRaf=requestAnimationFrame(()=>{ liveRaf=0; const el=$('#aiLive');
+  if(el){ const near=innerHeight+scrollY>=document.documentElement.scrollHeight-160; el.innerHTML=AI.live?md(AI.live):typingDots; if(near) scrollEnd(); } }); }
+const typingDots='<span class="typing"><i></i><i></i><i></i></span>';
+function scrollEnd(smooth){ requestAnimationFrame(()=>window.scrollTo({top:document.documentElement.scrollHeight,behavior:smooth?'smooth':'auto'})); }
+/* markdown minim: textul e scăpat înainte, apoi doar **bold**, *italic*, `cod`, liste, titluri */
+function md(src){
+  const inline=s=>s.replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/(^|[^*\w])\*([^*\s][^*]*?)\*(?!\w)/g,'$1<i>$2</i>');
+  let out='', list=null; const close=()=>{ if(list){ out+='</'+list+'>'; list=null; } };
+  esc(src).split('\n').forEach(raw=>{ const l=raw.replace(/\s+$/,''); let m;
+    if((m=/^\s*[-*•]\s+(.*)$/.exec(l))){ if(list!=='ul'){ close(); out+='<ul>'; list='ul'; } out+='<li>'+inline(m[1])+'</li>'; return; }
+    if((m=/^\s*\d+[.)]\s+(.*)$/.exec(l))){ if(list!=='ol'){ close(); out+='<ol>'; list='ol'; } out+='<li>'+inline(m[1])+'</li>'; return; }
+    close(); if(!l.trim()) return;
+    if((m=/^#{1,6}\s+(.*)$/.exec(l))){ out+='<h4>'+inline(m[1])+'</h4>'; return; }
+    if(/^\s*(-{3,}|\*{3,}|_{3,})\s*$/.test(l)){ out+='<hr>'; return; }
+    out+='<p>'+inline(l)+'</p>'; });
+  close(); return out;
+}
+function viewCoach(){
+  const msgs=(S.aiChat&&S.aiChat.msgs)||[], key=S.aiKey;
+  const lastA=[...msgs].reverse().find(m=>m.role==='assistant'), cost=costOf(AI.usage,AI.usageModel);
+  let log='';
+  msgs.forEach((m,i)=>{
+    if(m.role==='user') log+=`<div class="msg me">${esc(m.content)}</div>`;
+    else if(m.role==='system') log+=`<div class="sysnote">${ic('refresh')} date actualizate trimise antrenorului</div>`;
+    else { log+=`<div class="msg ai">${md(msgText(m))||'<span class="mu">(fără text)</span>'}</div>`;
+      if(m===lastA&&AI.usage&&!AI.busy) log+=`<div class="msg-meta">${AI.usageModel===AI_MODEL?'':'răspuns de la '+esc(AI.usageModel)+' · '}${AI.usage.input_tokens+(AI.usage.cache_read_input_tokens||0)+(AI.usage.cache_creation_input_tokens||0)} tokeni intrare${AI.usage.cache_read_input_tokens?' ('+AI.usage.cache_read_input_tokens+' din cache)':''} · ${AI.usage.output_tokens} ieșire${cost!=null?' · ~$'+cost.toFixed(3):''}</div>`; }
+  });
+  if(AI.busy) log+=`<div class="msg ai" id="aiLive">${AI.live?md(AI.live):typingDots}</div>`;
+  const setup=key?'':`<div class="card" style="border-color:rgba(255,77,46,.35)"><div class="eyebrow">${ic('key')} Pornește antrenorul</div>
+    <ol class="ai-steps"><li>Intră pe <b>console.anthropic.com</b> → <b>API Keys</b> și creează o cheie (contul are nevoie de credit; un răspuns costă de regulă câțiva cenți).</li>
+      <li>Lipește cheia aici. Rămâne doar pe acest dispozitiv.</li></ol>
+    <div class="keybox"><input class="inp" id="aiKeyIn" type="password" autocomplete="off" placeholder="sk-ant-…" aria-label="Cheia API Anthropic">
+      <button class="btn pri" data-a="aiKeySave">Salvează</button></div></div>`;
+  const empty=!msgs.length&&!AI.busy?`<div class="sugg-list">${QUICK.map((q,i)=>`<button class="chip ask" data-a="ask" data-i="${i}">${esc(q)}</button>`).join('')}</div>`:'';
+  return `
+  <div class="card"><div class="ai-head"><div class="cc-ic">${ic('coach')}</div>
+    <div class="sp"><div class="h3">Antrenorul AI</div><div class="sm mu">Claude Opus 5.5 · vede planul, seriile, alergările și greutatea</div></div>
+    ${msgs.length?`<button class="btn ghost sm" data-a="aiNew" ${AI.busy?'disabled':''} data-confirm="Sigur?">${ic('refresh')} Nouă</button>`:''}</div></div>
+  ${setup}
+  ${empty}
+  <div class="msgs">${log}</div>
+  ${AI.err?`<div class="err" role="alert">${ic('alert')}<span>${esc(AI.err)}</span></div>`:''}
+  <div class="composer"><textarea id="aiIn" rows="1" placeholder="Întreabă antrenorul…" aria-label="Mesaj pentru antrenor">${esc(AI.draft)}</textarea>
+    ${AI.busy?`<button class="btn send" data-a="aiStop" aria-label="Oprește">${ic('stop')}</button>`
+      :`<button class="btn pri send" data-a="aiSend" aria-label="Trimite">${ic('send')}</button>`}</div>`;
+}
+function autosize(t){ t.style.height='auto'; t.style.height=Math.min(150,t.scrollHeight)+'px'; }
+
+/* =====================================================================
+   9 · RANDARE
+   ===================================================================== */
+const VIEWS={azi:viewAzi,plan:viewPlan,prog:viewProg,coach:viewCoach,set:viewSet};
+const NAV=[['azi','Azi','home'],['plan','Plan','plan'],['prog','Progres','chart'],['coach','Antrenor','coach']];
+let lastTab=null;
+function render(){
+  const v=$('#view'), changed=S.tab!==lastTab;
+  v.innerHTML=VIEWS[S.tab]();
+  if(changed){ const oi=NAV.findIndex(n=>n[0]===lastTab), ni=NAV.findIndex(n=>n[0]===S.tab);
+    v.dataset.dir=oi<0||ni<0?'':ni>oi?'r':'l'; v.classList.remove('anim'); void v.offsetWidth; v.classList.add('anim'); lastTab=S.tab; countUp(v); }
+  else v.classList.remove('anim');
+  renderNav(); renderPill(); renderFocus();
+  $('#gear').innerHTML=ic('gear'); $('#gear').classList.toggle('on',S.tab==='set');
+  const ta=$('#aiIn'); if(ta) autosize(ta);
+}
+function renderNav(){
+  const nav=$('#nav'), i=NAV.findIndex(n=>n[0]===S.tab);
+  if(!nav.firstChild) nav.innerHTML=`<div class="nav-in"><i class="nav-ind"></i>${NAV.map(n=>`<button class="nb" data-a="tab" data-k="${n[0]}">${ic(n[2])}<span>${n[1]}</span></button>`).join('')}</div>`;
+  nav.querySelectorAll('.nb').forEach((b,j)=>{ b.classList.toggle('on',j===i); b.setAttribute('aria-current',j===i?'page':'false');
+    const bd=b.querySelector('.badge'), want=NAV[j][0]==='coach'&&AI.busy&&S.tab!=='coach';
+    if(want&&!bd) b.insertAdjacentHTML('beforeend','<span class="badge"></span>'); if(!want&&bd) bd.remove(); });
+  const ind=nav.querySelector('.nav-ind'); ind.style.opacity=i<0?'0':'1'; if(i>=0) ind.style.transform=`translateX(${i*100}%)`;
+}
+function renderPill(){
+  const r=$('#pillRoot'), show=S.sess&&!S.fxOpen;
+  document.body.classList.toggle('has-pill',!!show);
+  if(!show){ r.innerHTML=''; return; }
+  r.innerHTML=`<button class="pill" data-a="fxOpen"><span class="dot"></span>Antrenament <b id="pillClock">${fmtClock(sessSec())}</b>
+    ${S.rest?`<span class="rb">· pauză <b id="pillRest">${fmtClock((S.rest.end-Date.now())/1000)}</b></span>`:''}${ic('right')}</button>`;
+}
+function countUp(root){
+  root.querySelectorAll('[data-cnt]').forEach(el=>{ const to=parseFloat(el.dataset.cnt); if(!isFinite(to)) return;
+    const final=el.textContent, dec=+el.dataset.dec||0, dur=450; let t0=null;
+    /* timpul vine din primul cadru, nu din performance.now(): altfel primul cadru poate da progres negativ */
+    const st=now=>{ if(!el.isConnected) return; if(t0==null) t0=now; const k=clamp((now-t0)/dur,0,1), e=1-Math.pow(1-k,3);
+      el.textContent=k<1?(to*e).toFixed(dec):final; if(k<1) requestAnimationFrame(st); };
+    requestAnimationFrame(st); });
+}
+function toast(title,sub,kind){
+  document.querySelectorAll('.toast').forEach(x=>x.remove());
+  const t=document.createElement('div'); t.className='toast '+(kind||''); t.setAttribute('role','status');
+  t.innerHTML=`<b>${esc(title)}</b>${sub?`<span>${esc(sub)}</span>`:''}`; document.body.appendChild(t); setTimeout(()=>t.remove(),3000);
+}
+function burstAt(x,y,n){
+  const b=document.createElement('div'); b.className='burst'; b.style.left=x+'px'; b.style.top=y+'px';
+  const cols=['#FF4D2E','#FF8A3D','#FFFFFF','#4DA3FF','#FFB020'];
+  for(let i=0;i<(n||24);i++){ const a=Math.random()*Math.PI*2, d=70+Math.random()*130, e=document.createElement('i');
+    e.style.cssText=`--x:${(Math.cos(a)*d).toFixed(0)}px;--y:${(Math.sin(a)*d-50).toFixed(0)}px;--r:${(Math.random()*540-270).toFixed(0)}deg;--c:${cols[i%cols.length]};--t:${(.6+Math.random()*.5).toFixed(2)}s`;
+    b.appendChild(e); }
+  document.body.appendChild(b); setTimeout(()=>b.remove(),1300);
+}
+function flash(){ const f=document.createElement('div'); f.className='flash'; document.body.appendChild(f); setTimeout(()=>f.remove(),550); }
+function shake(sel){ const el=$(sel); if(!el) return; el.animate([{transform:'translateX(0)'},{transform:'translateX(-6px)'},{transform:'translateX(6px)'},{transform:'translateX(0)'}],{duration:220}); el.focus(); }
+function arm(el){
+  if(!el.dataset.html) el.dataset.html=el.innerHTML;
+  el.classList.add('armed'); el.innerHTML=el.dataset.confirm==='?'?ic('trash'):esc(el.dataset.confirm);
+  clearTimeout(el._t); el._t=setTimeout(()=>{ el.classList.remove('armed'); el.innerHTML=el.dataset.html; },3000);
+}
+
+/* =====================================================================
+   10 · EVENIMENTE
+   ===================================================================== */
+document.addEventListener('pointerdown',ev=>{
+  const b=ev.target.closest('.btn'); if(!b) return;
+  const r=b.getBoundingClientRect(), d=Math.max(r.width,r.height), sp=document.createElement('span');
+  sp.className='rip'; sp.style.cssText=`width:${d}px;height:${d}px;left:${ev.clientX-r.left-d/2}px;top:${ev.clientY-r.top-d/2}px`;
+  b.appendChild(sp); setTimeout(()=>sp.remove(),520);
+},{passive:true});
+
+document.addEventListener('click',async ev=>{
+  const el=ev.target.closest('[data-a]'); if(!el||el.disabled) return;
+  if(el.dataset.confirm&&!el.classList.contains('armed')){ arm(el); return; }
+  unlockAudio();
+  const a=el.dataset.a, k=el.dataset.k, tk=todayKey(), I=+el.dataset.i;
+  const W=+el.dataset.w, D=+el.dataset.d, X=+el.dataset.x;
+  const s=S.sess;
+  switch(a){
+    case 'tab': if(S.tab!==k){ S.tab=k; render(); window.scrollTo({top:0}); } else if(k==='coach') scrollEnd(true); else window.scrollTo({top:0,behavior:'smooth'}); return;
+    case 'openDay': S.tab='plan'; S.planW=W; S.openDay=D; render(); requestAnimationFrame(()=>{ const c=$('#day'+D); if(c) c.scrollIntoView({behavior:'smooth',block:'start'}); }); return;
+    case 'toggleDay': S.openDay=S.openDay===D?-1:D; { const c=$('#day'+D); if(c){ document.querySelectorAll('.day.open').forEach(o=>{ if(o!==c) o.classList.remove('open'); });
+        c.classList.toggle('open',S.openDay===D); c.querySelector('.day-h').setAttribute('aria-expanded',S.openDay===D); } } return;
+    case 'planW': S.planW=I; render(); return;
+    case 'tick': { const on=!isDone(W,D,X); await setDone(W,D,X,on); render(); if(on){ const t=document.querySelector(`.tick[data-w="${W}"][data-d="${D}"][data-x="${X}"]`); if(t) t.classList.add('pop'); buzz(15);
+        if(dayFull(W,D)){ const c=$('#day'+D); if(c){ const r=c.getBoundingClientRect(); burstAt(r.left+r.width/2,r.top+30,26); } toast('Zi completă',DAYN[D]+' · '+PLAN[D].t); } } return; }
+    case 'start': await startSess(W,D); return;
+    case 'newCycle': { const c=Object.assign({},S.cyc||{}); c.h=cyc()+1; await save('cyc',c); S.planW=0; S.openDay=-1; render(); toast('Ciclul '+cyc(),'Planul reîncepe de la săptămâna 1.'); return; }
+    case 'resetCycle': { const log=Object.assign({},S.wlog), pre='hc'+cyc()+'w'; Object.keys(log).forEach(x=>{ if(x.indexOf(pre)===0) delete log[x]; }); await save('wlog',log); render(); toast('Bife șterse','Ciclul '+cyc()+' reîncepe de la zero.','info'); return; }
+    case 'wAdd': { const inp=$('#wIn'), v=parseFloat(inp&&inp.value); if(!(v>30&&v<400)){ shake('#wIn'); return; }
+      const w=Object.assign({},S.weights); w[tk]=Math.round(v*10)/10; await save('weights',w); render(); toast('Greutate salvată',num(v)+' kg · '+fmtDay(tk),'info'); return; }
+    case 'wDel': { const w=Object.assign({},S.weights); delete w[k]; await save('weights',w); render(); return; }
+    case 'wRange': S.wRange=I; render(); return;
+    case 'progTab': S.progTab=k; render(); return;
+    case 'prEx': S.prEx=k; render(); return;
+    case 'goRuns': S.tab='prog'; S.progTab='r'; render(); requestAnimationFrame(()=>{ const f=$('#runForm'); if(f) f.scrollIntoView({behavior:'smooth',block:'center'}); }); return;
+    case 'runKind': S.runKind=k; render(); return;
+    case 'runAdd': { const km=parseFloat($('#rKm').value)||0, mn=parseFloat($('#rMin').value)||0, dt=$('#rDate').value||tk, rpe=parseInt($('#rRpe').value,10);
+      if(!(km>0)){ shake('#rKm'); return; }
+      const run={date:dt>tk?tk:dt,kind:S.runKind,km:Math.round(km*100)/100,min:Math.round(mn*10)/10}; if(rpe>=1&&rpe<=10) run.rpe=rpe;
+      await save('runs',(S.runs||[]).concat([run])); render(); toast('Alergare salvată',num(km,2)+' km'+(mn?' · '+fmtPace(mn/km):''),'info'); return; }
+    case 'runDel': await save('runs',(S.runs||[]).filter((_,j)=>j!==I)); render(); return;
+    case 'fxOpen': S.fxOpen=true; keepAwake(true); render(); return;
+    case 'fxMin': S.fxOpen=false; render(); return;
+    case 'fxGo': if(!s) return; S.fxDir=X>s.cur?'r':X<s.cur?'l':''; s.cur=X; await persistSess(); renderFocus(); return;
+    case 'fxNext': if(!s) return; { const n=dayFor(s.w,s.d).ex.length; if(s.cur<n-1){ s.cur++; S.fxDir='r'; await persistSess(); renderFocus(); $('#fxRoot .fx').scrollTop=0; } } return;
+    case 'fxPrev': if(!s||s.cur<=0) return; s.cur--; S.fxDir='l'; await persistSess(); renderFocus(); return;
+    case 'fxFinish': await finishSess(); return;
+    case 'fxQuit': await quitSess(); return;
+    case 'sumClose': S.summary=null; render(); return;
+    case 'sumAsk': { const m=S.summary; S.summary=null; aiSend('Tocmai am terminat antrenamentul de '+DAYN[m.d]+' ('+m.t+'). Cum a mers și la ce să fiu atent data viitoare?'); return; }
+    case 'kg': case 'rp': case 'km': case 'mn': { const id={kg:'#inKg',rp:'#inRp',km:'#inKm',mn:'#inMin'}[a], inp=$(id); if(!inp) return;
+      const step=parseFloat(el.dataset.v), v=Math.max(0,(parseFloat(inp.value)||0)+step), r=a==='rp'?Math.round(v):Math.round(v*100)/100;
+      inp.value=a==='rp'?r:num(r,2); if(s&&a==='kg') s.kg[s.cur]=r; if(s&&a==='rp') s.rp[s.cur]=r; buzz(8); updPace(); return; }
+    case 'logSet': if(s) await logSet(); return;
+    case 'undoSet': if(s) await undoSet(); return;
+    case 'logRun': if(s) await logRun(); return;
+    case 'exDone': if(s) await exDone(); return;
+    case 'restAdd': if(S.rest){ S.rest.end+=30000; S.rest.total+=30; tick(); } return;
+    case 'restSkip': S.rest=null; renderFocus(); renderPill(); return;
+    case 'ask': aiSend(QUICK[I]); return;
+    case 'aiSend': { const t=$('#aiIn'); aiSend(t?t.value:''); return; }
+    case 'aiStop': if(AI.stream) AI.stream.abort(); return;
+    case 'aiNew': AI.err=null; AI.usage=null; S.aiChat=null; await store.set(K.aiChat,null); render(); return;
+    case 'aiKeySave': { const v=($('#aiKeyIn').value||'').trim(); if(v.length<20){ shake('#aiKeyIn'); return; }
+      await save('aiKey',v); AI.err=null; render(); toast('Cheie salvată',v.indexOf('sk-ant-')===0?'Antrenorul AI e gata.':'Cheia nu începe cu „sk-ant-" — verific-o dacă primești erori.','info'); return; }
+    case 'aiKeyDel': await save('aiKey',''); render(); return;
+    case 'aiEffort': await save('aiEffort',k); render(); return;
+    case 'sound': await save('sound',!S.sound); render(); if(S.sound) beep(880,.08); return;
+    case 'rpReset': { const rp=Object.assign({},S.runPlan||{}); delete rp.h; await save('runPlan',rp); render(); return; }
+    case 'export': await doExport(); return;
+  }
+});
+document.addEventListener('input',ev=>{
+  const t=ev.target, s=S.sess;
+  if(t.id==='aiIn'){ AI.draft=t.value; autosize(t); }
+  else if(s&&t.id==='inKg'){ const v=parseFloat(t.value); s.kg[s.cur]=isFinite(v)?v:''; }
+  else if(s&&t.id==='inRp'){ const v=parseInt(t.value,10); s.rp[s.cur]=isFinite(v)?v:''; }
+  else if(t.id==='inKm'||t.id==='inMin') updPace();
+});
+document.addEventListener('keydown',ev=>{
+  const t=ev.target;
+  if(t.id==='aiIn'&&ev.key==='Enter'&&!ev.shiftKey&&!ev.isComposing&&matchMedia('(pointer:fine)').matches){ ev.preventDefault(); aiSend(t.value); }
+  else if(t.id==='wIn'&&ev.key==='Enter'){ ev.preventDefault(); $('[data-a="wAdd"]').click(); }
+  else if(t.id==='aiKeyIn'&&ev.key==='Enter'){ ev.preventDefault(); $('[data-a="aiKeySave"]').click(); }
+  else if(ev.key==='Escape'&&S.fxOpen&&!S.summary){ S.fxOpen=false; render(); }
+});
+document.addEventListener('change',async ev=>{
+  const t=ev.target;
+  if(t.dataset.p){ const v=parseFloat(t.value); if(!(v>0)) return; await save('prof',Object.assign({},S.prof||{},{[t.dataset.p]:v})); toast('Profil salvat','','info'); return; }
+  if(t.dataset.rp){ const [k,f,w]=t.dataset.rp.split('|'), v=parseInt(t.value,10); if(!(v>=0&&v<=300)) return;
+    const rp=Object.assign({},S.runPlan||{}), h=JSON.parse(JSON.stringify(rp.h||{})), cur=runPlan();
+    h[k]=h[k]||{}; h[k][f]=(h[k][f]||cur[k][f]).slice(); h[k][f][+w]=v; rp.h=h; await save('runPlan',rp); toast('Progresie salvată','','info'); return; }
+  if(t.id==='impFile'&&t.files&&t.files[0]){ await doImport(t.files[0]); t.value=''; }
+});
+
+/* copie de siguranță — cheia API nu intră în export */
+const EXPORT_KEYS=['zece:lifts','zece:weights','zece:runs','zece:wlog','zece:cyc','zece:runPlan','zece:nutri','zece3:hist','zece3:aiChat','zece3:aiEffort','zece3:sound',
+  'zece:tests','zece:mlog','zece:shoes','zece:body','zece:gtg','zece:workouts','zece:counts','zece:curBlock'];
+async function doExport(){
+  const data={app:'ZECE',v:3,at:new Date().toISOString(),keys:{}};
+  for(const k of EXPORT_KEYS){ const v=await store.get(k); if(v!=null) data.keys[k]=v; }
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));
+  a.download='zece-copie-'+todayKey()+'.json'; document.body.appendChild(a); a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },1000); toast('Copie exportată',a.download,'info');
+}
+async function doImport(file){
+  try{ const data=JSON.parse(await file.text()); if(!data||!data.keys||typeof data.keys!=='object') throw new Error('format');
+    let n=0; for(const k of Object.keys(data.keys)){ if(EXPORT_KEYS.indexOf(k)>=0){ await store.set(k,data.keys[k]); n++; } }
+    await loadAll(); render(); toast('Copie importată',n+' seturi de date restaurate.','info');
+  }catch(e){ toast('Import eșuat','Fișierul nu pare o copie ZECE.','info'); }
+}
+
+/* =====================================================================
+   11 · PORNIRE
+   ===================================================================== */
+async function loadAll(){
+  const keys=['lifts','weights','runs','wlog','cyc','runPlan','prof','hist','sess','sound','aiKey','aiChat','aiEffort'];
+  const vals=await Promise.all(keys.map(k=>store.get(K[k])));
+  const o=Object.fromEntries(keys.map((k,i)=>[k,vals[i]]));
+  const obj=v=>v&&typeof v==='object'&&!Array.isArray(v)?v:{};
+  S.lifts=obj(o.lifts); S.weights=obj(o.weights); S.wlog=obj(o.wlog); S.cyc=obj(o.cyc); S.runPlan=obj(o.runPlan); S.prof=obj(o.prof);
+  S.runs=Array.isArray(o.runs)?o.runs:[]; S.hist=Array.isArray(o.hist)?o.hist:[];
+  S.sess=o.sess&&o.sess.start&&o.sess.sets?o.sess:null; S.sound=o.sound!==false;
+  S.aiKey=typeof o.aiKey==='string'?o.aiKey:''; S.aiChat=o.aiChat&&Array.isArray(o.aiChat.msgs)?o.aiChat:null;
+  S.aiEffort=['low','medium','high'].indexOf(o.aiEffort)>=0?o.aiEffort:'medium';
+}
+(async function init(){
+  const intro=$('#intro'), reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const close=()=>{ if(!intro.isConnected) return; intro.classList.add('out'); setTimeout(()=>intro.remove(),340); };
+  intro.addEventListener('click',close); setTimeout(close,reduce?0:850);
+  await loadAll();
+  render();
+})();
+</script>
+</body>
+</html>
